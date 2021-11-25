@@ -32,8 +32,13 @@ L.tileLayer(
 }
 ).addTo(map);
 
-map.attributionControl.addAttribution('<a href="https://bikehub.ca/tri-cities">Tri-Cities Committee</a>');
-map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap">HUB Cycling</a>');
+map.attributionControl.addAttribution('<a href="https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki">Tri-Cities Committee</a>');
+map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap">HUBCycling</a>');
+map.attributionControl.addAttribution('<a href="https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes">ICBC</a>');
+map.attributionControl.addAttribution('<a href="https://github.com/BikeOttawa">BikeOttawa</a>');
+map.attributionControl.addAttribution('<a href="https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=">SchoolDistrictNo43</a>');
+map.attributionControl.addAttribution('<a href="https://bikemaps.org">BikeMaps</a>');
+map.attributionControl.addAttribution('<a href="https://apps.apple.com/ca/app/tricityfix/id1476599668">TriCityFix</a>');
 
 //--------------- add layers ---------------
 var layerGroup = new L.LayerGroup();
@@ -491,7 +496,7 @@ function onEachFeatureAdopt(feature, layer) {
 
 var adoptIcon = L.icon({
     iconUrl: settings[8].icon,
-    iconSize: [22, 22], // size of the icon
+    iconSize: [22, 22]
 });
 
 var adoptLayer = new L.geoJSON(settings[8].data, {
@@ -508,9 +513,10 @@ if (settings[8].checked){
 }
 
 // BIKEMAPS.ORG =========================================
+// data source: received by email on Aug 7, 2021
 var bikeMapsIcon = L.icon({
     iconUrl: settings[9].icon,
-    iconSize: [22, 22], // size of the icon
+    iconSize: [22, 22]
 });
 
 var bikeMapLayer = new L.geoJSON(settings[9].data, {
@@ -526,7 +532,8 @@ if (settings[9].checked){
     layerGroup.addLayer(bikeMapLayer);
 }
 
-// WhatWeHeard map - feedback received in TriCityFix app or tricitiesfix@gmail.com ====================
+// WhatWeHeard map 
+// data source: feedback received in TriCityFix app or at tricitiesfix@gmail.com ====================
 // todo: need to create one files for mulitple for each city. problem: "id" is not unique. also, how to keep track of photos? maybe just one geojson file?
 function onEachFeatureTriCityFix(feature, layer) {
     var popupContent = ""
@@ -554,7 +561,7 @@ function onEachFeatureTriCityFix(feature, layer) {
 
 var triCityFixIcon = L.icon({
     iconUrl: settings[10].icon,
-    iconSize: [22, 22], // size of the icon
+    iconSize: [22, 22]
 });
 
 var triCityFixLayer = new L.geoJSON(settings[10].data, {
@@ -566,7 +573,6 @@ var triCityFixLayer = new L.geoJSON(settings[10].data, {
         });
     }
 });
-//adoptLayer.addTo(map);
 if (settings[10].checked){
     layerGroup.addLayer(triCityFixLayer);
 }
