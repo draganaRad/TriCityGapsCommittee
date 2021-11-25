@@ -1,18 +1,26 @@
 const settings = [
-    { type: "Line", color: '#FF7F00', key: 'topGap', zIndex: 2, title: 'Committee Top Gaps', data: topCommitteeJson, checked: true},
-    { type: "Line", color: '#CE424C', key: 'HUBgap', zIndex: 1, title: 'HUB Major Gaps', data: HUBGapsJson, checked: showHUBgaps},
-    { type: "Line", color: '#9031AA', key: 'HUBgapNov2021', zIndex: 4, title: 'HUB Gaps', data: HUBGapsJson_Nov2021, checked: showHUBgaps},
-    { type: "Point", color: '#563B68', key: 'adoptGap', zIndex: 3, title: 'Adopt-a-Gap Campaign', data: adoptGapsJson, icon:'img/adopt.png', checked: showAdopt}]
+    { type: "Line", key: 'topGap', zIndex: 1, title: 'Committee Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: true},
+    { type: "Line", key: 'HUBgap', zIndex: 2, title: 'HUB Major Gaps', data: HUBGapsJson, color: '#CE424C', checked: false},
+    { type: "Line", key: 'HUBgapNov2021', zIndex: 3, title: 'HUB Gaps', data: HUBGapsJson_Nov2021, color: '#9031AA', icon:'img/purplePinIcon2.png', checked: showHUBgaps},
+    { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclists Crashes', data: ICBCcrashesJson, icon:'img/circle-exclamation-solid.svg', checked: showExisting},
+    { type: "Line", key: 'designLowStress', zIndex: 5, title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExisting},
+    { type: "Line", key: 'designHighStress', zIndex: 6, title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExisting},
+    { type: "Point", key: 'trainParkade', zIndex: 7, title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showExisting},
+    { type: "Point", key: 'schools', zIndex: 8, title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showExisting},
+    { type: "Point", key: 'adoptGap', zIndex: 9, title: 'Adopt-a-Gap Campaign', data: adoptGapsJson, icon:'img/adopt.png', checked: showCommunity},
+    { type: "Point", key: 'bikeMaps', zIndex: 10, title: 'BikeMaps.org', data: bikeMapsJson, icon:'img/BikeMapsRound.png', checked: showCommunity},
+    { type: "Point", key: 'triCityFix', zIndex: 11, title: 'TriCityFix App', data: triCityFixJson, icon:'img/TriCityFixRound.png', checked: showCommunity}]
 // note: zIndex currently not used. Leaving for future improvments.
 
 // Create variable to hold map element, give initial settings to map
-var centerCoord = [49.254667, -122.825015]
+//var centerCoord = [49.254667, -122.825015]
+var centerCoord = [49.266872, -122.799271]
 if (L.Browser.mobile) {
     // increase tolerance for tapping (it was hard to tap on line exactly), zoom out a bit, and remove zoom control
     var myRenderer = L.canvas({ padding: 0.1, tolerance: 5 });
     var map = L.map("map", { center: centerCoord, zoom: 11, renderer: myRenderer, zoomControl: false });
 } else {
-    var map = L.map("map", { center: centerCoord, zoom: 12 });
+    var map = L.map("map", { center: centerCoord, zoom: 13 });
 }
 
 // Add OpenStreetMap tile layer to map element
@@ -31,183 +39,35 @@ map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/
 var layerGroup = new L.LayerGroup();
 layerGroup.addTo(map);
 
-lineWeight = 5
+lineWeight = 4
 if (!L.Browser.mobile) {
     lineWeight = lineWeight + 1
 }
 lineOpacity = 0.55
 lineOpacityHighlight = 0.8
 
-// MAJOR HUB gaps =========================================
-var HUBgapStyle = {
-    "color": settings[1].color, // 'darkred'
-    "weight": lineWeight,
-    "opacity": lineOpacity
-};
-var HUBgapStyleHighlight = {
-    "color": settings[1].color, // 'darkred'
-    "weight": lineWeight+1,
-    "opacity": lineOpacityHighlight
-};
-
-// functions to highligh lines on click
-function highlightFeatureHUB(e) {
-    var layer = e.target;
-    layer.setStyle(HUBgapStyleHighlight);
-    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
-    }
-}
-function resetHighlightHUB(e) {
-    HUBgapLayer.resetStyle(e.target);
-}
-
-// add popup and highlight
-function onEachFeatureHUB(feature, layer) {
+// generic pop-up function for geojson
+function onEachFeatureGeoJson(feature, layer) {
     var popupContent = ""
     if (feature.properties) {
-        if (feature.properties.Name) {
-            popupContent += "<b>Location: </b>";
-            popupContent += feature.properties.Name;
-        }
-        if (feature.properties.Description) {
-            popupContent += "<br><b>Description: </b>";
-            popupContent += feature.properties.Description;
-        }
-    }
-    layer.bindPopup(popupContent);
-
-    layer.on({
-        mouseover: highlightFeatureHUB,
-        mouseout: resetHighlightHUB,
-    });
-}
-
-var HUBgapLayer = new L.geoJSON(settings[1].data, {
-    style: HUBgapStyle,
-    onEachFeature: onEachFeatureHUB,
-})
-if (settings[1].checked){
-    layerGroup.addLayer(HUBgapLayer);
-}
-
-// HUB gaps =========================================
-var HUBallGapStyle = {
-    "color": settings[2].color, // 'darkpurple'
-    "weight": lineWeight,
-    "opacity": lineOpacity
-};
-var HUBallGapStyleHighlight = {
-    "color": settings[2].color, // 'darkpurple'
-    "weight": lineWeight+1,
-    "opacity": lineOpacityHighlight
-};
-
-// functions to highligh lines on click
-function highlightFeatureHUBall(e) {
-    var layer = e.target;
-    if (typeof layer.setStyle === "function") { //for markers received error here "layer.setStyle is not a function"
-        layer.setStyle(HUBallGapStyleHighlight);
-        if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-            layer.bringToFront();
-        }
-    }
-}
-function resetHighlightHUBall(e) {
-    if (typeof HUBallGapLayer.resetStyle === "function") {
-        HUBallGapLayer.resetStyle(e.target);
-    }
-}
-
-// add popup and highlight
-function onEachFeatureHUBall(feature, layer) {
-    var popupContent = ""
-    if (feature.properties) {
-        if (feature.properties.Name) {
-            popupContent += "<b>Location: </b>";
-            popupContent += feature.properties.Name;
-        }
-        if (feature.properties.Description) {
-            popupContent += "<br><b>Id: </b>";
-            popupContent += feature.properties.Description;
-        }
-    }
-    layer.bindPopup(popupContent);
-
-    layer.on({
-        mouseover: highlightFeatureHUBall,
-        mouseout: resetHighlightHUBall,
-    });
-}
-
-// var HUBallMarker = L.AwesomeMarkers.icon({
-//     icon: 'circle',
-//     iconColor: '#BE89CB',
-//     prefix: 'fa',
-//     markerColor: 'darkpurple'
-// });
-
-var HUBallIcon = L.icon({
-    //iconUrl: 'img/graduation-cap-solid.svg',
-    iconUrl: 'img/purplePinIcon.png',
-    iconSize: [22, 31],
-    iconAnchor: [11, 30],
-    popupAnchor:  [0, -20]
-});
-
-var HUBallGapLayer = new L.geoJSON(settings[2].data, {
-    style: HUBallGapStyle,
-    onEachFeature: onEachFeatureHUBall,
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {
-            icon: HUBallIcon
-        });
-    }
-});
-
-if (settings[2].checked){
-    layerGroup.addLayer(HUBallGapLayer);
-}
-
-// HUB Adopt-a-gap campain markers =========================================
-function onEachFeatureAdopt(feature, layer) {
-    var popupContent = ""
-    if (feature.properties) {
-        if (feature.properties.Name) {
-            popupContent += "<b>Name: </b>";
-            popupContent += feature.properties.Name;
-        }
-        if (feature.properties.Description) {
-            popupContent += "<br><b>Description: </b>";
-            popupContent += feature.properties.Description;
-        }
+        for (let property in feature.properties) {
+            //console.log('Dragana:: tag ' + JSON.stringify(tag) +', value: '+ way.tags[tag])
+            if (feature.properties[property] != null){
+                if (popupContent != "") {
+                    popupContent += "<br>";
+                }
+                popupContent += "<b>" + property + ": </b>";
+                popupContent += feature.properties[property];
+            }
+          }
     }
     layer.bindPopup(popupContent);
 }
 
-var adoptIcon = L.icon({
-    iconUrl: 'img/adopt.png',
-    iconSize: [25, 25], // size of the icon
-    // iconAnchor: [11, 30],
-    // popupAnchor:  [0, -20]
-});
+// Committe Top gaps =======================================================
+// data source: https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki
 
-var adoptLayer = new L.geoJSON(settings[3].data, {
-    style: HUBgapStyle,
-    onEachFeature: onEachFeatureAdopt,
-    pointToLayer: function (feature, latlng) {
-        return L.marker(latlng, {
-            icon: adoptIcon
-        });
-    }
-});
-//adoptLayer.addTo(map);
-if (settings[3].checked){
-    layerGroup.addLayer(adoptLayer);
-}
-
-// Committe Top gaps ==========================================
-// lines style
+// style for lines
 var topGapStyle = {
     "color": settings[0].color, // darkOrange_color ("Paired")
     "weight": lineWeight,
@@ -219,6 +79,7 @@ var topGapStyleHighlight = {
     "opacity": lineOpacityHighlight
 };
 
+// functions to highligh lines on click
 function highlightFeatureTop(e) {
     var layer = e.target;
     layer.setStyle(topGapStyleHighlight);
@@ -257,7 +118,462 @@ var topGapLayer = new L.geoJSON(settings[0].data, {
 });
 layerGroup.addLayer(topGapLayer);
 
-// Legend ===========================================
+// MAJOR HUB gaps ========================================================
+// data source: https://bikehub.ca/get-involved/ungapthemap/adopt-gap
+// to process - HUBgapMap.R
+
+var HUBgapStyle = {
+    "color": settings[1].color, // 'darkred'
+    "weight": lineWeight,
+    "opacity": lineOpacity
+};
+var HUBgapStyleHighlight = {
+    "color": settings[1].color, // 'darkred'
+    "weight": lineWeight+1,
+    "opacity": lineOpacityHighlight
+};
+
+function highlightFeatureHUB(e) {
+    var layer = e.target;
+    layer.setStyle(HUBgapStyleHighlight);
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+function resetHighlightHUB(e) {
+    HUBgapLayer.resetStyle(e.target);
+}
+
+function onEachFeatureHUB(feature, layer) {
+    var popupContent = ""
+    if (feature.properties) {
+        if (feature.properties.Name) {
+            popupContent += "<b>Location: </b>";
+            popupContent += feature.properties.Name;
+        }
+        if (feature.properties.Description) {
+            popupContent += "<br><b>Description: </b>";
+            popupContent += feature.properties.Description;
+        }
+    }
+    layer.bindPopup(popupContent);
+
+    layer.on({
+        mouseover: highlightFeatureHUB,
+        mouseout: resetHighlightHUB,
+    });
+}
+
+var HUBgapLayer = new L.geoJSON(settings[1].data, {
+    style: HUBgapStyle,
+    onEachFeature: onEachFeatureHUB,
+})
+if (settings[1].checked){
+    layerGroup.addLayer(HUBgapLayer);
+}
+
+// HUB gaps =========================================
+// data source: https://www.google.com/maps/d/u/0/viewer?mid=1wlQVVmwJBDBVMZt2S5-5Ts5z9unilKHJ&ll=49.27104359118351%2C-122.81123126786682&z=14
+// to process - HUBgapMap.R
+var HUBallGapStyle = {
+    "color": settings[2].color, // 'darkpurple'
+    "weight": lineWeight,
+    "opacity": lineOpacity
+};
+var HUBallGapStyleHighlight = {
+    "color": settings[2].color, // 'darkpurple'
+    "weight": lineWeight+1,
+    "opacity": lineOpacityHighlight
+};
+
+function highlightFeatureHUBall(e) {
+    var layer = e.target;
+    if (typeof layer.setStyle === "function") { //for markers received error here "layer.setStyle is not a function"
+        layer.setStyle(HUBallGapStyleHighlight);
+        if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+            layer.bringToFront();
+        }
+    }
+}
+function resetHighlightHUBall(e) {
+    if (typeof HUBallGapLayer.resetStyle === "function") {
+        HUBallGapLayer.resetStyle(e.target);
+    }
+}
+
+function onEachFeatureHUBall(feature, layer) {
+    var popupContent = ""
+    if (feature.properties) {
+        if (feature.properties.Name) {
+            popupContent += "<b>Location: </b>";
+            popupContent += feature.properties.Name;
+        }
+        if (feature.properties.Description) {
+            popupContent += "<br><b>Id: </b>";
+            popupContent += feature.properties.Description;
+        }
+    }
+    layer.bindPopup(popupContent);
+
+    layer.on({
+        mouseover: highlightFeatureHUBall,
+        mouseout: resetHighlightHUBall,
+    });
+}
+
+var HUBallIcon = L.icon({
+    iconUrl: settings[2].icon,
+    iconSize: [22, 31],
+    iconAnchor: [11, 30],
+    popupAnchor:  [0, -20]
+});
+
+var HUBallGapLayer = new L.geoJSON(settings[2].data, {
+    style: HUBallGapStyle,
+    onEachFeature: onEachFeatureHUBall,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: HUBallIcon
+        });
+    }
+});
+if (settings[2].checked){
+    layerGroup.addLayer(HUBallGapLayer);
+}
+
+// ICBC cyclists crashes
+// data source: https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes
+// to process: TriCityHotspots.R
+var icbcIcon = L.icon({
+    iconUrl: settings[3].icon,
+    iconSize: [20, 20], // size of the icon
+    // iconAnchor: [11, 30],
+    // popupAnchor:  [0, -20]
+});
+
+var icbcLayer = new L.geoJSON(settings[3].data, {
+    style: HUBgapStyle,
+    onEachFeature: onEachFeatureGeoJson,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: icbcIcon
+        });
+    }
+});
+//adoptLayer.addTo(map);
+if (settings[3].checked){
+    layerGroup.addLayer(icbcLayer);
+}
+
+// ******** Existing Facilities Category: *************************************************
+// LOW TRAFFIC STRESS BIKE DESIGNATED =========================================
+// data source: OSM and Level of Traffic Stres BikeOttawa algorithm. in Notes "How to create LTS map:"
+var lowStressStyle = {
+    "color": settings[4].color, // light blue
+    "weight": lineWeight - 1,  // had to adjust opacity and then line width becuase data seems messy
+    "opacity": lineOpacity + 0.2
+};
+var lowStressHighlight = {
+    "color": settings[4].color,
+    "weight": lineWeight,
+    "opacity": lineOpacityHighlight + 0.2
+};
+
+function highlightFeatureLowStress(e) {
+    var layer = e.target;
+    layer.setStyle(lowStressHighlight);
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+function resetHighlightLowStress(e) {
+    lowStressLayer.resetStyle(e.target);
+}
+
+function createPopupContent(feature) {
+    var popupContent = ""
+    if (feature.properties) {
+      if (feature.properties.id) {
+        popupContent +='<b><a href="https://www.openstreetmap.org/' + feature.properties.id + '" target="_blank">' + feature.properties.id + '</a></b><hr>'
+        //popupContent += "<b>Id: </b>";
+        //popupContent += feature.properties.id;
+      }
+      if (feature.properties.highway) {
+        popupContent += "<b>category: </b>";
+        popupContent += feature.properties.highway;
+      }
+      for (let property in feature.properties) {
+        //console.log('Dragana:: tag ' + JSON.stringify(tag) +', value: '+ way.tags[tag])
+        if ((property !== "id") && (property !== "decisionMsg") && (property !== "highway") && (feature.properties[property] != null)){
+          popupContent += "<br><b>" + property + ": </b>";
+          popupContent += feature.properties[property];
+        }
+      }
+      if (feature.properties.decisionMsg) {
+        popupContent += "<br><br><b>Decision Msg: </b>";
+        popupContent += feature.properties.decisionMsg;
+      }
+    }
+    return popupContent;
+}
+
+function onEachFeatureLowStress(feature, layer) {
+    var popupContent = createPopupContent(feature)
+    layer.bindPopup(popupContent);
+
+    layer.on({
+        mouseover: highlightFeatureLowStress,
+        mouseout: resetHighlightLowStress,
+    });
+}
+
+var lowStressLayer = new L.geoJSON(settings[4].data, {
+    style: lowStressStyle,
+    onEachFeature: onEachFeatureLowStress,
+})
+if (settings[4].checked){
+    layerGroup.addLayer(lowStressLayer);
+}
+
+// HIGH TRAFFIC STRESS BIKE DESIGNATED =========================================
+// data source: OSM and Level of Traffic Stres BikeOttawa algorithm. in Notes "How to create LTS map:"
+var highStressStyle = {
+    "color": settings[5].color, // brown
+    "weight": lineWeight - 1,
+    "opacity": lineOpacity + 0.2
+};
+var highStressHighlight = {
+    "color": settings[5].color,
+    "weight": lineWeight,
+    "opacity": lineOpacityHighlight + 0.2
+};
+
+function highlightFeatureHighStress(e) {
+    var layer = e.target;
+    layer.setStyle(highStressHighlight);
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+function resetHighlightHighStress(e) {
+    highStressLayer.resetStyle(e.target);
+}
+
+function onEachFeatureHighStress(feature, layer) {
+    var popupContent = createPopupContent(feature)
+    layer.bindPopup(popupContent);
+
+    layer.on({
+        mouseover: highlightFeatureHighStress,
+        mouseout: resetHighlightHighStress,
+    });
+}
+
+var highStressLayer = new L.geoJSON(settings[5].data, {
+    style: highStressStyle,
+    onEachFeature: onEachFeatureHighStress,
+})
+if (settings[5].checked){
+    layerGroup.addLayer(highStressLayer);
+}
+
+// TRAIN STATIONS AND PARKADES =====================================================
+// data source: OSM - in Notes "Overpass API" 
+function onEachFeatureTrain(feature, layer) {
+    var popupContent = ""
+    if (feature.properties) {
+        if (feature.properties.subway && feature.properties.subway == "yes") {
+            popupContent += "SkyTrain Station:";
+        }else if (feature.properties.railway && feature.properties.railway == "station") {
+            popupContent += "West Coast Express Station:";
+        }
+        if (feature.properties.name) {
+            popupContent += "<br>";
+            popupContent += feature.properties.name;
+        }
+    }
+    layer.bindPopup(popupContent);
+}
+function onEachFeatureParkade(feature, layer) {
+    var popupContent = "Bike Parkade"
+    if (feature.properties) {
+        if (feature.properties.operator) {
+            popupContent += "<br>operator: ";
+            popupContent += feature.properties.operator;
+        }
+        if (feature.properties.covered) {
+            popupContent += "<br>covered: ";
+            popupContent += feature.properties.covered;
+        }
+        if (feature.properties.charge) {
+            popupContent += "<br>charge: ";
+            popupContent += feature.properties.charge;
+        }
+        if (feature.properties.opening_hours) {
+            popupContent += "<br>opening hours: ";
+            popupContent += feature.properties.opening_hours;
+        }
+    }
+    layer.bindPopup(popupContent);
+}
+
+var trainIcon = L.icon({
+    iconUrl: settings[6].icon,
+    iconSize: [22, 22]
+});
+var parkadeIcon = L.icon({
+    iconUrl: settings[6].icon1,
+    iconSize: [22, 22]
+});
+
+var trainLayer = new L.geoJSON(settings[6].data, {
+    style: HUBgapStyle,
+    onEachFeature: onEachFeatureTrain,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: trainIcon
+        });
+    }
+});
+var parkadeLayer = new L.geoJSON(settings[6].data1, {
+    style: HUBgapStyle,
+    onEachFeature: onEachFeatureParkade,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: parkadeIcon
+        });
+    }
+});
+if (settings[6].checked){
+    layerGroup.addLayer(trainLayer);
+    layerGroup.addLayer(parkadeLayer);
+}
+
+// SCHOOLS =========================================================================
+// data source: https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=
+// (R script to convert from kml to geojson - HUBgapMap.R)
+var schoolIcon = L.icon({
+    iconUrl: settings[7].icon,
+    iconSize: [22, 22], // size of the icon
+});
+
+var schoolLayer = new L.geoJSON(settings[7].data, {
+    style: HUBgapStyle,
+    onEachFeature: onEachFeatureGeoJson,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: schoolIcon
+        });
+    }
+});
+if (settings[7].checked){
+    layerGroup.addLayer(schoolLayer);
+}
+
+// ******** Community Feedback Category: **************************************************
+// HUB Adopt-a-gap campain markers =========================================
+// data source: https://bikehub.ca/get-involved/ungapthemap/adopt-gap
+// to process - HUBgapMap.R
+function onEachFeatureAdopt(feature, layer) {
+    var popupContent = ""
+    if (feature.properties) {
+        if (feature.properties.Name) {
+            popupContent += "<b>Name: </b>";
+            popupContent += feature.properties.Name;
+        }
+        if (feature.properties.Description) {
+            popupContent += "<br><b>Description: </b>";
+            popupContent += feature.properties.Description;
+        }
+    }
+    layer.bindPopup(popupContent);
+}
+
+var adoptIcon = L.icon({
+    iconUrl: settings[8].icon,
+    iconSize: [22, 22], // size of the icon
+});
+
+var adoptLayer = new L.geoJSON(settings[8].data, {
+    style: HUBgapStyle,
+    onEachFeature: onEachFeatureAdopt,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: adoptIcon
+        });
+    }
+});
+if (settings[8].checked){
+    layerGroup.addLayer(adoptLayer);
+}
+
+// BIKEMAPS.ORG =========================================
+var bikeMapsIcon = L.icon({
+    iconUrl: settings[9].icon,
+    iconSize: [22, 22], // size of the icon
+});
+
+var bikeMapLayer = new L.geoJSON(settings[9].data, {
+    style: HUBgapStyle,
+    onEachFeature: onEachFeatureGeoJson,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: bikeMapsIcon
+        });
+    }
+});
+if (settings[9].checked){
+    layerGroup.addLayer(bikeMapLayer);
+}
+
+// WhatWeHeard map - feedback received in TriCityFix app or tricitiesfix@gmail.com ====================
+// todo: need to create one files for mulitple for each city. problem: "id" is not unique. also, how to keep track of photos? maybe just one geojson file?
+function onEachFeatureTriCityFix(feature, layer) {
+    var popupContent = ""
+    if (feature.properties) {
+        for (let property in feature.properties) {
+            //console.log('Dragana:: tag ' + JSON.stringify(property) +', value: '+ feature.properties[property])
+            if (feature.properties[property] != null && feature.properties[property] != "" && 
+            property != 'key' && property != 'photo'){
+                if (popupContent != "") {
+                    popupContent += "<br>";
+                }
+                popupContent += "<b>" + property + ": </b>";
+                popupContent += feature.properties[property];
+            }
+            if (property == "photo" && feature.properties["photo"] != "") {
+                //console.log(city)
+                popupContent += "<br><br>"
+                imageSrc = "img/triCityFix/" + feature.properties.photo
+                popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>"
+            }
+        }
+    }
+    layer.bindPopup(popupContent);
+}
+
+var triCityFixIcon = L.icon({
+    iconUrl: settings[10].icon,
+    iconSize: [22, 22], // size of the icon
+});
+
+var triCityFixLayer = new L.geoJSON(settings[10].data, {
+    style: HUBgapStyle,
+    onEachFeature: onEachFeatureTriCityFix,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: triCityFixIcon
+        });
+    }
+});
+//adoptLayer.addTo(map);
+if (settings[10].checked){
+    layerGroup.addLayer(triCityFixLayer);
+}
+
+// TODO: add city plans and developments to come
+
+// Legend ========================================================================================
 function addLegend() {
     const legend = L.control({ position: 'topright' })
     legend.onAdd = function (map) {
@@ -270,6 +586,14 @@ function addLegend() {
 
         for (let setting of settings) {
             legendHtml += addLegendLine(setting)
+            if (setting.key == "ICBCcrashes"){ //todo: hack. fix.
+                // add community category note
+                legendHtml += '<div class="button quiet col12">Existing Facilities:</div>'
+            }
+            if (setting.key == "schools"){ //todo: hack. fix.
+                // add community category note
+                legendHtml += '<div class="button quiet col12">Community Feedback:</div>'
+            }
         }
         // '<input type="checkbox" id="low_stress" checked="checked">' +
         // '<label for="low_stress" id="low_stress-label" class="button icon check quiet col12">' +
@@ -339,6 +663,7 @@ function toggleDisplay(elementIds) {
 }
 
 function toggleLayer(checkbox) {
+    var targetLayer = null;
     if (checkbox.id == "topGap"){
         targetLayer = topGapLayer
     }
@@ -348,13 +673,44 @@ function toggleLayer(checkbox) {
     if (checkbox.id == "HUBgapNov2021"){
         targetLayer = HUBallGapLayer
     }
+    if (checkbox.id == "ICBCcrashes"){
+        targetLayer = icbcLayer
+    }
+    if (checkbox.id == "designLowStress"){
+        targetLayer = lowStressLayer
+    }
+    if (checkbox.id == "designHighStress"){
+        targetLayer = highStressLayer
+    }
+    if (checkbox.id == "schools"){
+        targetLayer = schoolLayer
+    }
     if (checkbox.id == "adoptGap"){
         targetLayer = adoptLayer
     }
-
-    if (checkbox.checked){
-        layerGroup.addLayer(targetLayer);
-    }else{
-        layerGroup.removeLayer(targetLayer); 
+    if (checkbox.id == "bikeMaps"){
+        targetLayer = bikeMapLayer
     }
+    if (checkbox.id == "triCityFix"){
+        targetLayer = triCityFixLayer
+    }
+
+    if (targetLayer){
+        if (checkbox.checked){
+            layerGroup.addLayer(targetLayer);
+        }else{
+            layerGroup.removeLayer(targetLayer); 
+        }
+     }else{
+         // special case for train stations and parkades. I have two data layers because of different icons for each
+        if (checkbox.id == "trainParkade"){
+            if (checkbox.checked){
+                layerGroup.addLayer(trainLayer);
+                layerGroup.addLayer(parkadeLayer);
+            }else{
+                layerGroup.removeLayer(trainLayer); 
+                layerGroup.removeLayer(parkadeLayer);
+            }
+        }
+     }
 }
