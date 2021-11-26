@@ -117,6 +117,22 @@ html {
     /* background-color: rgba(85, 228, 29, 1); */
 }
 
+.icon.chevronright::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; 
+    font-size: small;
+    padding: 3px;
+    content: "\f054";
+}
+
+.icon.chevrondown::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900; 
+    font-size: small;
+    padding: 3px;
+    content: "\f078";
+}
+
 /* Markup free clearing
 ------------------------------------------------------- */
 

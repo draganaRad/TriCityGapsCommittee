@@ -590,17 +590,37 @@ function addLegend() {
             '<div class="clearfix"></div>' +
             '<form><fieldset class="checkbox-pill clearfix">'
 
-        for (let setting of settings) {
+         for (let setting of settings) {
             legendHtml += addLegendLine(setting)
-            if (setting.key == "ICBCcrashes"){ //todo: hack. fix.
-                // add community category note
-                legendHtml += '<div class="button quiet col12">Existing Facilities:</div>'
+            if (setting.key == "ICBCcrashes"){ //todo: this probably shouldn't be hardcoded
+                // add existing facilites note and colapse button
+                //legendHtml += '<div class="button quiet col12">Existing Facilities:</div>'
+                legendHtml += '<div class="button quiet col12">Existing Facilities:' + 
+                '<div id="efchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
+                '<div id="efchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+                '</div>' +
+                '<div id="existfacil" style="display: block">';  //start of Existing Facilities div element that can collapse
             }
-            if (setting.key == "schools"){ //todo: hack. fix.
-                // add community category note
-                legendHtml += '<div class="button quiet col12">Community Feedback:</div>'
+            if (setting.key == "schools"){ //todo: this probably shouldn't be hardcoded
+                legendHtml += '</div>' //end of Existing Facilities div that can collapse
+                // add community category note and colapse button
+                legendHtml += '<div class="button quiet col12">Community Feedback:' +
+                '<div id="cfchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
+                '<div id="cfchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+                '</div>' +
+                '<div id="commfeed" style="display: block">';  //start of Community Feedback div element that can collapse
+            }
+            if (setting.key == "triCityFix"){ //todo: this probably shouldn't be hardcoded
+                legendHtml += '</div>' //end of Community Feedback div that can collapse
             }
         }
+
+        // leaving this in for testing
+        // legendHtml += '<input type="checkbox" id="topGap" onclick="toggleLayer(this)" checked><label for="topGap" id="topGap-label" class="button icon check quiet col12">&nbsp;<span style="display:inline-block; width:50px; height:8px; background-color:#FF7F00"></span>&nbsp;Committee Top Gaps </label>';
+        // legendHtml += '<div class="button quiet col12">Existing Facilities:'+ '<div id="chevright" class="fill-darken2 icon chevronright button fr" style="padding:0px; display:block"></div>'+'<div id="chevdown" class="fill-darken2 icon chevrondown button fr" style="padding:0px; display:none"></div>'+'</div>'
+        // legendHtml += '<div id="existfacil" style="display: none"><input type="checkbox" id="designLowStress" onclick="toggleLayer(this)"><label for="designLowStress" id="designLowStress-label" class="button icon check quiet col12">&nbsp;<span style="display:inline-block; width:50px; height:8px; background-color:#4292C6"></span>&nbsp;Low Traffic Stress </label>';
+        // legendHtml += '<input type="checkbox" id="designHighStress" onclick="toggleLayer(this)"><label for="designHighStress" id="designHighStress-label" class="button icon check quiet col12">&nbsp;<span style="display:inline-block; width:50px; height:8px; background-color:#A63603"></span>&nbsp;High Traffic Stress </label></div>';
+
         // '<input type="checkbox" id="low_stress" checked="checked">' +
         // '<label for="low_stress" id="low_stress-label" class="button icon check quiet col12">' +
         // '&nbsp;<span style="display: inline-block;width:50px; height:8px;background-color:#377EB8"></span>&nbsp;Committee Top Gaps</label>' +
@@ -648,14 +668,23 @@ function addLegendLine(setting) {
         '<label for="'+ setting.key +'" id="'+ setting.key +'-label" class="button icon check quiet col12">' +
         '&nbsp;' + spanHtml + ' </label>'
 
+    //console.log('Dragana:: lineHtml ' + lineHtml + "***end")  
     return lineHtml
 }
 
 addLegend()
 
-// show hide legend
+// show/hide legend
 document.getElementById('legendbtn').onclick = function () { toggleDisplay(['legendbtn', 'legend']) };
 document.getElementById('closebtn').onclick = function () { toggleDisplay(['legendbtn', 'legend']) };
+
+// show/hide Existing Facilities section
+document.getElementById('efchevright').onclick = function () { toggleDisplay(['efchevright', 'efchevdown', 'existfacil']) };
+document.getElementById('efchevdown').onclick = function () { toggleDisplay(['efchevright', 'efchevdown', 'existfacil']) };
+
+// show/hide Community Feedback section
+document.getElementById('cfchevright').onclick = function () { toggleDisplay(['cfchevright', 'cfchevdown', 'commfeed']) };
+document.getElementById('cfchevdown').onclick = function () { toggleDisplay(['cfchevright', 'cfchevdown', 'commfeed']) };
 
 function toggleDisplay(elementIds) {
     elementIds.forEach(function (elementId) {
