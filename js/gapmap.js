@@ -1,15 +1,15 @@
 const settings = [
-    { type: "Line", key: 'topGap', zIndex: 1, title: 'Committee Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: true},
-    { type: "Line", key: 'HUBgap', zIndex: 2, title: 'HUB Major Gaps', data: HUBGapsJson, color: '#CE424C', checked: false},
-    { type: "Line", key: 'HUBgapNov2021', zIndex: 3, title: 'HUB Gaps', data: HUBGapsJson_Nov2021, color: '#9031AA', icon:'img/purplePinIcon2.png', checked: showHUBgaps},
+    { type: "Line", key: 'topGap', zIndex: 1, title: 'HUB Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: true},
+    //{ type: "Line", key: 'HUBgap', zIndex: 2, title: 'HUB Major Gaps', color: '#CE424C', checked: false},
+    { type: "Line", key: 'HUBgapNov2021', zIndex: 3, title: 'HUB Gaps/Hotspots', data: HUBGapsJson2022, color: '#9031AA', icon:'img/purplePinIcon2.png', checked: showHUBgaps},
     { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclists Crashes', data: ICBCcrashesJson, icon:'img/circle-exclamation-solid.svg', checked: showExisting},
     { type: "Line", key: 'designLowStress', zIndex: 5, title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExisting},
     { type: "Line", key: 'designHighStress', zIndex: 6, title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExisting},
     { type: "Point", key: 'trainParkade', zIndex: 7, title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showExisting},
     { type: "Point", key: 'schools', zIndex: 8, title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showExisting},
-    { type: "Point", key: 'adoptGap', zIndex: 9, title: 'Adopt-a-Gap Campaign', data: adoptGapsJson, icon:'img/adopt.png', checked: showCommunity},
+    { type: "Point", key: 'adoptGap', zIndex: 9, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showCommunity},
     { type: "Point", key: 'bikeMaps', zIndex: 10, title: 'BikeMaps.org', data: bikeMapsJson, icon:'img/BikeMapsRound.png', checked: showCommunity},
-    { type: "Point", key: 'triCityFix', zIndex: 11, title: 'TriCityFix App', data: triCityFixJson, icon:'img/TriCityFixRound.png', checked: showCommunity}]
+    { type: "Point", key: 'triCityFix', zIndex: 11, title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound.png', checked: showCommunity}]
 // note: zIndex currently not used. Leaving for future improvments.
 
 // Create variable to hold map element, give initial settings to map
@@ -18,9 +18,9 @@ var centerCoord = [49.266872, -122.799271]
 if (L.Browser.mobile) {
     // increase tolerance for tapping (it was hard to tap on line exactly), zoom out a bit, and remove zoom control
     var myRenderer = L.canvas({ padding: 0.1, tolerance: 5 });
-    var map = L.map("map", { center: centerCoord, zoom: 11, renderer: myRenderer, zoomControl: false });
+    var map = L.map("map", { center: centerCoord, zoom: 10, renderer: myRenderer, zoomControl: false });
 } else {
-    var map = L.map("map", { center: centerCoord, zoom: 13 });
+    var map = L.map("map", { center: centerCoord, zoom: 12 });
 }
 
 // Add OpenStreetMap tile layer to map element
@@ -32,11 +32,11 @@ L.tileLayer(
 }
 ).addTo(map);
 
-map.attributionControl.addAttribution('<a href="https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki">Tri-Cities Committee</a>');
-map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap">HUBCycling</a>');
+map.attributionControl.addAttribution('<a href="https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki">Tri-Cities HUB</a>');
 map.attributionControl.addAttribution('<a href="https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes">ICBC</a>');
 map.attributionControl.addAttribution('<a href="https://github.com/BikeOttawa">BikeOttawa</a>');
 map.attributionControl.addAttribution('<a href="https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=">SchoolDistrictNo43</a>');
+map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap">HUB Adopt Gap</a>');
 map.attributionControl.addAttribution('<a href="https://bikemaps.org">BikeMaps</a>');
 map.attributionControl.addAttribution('<a href="https://apps.apple.com/ca/app/tricityfix/id1476599668">TriCityFix</a>');
 
@@ -79,15 +79,36 @@ var topGapStyle = {
     "opacity": lineOpacity
 };
 var topGapStyleHighlight = {
-    "color": settings[0].color, // 'darkpurple'
+    "color": settings[0].color,
     "weight": lineWeight+1,
     "opacity": lineOpacityHighlight
 };
 
-// functions to highligh lines on click
+function styleTop(feature) {
+    // for straight line make wider, more transparent and rounded corners
+    var weight = lineWeight;
+    var opacity = lineOpacity;
+    if (feature.properties.type == "line"){
+        weight = lineWeight + 13;
+        opacity = 0.3
+    }
+    return {
+        weight: weight,
+        opacity: opacity,
+        color: settings[0].color
+    };
+}
+
+// functions to highlight lines on click
 function highlightFeatureTop(e) {
     var layer = e.target;
-    layer.setStyle(topGapStyleHighlight);
+    var newOpacity = lineOpacityHighlight;
+    var newWeight = lineWeight+1;
+    if (layer.feature.properties.type == "line"){
+        newOpacity = 0.5
+        newWeight = lineWeight + 14;
+    }
+    layer.setStyle({opacity :newOpacity, weight: newWeight});
     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
         layer.bringToFront();
     }
@@ -100,8 +121,12 @@ function resetHighlightTop(e) {
 function onEachFeatureTop(feature, layer) {
     var popupContent = ""
     if (feature.properties) {
+        if (feature.id) {
+            popupContent += "<b>Gap #";
+            popupContent += feature.id + "</b>";
+        }
         if (feature.properties.location) {
-            popupContent += "<b>Location: </b>";
+            popupContent += "<br><b>Location: </b>";
             popupContent += feature.properties.location;
         }
         if (feature.properties.description) {
@@ -118,75 +143,76 @@ function onEachFeatureTop(feature, layer) {
 }
 
 var topGapLayer = new L.geoJSON(settings[0].data, {
-    style: topGapStyle,
+    style: styleTop,
     onEachFeature: onEachFeatureTop,
 });
 layerGroup.addLayer(topGapLayer);
 
+// [Feb 14, 2022] - committee doesn't have this so removing
 // MAJOR HUB gaps ========================================================
 // data source: https://bikehub.ca/get-involved/ungapthemap/adopt-gap
 // to process - HUBgapMap.R
 
-var HUBgapStyle = {
-    "color": settings[1].color, // 'darkred'
-    "weight": lineWeight,
-    "opacity": lineOpacity
-};
-var HUBgapStyleHighlight = {
-    "color": settings[1].color, // 'darkred'
-    "weight": lineWeight+1,
-    "opacity": lineOpacityHighlight
-};
+// var HUBgapStyle = {
+//     "color": settings[1].color, // 'darkred'
+//     "weight": lineWeight,
+//     "opacity": lineOpacity
+// };
+// var HUBgapStyleHighlight = {
+//     "color": settings[1].color, // 'darkred'
+//     "weight": lineWeight+1,
+//     "opacity": lineOpacityHighlight
+// };
 
-function highlightFeatureHUB(e) {
-    var layer = e.target;
-    layer.setStyle(HUBgapStyleHighlight);
-    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
-    }
-}
-function resetHighlightHUB(e) {
-    HUBgapLayer.resetStyle(e.target);
-}
+// function highlightFeatureHUB(e) {
+//     var layer = e.target;
+//     layer.setStyle(HUBgapStyleHighlight);
+//     if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+//         layer.bringToFront();
+//     }
+// }
+// function resetHighlightHUB(e) {
+//     HUBgapLayer.resetStyle(e.target);
+// }
 
-function onEachFeatureHUB(feature, layer) {
-    var popupContent = ""
-    if (feature.properties) {
-        if (feature.properties.Name) {
-            popupContent += "<b>Location: </b>";
-            popupContent += feature.properties.Name;
-        }
-        if (feature.properties.Description) {
-            popupContent += "<br><b>Description: </b>";
-            popupContent += feature.properties.Description;
-        }
-    }
-    layer.bindPopup(popupContent);
+// function onEachFeatureHUB(feature, layer) {
+//     var popupContent = ""
+//     if (feature.properties) {
+//         if (feature.properties.Name) {
+//             popupContent += "<b>Location: </b>";
+//             popupContent += feature.properties.Name;
+//         }
+//         if (feature.properties.Description) {
+//             popupContent += "<br><b>Description: </b>";
+//             popupContent += feature.properties.Description;
+//         }
+//     }
+//     layer.bindPopup(popupContent);
 
-    layer.on({
-        mouseover: highlightFeatureHUB,
-        mouseout: resetHighlightHUB,
-    });
-}
+//     layer.on({
+//         mouseover: highlightFeatureHUB,
+//         mouseout: resetHighlightHUB,
+//     });
+// }
 
-var HUBgapLayer = new L.geoJSON(settings[1].data, {
-    style: HUBgapStyle,
-    onEachFeature: onEachFeatureHUB,
-})
-if (settings[1].checked){
-    layerGroup.addLayer(HUBgapLayer);
-}
+// var HUBgapLayer = new L.geoJSON(settings[1].data, {
+//     style: HUBgapStyle,
+//     onEachFeature: onEachFeatureHUB,
+// })
+// if (settings[1].checked){
+//     layerGroup.addLayer(HUBgapLayer);
+// }
 
 // HUB gaps =========================================
 // data source: https://www.google.com/maps/d/u/0/viewer?mid=1wlQVVmwJBDBVMZt2S5-5Ts5z9unilKHJ&ll=49.27104359118351%2C-122.81123126786682&z=14
 // to process - HUBgapMap.R
 var HUBallGapStyle = {
-    "color": settings[2].color, // 'darkpurple'
+    "color": settings[1].color, // 'darkpurple'
     "weight": lineWeight,
     "opacity": lineOpacity
 };
 var HUBallGapStyleHighlight = {
-    "color": settings[2].color, // 'darkpurple'
+    "color": settings[1].color, // 'darkpurple'
     "weight": lineWeight+1,
     "opacity": lineOpacityHighlight
 };
@@ -227,13 +253,13 @@ function onEachFeatureHUBall(feature, layer) {
 }
 
 var HUBallIcon = L.icon({
-    iconUrl: settings[2].icon,
+    iconUrl: settings[1].icon,
     iconSize: [22, 31],
     iconAnchor: [11, 30],
     popupAnchor:  [0, -20]
 });
 
-var HUBallGapLayer = new L.geoJSON(settings[2].data, {
+var HUBallGapLayer = new L.geoJSON(settings[1].data, {
     style: HUBallGapStyle,
     onEachFeature: onEachFeatureHUBall,
     pointToLayer: function (feature, latlng) {
@@ -242,22 +268,21 @@ var HUBallGapLayer = new L.geoJSON(settings[2].data, {
         });
     }
 });
-if (settings[2].checked){
+if (settings[1].checked){
     layerGroup.addLayer(HUBallGapLayer);
 }
 
-// ICBC cyclists crashes
+// ICBC cyclists crashes =========================================
 // data source: https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes
 // to process: TriCityHotspots.R
 var icbcIcon = L.icon({
-    iconUrl: settings[3].icon,
+    iconUrl: settings[2].icon,
     iconSize: [20, 20], // size of the icon
     // iconAnchor: [11, 30],
     // popupAnchor:  [0, -20]
 });
 
-var icbcLayer = new L.geoJSON(settings[3].data, {
-    style: HUBgapStyle,
+var icbcLayer = new L.geoJSON(settings[2].data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -266,7 +291,7 @@ var icbcLayer = new L.geoJSON(settings[3].data, {
     }
 });
 //adoptLayer.addTo(map);
-if (settings[3].checked){
+if (settings[2].checked){
     layerGroup.addLayer(icbcLayer);
 }
 
@@ -274,12 +299,12 @@ if (settings[3].checked){
 // LOW TRAFFIC STRESS BIKE DESIGNATED =========================================
 // data source: OSM and Level of Traffic Stres BikeOttawa algorithm. in Notes "How to create LTS map:"
 var lowStressStyle = {
-    "color": settings[4].color, // light blue
+    "color": settings[3].color, // light blue
     "weight": lineWeight - 1,  // had to adjust opacity and then line width becuase data seems messy
     "opacity": lineOpacity + 0.2
 };
 var lowStressHighlight = {
-    "color": settings[4].color,
+    "color": settings[3].color,
     "weight": lineWeight,
     "opacity": lineOpacityHighlight + 0.2
 };
@@ -332,23 +357,23 @@ function onEachFeatureLowStress(feature, layer) {
     });
 }
 
-var lowStressLayer = new L.geoJSON(settings[4].data, {
+var lowStressLayer = new L.geoJSON(settings[3].data, {
     style: lowStressStyle,
     onEachFeature: onEachFeatureLowStress,
 })
-if (settings[4].checked){
+if (settings[3].checked){
     layerGroup.addLayer(lowStressLayer);
 }
 
 // HIGH TRAFFIC STRESS BIKE DESIGNATED =========================================
 // data source: OSM and Level of Traffic Stres BikeOttawa algorithm. in Notes "How to create LTS map:"
 var highStressStyle = {
-    "color": settings[5].color, // brown
+    "color": settings[4].color, // brown
     "weight": lineWeight - 1,
     "opacity": lineOpacity + 0.2
 };
 var highStressHighlight = {
-    "color": settings[5].color,
+    "color": settings[4].color,
     "weight": lineWeight,
     "opacity": lineOpacityHighlight + 0.2
 };
@@ -374,11 +399,11 @@ function onEachFeatureHighStress(feature, layer) {
     });
 }
 
-var highStressLayer = new L.geoJSON(settings[5].data, {
+var highStressLayer = new L.geoJSON(settings[4].data, {
     style: highStressStyle,
     onEachFeature: onEachFeatureHighStress,
 })
-if (settings[5].checked){
+if (settings[4].checked){
     layerGroup.addLayer(highStressLayer);
 }
 
@@ -423,16 +448,15 @@ function onEachFeatureParkade(feature, layer) {
 }
 
 var trainIcon = L.icon({
-    iconUrl: settings[6].icon,
+    iconUrl: settings[5].icon,
     iconSize: [22, 22]
 });
 var parkadeIcon = L.icon({
-    iconUrl: settings[6].icon1,
+    iconUrl: settings[5].icon1,
     iconSize: [22, 22]
 });
 
-var trainLayer = new L.geoJSON(settings[6].data, {
-    style: HUBgapStyle,
+var trainLayer = new L.geoJSON(settings[5].data, {
     onEachFeature: onEachFeatureTrain,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -440,8 +464,7 @@ var trainLayer = new L.geoJSON(settings[6].data, {
         });
     }
 });
-var parkadeLayer = new L.geoJSON(settings[6].data1, {
-    style: HUBgapStyle,
+var parkadeLayer = new L.geoJSON(settings[5].data1, {
     onEachFeature: onEachFeatureParkade,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -449,7 +472,7 @@ var parkadeLayer = new L.geoJSON(settings[6].data1, {
         });
     }
 });
-if (settings[6].checked){
+if (settings[5].checked){
     layerGroup.addLayer(trainLayer);
     layerGroup.addLayer(parkadeLayer);
 }
@@ -458,12 +481,11 @@ if (settings[6].checked){
 // data source: https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=
 // (R script to convert from kml to geojson - HUBgapMap.R)
 var schoolIcon = L.icon({
-    iconUrl: settings[7].icon,
+    iconUrl: settings[6].icon,
     iconSize: [22, 22], // size of the icon
 });
 
-var schoolLayer = new L.geoJSON(settings[7].data, {
-    style: HUBgapStyle,
+var schoolLayer = new L.geoJSON(settings[6].data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -471,7 +493,7 @@ var schoolLayer = new L.geoJSON(settings[7].data, {
         });
     }
 });
-if (settings[7].checked){
+if (settings[6].checked){
     layerGroup.addLayer(schoolLayer);
 }
 
@@ -495,12 +517,11 @@ function onEachFeatureAdopt(feature, layer) {
 }
 
 var adoptIcon = L.icon({
-    iconUrl: settings[8].icon,
+    iconUrl: settings[7].icon,
     iconSize: [22, 22]
 });
 
-var adoptLayer = new L.geoJSON(settings[8].data, {
-    style: HUBgapStyle,
+var adoptLayer = new L.geoJSON(settings[7].data, {
     onEachFeature: onEachFeatureAdopt,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -508,19 +529,18 @@ var adoptLayer = new L.geoJSON(settings[8].data, {
         });
     }
 });
-if (settings[8].checked){
+if (settings[7].checked){
     layerGroup.addLayer(adoptLayer);
 }
 
 // BIKEMAPS.ORG =========================================
 // data source: received by email on Aug 7, 2021
 var bikeMapsIcon = L.icon({
-    iconUrl: settings[9].icon,
+    iconUrl: settings[8].icon,
     iconSize: [22, 22]
 });
 
-var bikeMapLayer = new L.geoJSON(settings[9].data, {
-    style: HUBgapStyle,
+var bikeMapLayer = new L.geoJSON(settings[8].data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -528,7 +548,7 @@ var bikeMapLayer = new L.geoJSON(settings[9].data, {
         });
     }
 });
-if (settings[9].checked){
+if (settings[8].checked){
     layerGroup.addLayer(bikeMapLayer);
 }
 
@@ -560,12 +580,11 @@ function onEachFeatureTriCityFix(feature, layer) {
 }
 
 var triCityFixIcon = L.icon({
-    iconUrl: settings[10].icon,
+    iconUrl: settings[9].icon,
     iconSize: [22, 22]
 });
 
-var triCityFixLayer = new L.geoJSON(settings[10].data, {
-    style: HUBgapStyle,
+var triCityFixLayer = new L.geoJSON(settings[9].data, {
     onEachFeature: onEachFeatureTriCityFix,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -573,7 +592,7 @@ var triCityFixLayer = new L.geoJSON(settings[10].data, {
         });
     }
 });
-if (settings[10].checked){
+if (settings[9].checked){
     layerGroup.addLayer(triCityFixLayer);
 }
 
@@ -590,9 +609,19 @@ function addLegend() {
             '<div class="clearfix"></div>' +
             '<form><fieldset class="checkbox-pill clearfix">'
 
+        legendHtml += '<div class="button quiet col12">Tri-Cities Cycling</div>'
+
+        //Gaps and Crashes div element that can collapse
+        legendHtml += '<div class="button quiet col12">Gaps, Hotspots and Crashes:' + 
+        '<div id="gcchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
+        '<div id="gcchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+        '</div>' +
+        '<div id="gapscrash" style="display: block">';
+
          for (let setting of settings) {
             legendHtml += addLegendLine(setting)
             if (setting.key == "ICBCcrashes"){ //todo: this probably shouldn't be hardcoded
+                legendHtml += '</div>' //end of Gaps and Crashes div that can collapse
                 // add existing facilites note and colapse button
                 //legendHtml += '<div class="button quiet col12">Existing Facilities:</div>'
                 legendHtml += '<div class="button quiet col12">Existing Facilities:' + 
@@ -677,6 +706,10 @@ addLegend()
 // show/hide legend
 document.getElementById('legendbtn').onclick = function () { toggleDisplay(['legendbtn', 'legend']) };
 document.getElementById('closebtn').onclick = function () { toggleDisplay(['legendbtn', 'legend']) };
+
+// show/hide Gaps and Crashes section
+document.getElementById('gcchevright').onclick = function () { toggleDisplay(['gcchevright', 'gcchevdown', 'gapscrash']) };
+document.getElementById('gcchevdown').onclick = function () { toggleDisplay(['gcchevright', 'gcchevdown', 'gapscrash']) };
 
 // show/hide Existing Facilities section
 document.getElementById('efchevright').onclick = function () { toggleDisplay(['efchevright', 'efchevdown', 'existfacil']) };
