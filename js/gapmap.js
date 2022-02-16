@@ -18,7 +18,7 @@ var centerCoord = [49.266872, -122.799271]
 if (L.Browser.mobile) {
     // increase tolerance for tapping (it was hard to tap on line exactly), zoom out a bit, and remove zoom control
     var myRenderer = L.canvas({ padding: 0.1, tolerance: 5 });
-    var map = L.map("map", { center: centerCoord, zoom: 10, renderer: myRenderer, zoomControl: false });
+    var map = L.map("map", { center: centerCoord, zoom: 11, renderer: myRenderer, zoomControl: false });
 } else {
     var map = L.map("map", { center: centerCoord, zoom: 12 });
 }
