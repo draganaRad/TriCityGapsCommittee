@@ -20,7 +20,7 @@ var adoptGapsJson = {
             "type": "Feature",
             "properties": {
                 "Name": "Gap 933 adopted: Guildford Way from Carlsen to Pinetree Way",
-                "Description": "Learn why Marc Fernandez generously adopted this gap below:<br><br>\"To improve cycling connections and safety in the Tri-Cities and across Canada (as this is part of The Great Trail). For weekend and daily commuter cyclists.\"<br><br>You too can Adopt-a-Gap here: <a href=\"<a href=\"https://bikehub.ca/get-involved/ungapthemap\" target=\"_blank\">https://bikehub.ca/get-involved/ungapthemap</a>"
+                "Description": "Learn why Marc Fernandez generously adopted this gap below:<br><br>\"To improve cycling connections and safety in the Tri-Cities and across Canada (as this is part of The Great Trail). For weekend and daily commuter cyclists.\"<br><br>You too can Adopt-a-Gap here: <a href=\"https://bikehub.ca/get-involved/ungapthemap\" target=\"_blank\">https://bikehub.ca/get-involved/ungapthemap</a>"
             },
             "geometry": {
                 "type": "Point",
