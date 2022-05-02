@@ -2,13 +2,13 @@ const settings = [
     { type: "Line", key: 'topGap', zIndex: 1, title: 'HUB Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: true},
     //{ type: "Line", key: 'HUBgap', zIndex: 2, title: 'HUB Major Gaps', color: '#CE424C', checked: false},
     { type: "Line", key: 'HUBgapNov2021', zIndex: 3, title: 'HUB Gaps/Hotspots', data: HUBGapsJson2022, color: '#9031AA', icon:'img/purplePinIcon2.png', checked: showHUBgaps},
-    { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclists Crashes', data: ICBCcrashesJson, icon:'img/circle-exclamation-solid.svg', checked: showExisting},
+    { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclists Crashes', data: ICBCcrashesJsonApr2022, icon:'img/circle-exclamation-solid.svg', checked: showExisting},
     { type: "Line", key: 'designLowStress', zIndex: 5, title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExisting},
     { type: "Line", key: 'designHighStress', zIndex: 6, title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExisting},
     { type: "Point", key: 'trainParkade', zIndex: 7, title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showExisting},
     { type: "Point", key: 'schools', zIndex: 8, title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showExisting},
     { type: "Point", key: 'adoptGap', zIndex: 9, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showCommunity},
-    { type: "Point", key: 'bikeMaps', zIndex: 10, title: 'BikeMaps.org', data: bikeMapsJson, icon:'img/BikeMapsRound.png', checked: showCommunity},
+    { type: "Point", key: 'bikeMaps', zIndex: 10, title: 'BikeMaps.org', data: bikeMapsJsonApr2022, icon:'img/BikeMapsRound.png', checked: showCommunity},
     { type: "Point", key: 'triCityFix', zIndex: 11, title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound.png', checked: showCommunity}]
 // note: zIndex currently not used. Leaving for future improvments.
 
@@ -18,9 +18,9 @@ var centerCoord = [49.266872, -122.799271]
 if (L.Browser.mobile) {
     // increase tolerance for tapping (it was hard to tap on line exactly), zoom out a bit, and remove zoom control
     var myRenderer = L.canvas({ padding: 0.1, tolerance: 5 });
-    var map = L.map("map", { center: centerCoord, zoom: 11, renderer: myRenderer, zoomControl: false });
+    var map = L.map("map", { center: centerCoord, zoom: 11, minZoom: 10, renderer: myRenderer, zoomControl: false });
 } else {
-    var map = L.map("map", { center: centerCoord, zoom: 12 });
+    var map = L.map("map", { center: centerCoord, zoom: 12, minZoom: 10,});
 }
 
 // Add OpenStreetMap tile layer to map element
@@ -39,6 +39,7 @@ map.attributionControl.addAttribution('<a href="https://www.sd43.bc.ca/Schools/D
 map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap">HUB Adopt Gap</a>');
 map.attributionControl.addAttribution('<a href="https://bikemaps.org">BikeMaps</a>');
 map.attributionControl.addAttribution('<a href="https://apps.apple.com/ca/app/tricityfix/id1476599668">TriCityFix</a>');
+map.attributionControl.addAttribution('updated 2022-05-02');
 
 //--------------- add layers ---------------
 var layerGroup = new L.LayerGroup();
@@ -609,7 +610,7 @@ function addLegend() {
             '<div class="clearfix"></div>' +
             '<form><fieldset class="checkbox-pill clearfix">'
 
-        legendHtml += '<div class="button quiet col12">Tri-Cities Cycling</div>'
+        legendHtml += '<div class="button quiet col12">Tri-Cities Cycling Data</div>'
 
         //Gaps and Crashes div element that can collapse
         legendHtml += '<div class="button quiet col12">Gaps, Hotspots and Crashes:' + 
