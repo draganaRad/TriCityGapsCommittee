@@ -7,9 +7,10 @@ const settings = [
     { type: "Line", key: 'designHighStress', zIndex: 6, title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExisting},
     { type: "Point", key: 'trainParkade', zIndex: 7, title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showExisting},
     { type: "Point", key: 'schools', zIndex: 8, title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showExisting},
-    { type: "Point", key: 'adoptGap', zIndex: 9, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showCommunity},
-    { type: "Point", key: 'bikeMaps', zIndex: 10, title: 'BikeMaps.org', data: bikeMapsJsonApr2022, icon:'img/BikeMapsRound.png', checked: showCommunity},
-    { type: "Point", key: 'triCityFix', zIndex: 11, title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound.png', checked: showCommunity}]
+    { type: "Point", key: 'food', zIndex: 9, title: 'Grocery', data: foodJson_Apr2022, icon:'img/cart-shopping-solid.svg', checked: showExisting},
+    { type: "Point", key: 'adoptGap', zIndex: 10, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showCommunity},
+    { type: "Point", key: 'bikeMaps', zIndex: 11, title: 'BikeMaps.org', data: bikeMapsJsonApr2022, icon:'img/BikeMapsRound.png', checked: showCommunity},
+    { type: "Point", key: 'triCityFix', zIndex: 12, title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound.png', checked: showCommunity}]
 // note: zIndex currently not used. Leaving for future improvments.
 
 // Create variable to hold map element, give initial settings to map
@@ -39,7 +40,7 @@ map.attributionControl.addAttribution('<a href="https://www.sd43.bc.ca/Schools/D
 map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap">HUB Adopt Gap</a>');
 map.attributionControl.addAttribution('<a href="https://bikemaps.org">BikeMaps</a>');
 map.attributionControl.addAttribution('<a href="https://apps.apple.com/ca/app/tricityfix/id1476599668">TriCityFix</a>');
-map.attributionControl.addAttribution('updated 2022-05-02');
+map.attributionControl.addAttribution('updated May 2022');
 
 //--------------- add layers ---------------
 var layerGroup = new L.LayerGroup();
@@ -498,6 +499,27 @@ if (settings[6].checked){
     layerGroup.addLayer(schoolLayer);
 }
 
+// GROCERY =========================================================================
+// data source: TriCities Food Asset Map from the report produced by a consultant hired by city of Port Moody 
+// https://www.google.com/maps/d/u/0/viewer?mid=1NY6gbgDuGzDOrFBa-RNHFzVd4PkRbHM0&ll=49.273934982609674%2C-122.7769743&z=13
+// (R script to convert from kml to geojson - HUBgapMap.R)
+var foodIcon = L.icon({
+    iconUrl: settings[7].icon,
+    iconSize: [22, 22], // size of the icon
+});
+
+var foodLayer = new L.geoJSON(settings[7].data, {
+    onEachFeature: onEachFeatureGeoJson,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: foodIcon
+        });
+    }
+});
+if (settings[7].checked){
+    layerGroup.addLayer(foodLayer);
+}
+
 // ******** Community Feedback Category: **************************************************
 // HUB Adopt-a-gap campain markers =========================================
 // data source: https://bikehub.ca/get-involved/ungapthemap/adopt-gap
@@ -518,11 +540,11 @@ function onEachFeatureAdopt(feature, layer) {
 }
 
 var adoptIcon = L.icon({
-    iconUrl: settings[7].icon,
+    iconUrl: settings[8].icon,
     iconSize: [22, 22]
 });
 
-var adoptLayer = new L.geoJSON(settings[7].data, {
+var adoptLayer = new L.geoJSON(settings[8].data, {
     onEachFeature: onEachFeatureAdopt,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -530,18 +552,18 @@ var adoptLayer = new L.geoJSON(settings[7].data, {
         });
     }
 });
-if (settings[7].checked){
+if (settings[8].checked){
     layerGroup.addLayer(adoptLayer);
 }
 
 // BIKEMAPS.ORG =========================================
 // data source: received by email on Aug 7, 2021
 var bikeMapsIcon = L.icon({
-    iconUrl: settings[8].icon,
+    iconUrl: settings[9].icon,
     iconSize: [22, 22]
 });
 
-var bikeMapLayer = new L.geoJSON(settings[8].data, {
+var bikeMapLayer = new L.geoJSON(settings[9].data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -549,7 +571,7 @@ var bikeMapLayer = new L.geoJSON(settings[8].data, {
         });
     }
 });
-if (settings[8].checked){
+if (settings[9].checked){
     layerGroup.addLayer(bikeMapLayer);
 }
 
@@ -581,11 +603,11 @@ function onEachFeatureTriCityFix(feature, layer) {
 }
 
 var triCityFixIcon = L.icon({
-    iconUrl: settings[9].icon,
+    iconUrl: settings[10].icon,
     iconSize: [22, 22]
 });
 
-var triCityFixLayer = new L.geoJSON(settings[9].data, {
+var triCityFixLayer = new L.geoJSON(settings[10].data, {
     onEachFeature: onEachFeatureTriCityFix,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -593,7 +615,7 @@ var triCityFixLayer = new L.geoJSON(settings[9].data, {
         });
     }
 });
-if (settings[9].checked){
+if (settings[10].checked){
     layerGroup.addLayer(triCityFixLayer);
 }
 
@@ -631,9 +653,9 @@ function addLegend() {
                 '</div>' +
                 '<div id="existfacil" style="display: block">';  //start of Existing Facilities div element that can collapse
             }
-            if (setting.key == "schools"){ //todo: this probably shouldn't be hardcoded
+            if (setting.key == "food"){ //todo: this probably shouldn't be hardcoded
                 legendHtml += '</div>' //end of Existing Facilities div that can collapse
-                // add community category note and colapse button
+                // add community feedback category note and colapse button
                 legendHtml += '<div class="button quiet col12">Community Feedback:' +
                 '<div id="cfchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
                 '<div id="cfchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
@@ -753,6 +775,9 @@ function toggleLayer(checkbox) {
     }
     if (checkbox.id == "schools"){
         targetLayer = schoolLayer
+    }
+    if (checkbox.id == "food"){
+        targetLayer = foodLayer
     }
     if (checkbox.id == "adoptGap"){
         targetLayer = adoptLayer
