@@ -1,16 +1,17 @@
 const settings = [
-    { type: "Line", key: 'topGap', zIndex: 1, title: 'HUB Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: true},
+    { type: "Line", key: 'topGap', zIndex: 1, title: 'HUB Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: showTopGaps},
     //{ type: "Line", key: 'HUBgap', zIndex: 2, title: 'HUB Major Gaps', color: '#CE424C', checked: false},
     { type: "Line", key: 'HUBgapNov2021', zIndex: 3, title: 'HUB Gaps/Hotspots', data: HUBGapsJson2022, color: '#9031AA', icon:'img/purplePinIcon2.png', checked: showHUBgaps},
-    { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclists Crashes', data: ICBCcrashesJsonApr2022, icon:'img/circle-exclamation-solid.svg', checked: showExisting},
-    { type: "Line", key: 'designLowStress', zIndex: 5, title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExisting},
-    { type: "Line", key: 'designHighStress', zIndex: 6, title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExisting},
-    { type: "Point", key: 'trainParkade', zIndex: 7, title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showExisting},
-    { type: "Point", key: 'schools', zIndex: 8, title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showExisting},
-    { type: "Point", key: 'food', zIndex: 9, title: 'Grocery', data: foodJson_Apr2022, icon:'img/cart-shopping-solid.svg', checked: showExisting},
-    { type: "Point", key: 'adoptGap', zIndex: 10, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showCommunity},
-    { type: "Point", key: 'bikeMaps', zIndex: 11, title: 'BikeMaps.org', data: bikeMapsJsonApr2022, icon:'img/BikeMapsRound.png', checked: showCommunity},
-    { type: "Point", key: 'triCityFix', zIndex: 12, title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound.png', checked: showCommunity}]
+    { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclists Crashes', data: ICBCcrashesJsonApr2022, icon:'img/circle-exclamation-solid.svg', checked: showCrashes},
+    { type: "Line", key: 'designLowStress', zIndex: 5, title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExistingLowStress},
+    { type: "Line", key: 'designHighStress', zIndex: 6, title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExistingHighStress},
+    { type: "Point", key: 'trainParkade', zIndex: 7, title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showStations},
+    { type: "Point", key: 'schools', zIndex: 8, title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showShools},
+    { type: "Point", key: 'food', zIndex: 9, title: 'Grocery', data: foodJson_Apr2022, icon:'img/cart-shopping-solid.svg', checked: showFood},
+    { type: "Point", key: 'adoptGap', zIndex: 10, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showAdoptGap},
+    { type: "Point", key: 'bikeMaps', zIndex: 11, title: 'BikeMaps.org', data: bikeMapsJsonApr2022, icon:'img/BikeMapsRound.png', checked: showBikeMaps},
+    { type: "Point", key: 'triCityFix', zIndex: 12, title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound2.png', checked: showTriCityFix},
+    { type: "Point", key: 'veloCanada', zIndex: 13, title: 'Velo Canada Bikes', data: veloData2021, icon:'img/VeloBikesRound2.png', checked: showVeloBikes}]
 // note: zIndex currently not used. Leaving for future improvments.
 
 // Create variable to hold map element, give initial settings to map
@@ -37,9 +38,11 @@ map.attributionControl.addAttribution('<a href="https://wiki.bikehub.ca/sites/co
 map.attributionControl.addAttribution('<a href="https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes">ICBC</a>');
 map.attributionControl.addAttribution('<a href="https://github.com/BikeOttawa">BikeOttawa</a>');
 map.attributionControl.addAttribution('<a href="https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=">SchoolDistrictNo43</a>');
+// todo: add food attribution
 map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap">HUB Adopt Gap</a>');
 map.attributionControl.addAttribution('<a href="https://bikemaps.org">BikeMaps</a>');
 map.attributionControl.addAttribution('<a href="https://apps.apple.com/ca/app/tricityfix/id1476599668">TriCityFix</a>');
+map.attributionControl.addAttribution('<a href="https://www.velocanadabikes.org/pedalpoll/pedal-poll-sondo-velo-2021-results/">VeloPedalPoll</a>');
 map.attributionControl.addAttribution('updated May 2022');
 
 //--------------- add layers ---------------
@@ -148,7 +151,9 @@ var topGapLayer = new L.geoJSON(settings[0].data, {
     style: styleTop,
     onEachFeature: onEachFeatureTop,
 });
-layerGroup.addLayer(topGapLayer);
+if (settings[0].checked){
+    layerGroup.addLayer(topGapLayer);
+}
 
 // [Feb 14, 2022] - committee doesn't have this so removing
 // MAJOR HUB gaps ========================================================
@@ -619,6 +624,25 @@ if (settings[10].checked){
     layerGroup.addLayer(triCityFixLayer);
 }
 
+// VeloCanadaBikes Pedal Poll
+// data source: https://www.velocanadabikes.org/pedalpoll/pedal-poll-sondo-velo-2021-results/ ====================
+var pedalPollIcon = L.icon({
+    iconUrl: settings[11].icon,
+    iconSize: [22, 22]
+});
+
+var pedalPollLayer = new L.geoJSON(settings[11].data, {
+    onEachFeature: onEachFeatureGeoJson,
+    pointToLayer: function (feature, latlng) {
+        return L.marker(latlng, {
+            icon: pedalPollIcon
+        });
+    }
+});
+if (settings[11].checked){
+    layerGroup.addLayer(pedalPollLayer);
+}
+
 // TODO: add city plans and developments to come
 
 // Legend ========================================================================================
@@ -662,7 +686,7 @@ function addLegend() {
                 '</div>' +
                 '<div id="commfeed" style="display: block">';  //start of Community Feedback div element that can collapse
             }
-            if (setting.key == "triCityFix"){ //todo: this probably shouldn't be hardcoded
+            if (setting.key == "veloCanada"){ //todo: this probably shouldn't be hardcoded
                 legendHtml += '</div>' //end of Community Feedback div that can collapse
             }
         }
@@ -787,6 +811,9 @@ function toggleLayer(checkbox) {
     }
     if (checkbox.id == "triCityFix"){
         targetLayer = triCityFixLayer
+    }
+    if (checkbox.id == "veloCanada"){
+        targetLayer = pedalPollLayer
     }
 
     if (targetLayer){
