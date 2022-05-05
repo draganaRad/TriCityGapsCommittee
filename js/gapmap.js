@@ -3,15 +3,15 @@ const settings = [
     //{ type: "Line", key: 'HUBgap', zIndex: 2, title: 'HUB Major Gaps', color: '#CE424C', checked: false},
     { type: "Line", key: 'HUBgapNov2021', zIndex: 3, title: 'HUB Gaps/Hotspots', data: HUBGapsJson2022, color: '#9031AA', icon:'img/purplePinIcon2.png', checked: showHUBgaps},
     { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonApr2022, icon:'img/circle-exclamation-solid.svg', checked: showCrashes},
+    { type: "Point", key: 'adoptGap', zIndex: 10, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showAdoptGap},
+    { type: "Point", key: 'bikeMaps', zIndex: 11, title: 'BikeMaps.org', data: bikeMapsJsonApr2022, icon:'img/BikeMapsRound.png', checked: showBikeMaps},
+    { type: "Point", key: 'triCityFix', zIndex: 12, title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound2.png', checked: showTriCityFix},
+    { type: "Point", key: 'veloCanada', zIndex: 13, title: 'Velo Pedal Poll', data: veloData2021, icon:'img/VeloBikesRound2.png', checked: showVeloBikes},
     { type: "Line", key: 'designLowStress', zIndex: 5, title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExistingLowStress},
     { type: "Line", key: 'designHighStress', zIndex: 6, title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExistingHighStress},
     { type: "Point", key: 'trainParkade', zIndex: 7, title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showStations},
     { type: "Point", key: 'schools', zIndex: 8, title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showShools},
-    { type: "Point", key: 'food', zIndex: 9, title: 'Grocery', data: foodJson_Apr2022, icon:'img/cart-shopping-solid.svg', checked: showFood},
-    { type: "Point", key: 'adoptGap', zIndex: 10, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showAdoptGap},
-    { type: "Point", key: 'bikeMaps', zIndex: 11, title: 'BikeMaps.org', data: bikeMapsJsonApr2022, icon:'img/BikeMapsRound.png', checked: showBikeMaps},
-    { type: "Point", key: 'triCityFix', zIndex: 12, title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound2.png', checked: showTriCityFix},
-    { type: "Point", key: 'veloCanada', zIndex: 13, title: 'Velo Pedal Poll', data: veloData2021, icon:'img/VeloBikesRound2.png', checked: showVeloBikes}]
+    { type: "Point", key: 'food', zIndex: 9, title: 'Grocery', data: foodJson_Apr2022, icon:'img/cart-shopping-solid.svg', checked: showFood},]
 // note: zIndex currently not used. Leaving for future improvments.
 
 // Create variable to hold map element, give initial settings to map
@@ -306,12 +306,12 @@ if (settings[2].checked){
 // LOW TRAFFIC STRESS BIKE DESIGNATED =========================================
 // data source: OSM and Level of Traffic Stres BikeOttawa algorithm. in Notes "How to create LTS map:"
 var lowStressStyle = {
-    "color": settings[3].color, // light blue
+    "color": settings[7].color, // light blue
     "weight": lineWeight - 1,  // had to adjust opacity and then line width becuase data seems messy
     "opacity": lineOpacity + 0.2
 };
 var lowStressHighlight = {
-    "color": settings[3].color,
+    "color": settings[7].color,
     "weight": lineWeight,
     "opacity": lineOpacityHighlight + 0.2
 };
@@ -364,23 +364,23 @@ function onEachFeatureLowStress(feature, layer) {
     });
 }
 
-var lowStressLayer = new L.geoJSON(settings[3].data, {
+var lowStressLayer = new L.geoJSON(settings[7].data, {
     style: lowStressStyle,
     onEachFeature: onEachFeatureLowStress,
 })
-if (settings[3].checked){
+if (settings[7].checked){
     layerGroup.addLayer(lowStressLayer);
 }
 
 // HIGH TRAFFIC STRESS BIKE DESIGNATED =========================================
 // data source: OSM and Level of Traffic Stres BikeOttawa algorithm. in Notes "How to create LTS map:"
 var highStressStyle = {
-    "color": settings[4].color, // brown
+    "color": settings[8].color, // brown
     "weight": lineWeight - 1,
     "opacity": lineOpacity + 0.2
 };
 var highStressHighlight = {
-    "color": settings[4].color,
+    "color": settings[8].color,
     "weight": lineWeight,
     "opacity": lineOpacityHighlight + 0.2
 };
@@ -406,11 +406,11 @@ function onEachFeatureHighStress(feature, layer) {
     });
 }
 
-var highStressLayer = new L.geoJSON(settings[4].data, {
+var highStressLayer = new L.geoJSON(settings[8].data, {
     style: highStressStyle,
     onEachFeature: onEachFeatureHighStress,
 })
-if (settings[4].checked){
+if (settings[8].checked){
     layerGroup.addLayer(highStressLayer);
 }
 
@@ -455,15 +455,15 @@ function onEachFeatureParkade(feature, layer) {
 }
 
 var trainIcon = L.icon({
-    iconUrl: settings[5].icon,
+    iconUrl: settings[9].icon,
     iconSize: [22, 22]
 });
 var parkadeIcon = L.icon({
-    iconUrl: settings[5].icon1,
+    iconUrl: settings[9].icon1,
     iconSize: [22, 22]
 });
 
-var trainLayer = new L.geoJSON(settings[5].data, {
+var trainLayer = new L.geoJSON(settings[9].data, {
     onEachFeature: onEachFeatureTrain,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -471,7 +471,7 @@ var trainLayer = new L.geoJSON(settings[5].data, {
         });
     }
 });
-var parkadeLayer = new L.geoJSON(settings[5].data1, {
+var parkadeLayer = new L.geoJSON(settings[9].data1, {
     onEachFeature: onEachFeatureParkade,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -479,7 +479,7 @@ var parkadeLayer = new L.geoJSON(settings[5].data1, {
         });
     }
 });
-if (settings[5].checked){
+if (settings[9].checked){
     layerGroup.addLayer(trainLayer);
     layerGroup.addLayer(parkadeLayer);
 }
@@ -488,11 +488,11 @@ if (settings[5].checked){
 // data source: https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=
 // (R script to convert from kml to geojson - HUBgapMap.R)
 var schoolIcon = L.icon({
-    iconUrl: settings[6].icon,
+    iconUrl: settings[10].icon,
     iconSize: [22, 22], // size of the icon
 });
 
-var schoolLayer = new L.geoJSON(settings[6].data, {
+var schoolLayer = new L.geoJSON(settings[10].data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -500,7 +500,7 @@ var schoolLayer = new L.geoJSON(settings[6].data, {
         });
     }
 });
-if (settings[6].checked){
+if (settings[10].checked){
     layerGroup.addLayer(schoolLayer);
 }
 
@@ -509,11 +509,11 @@ if (settings[6].checked){
 // https://www.google.com/maps/d/u/0/viewer?mid=1NY6gbgDuGzDOrFBa-RNHFzVd4PkRbHM0&ll=49.273934982609674%2C-122.7769743&z=13
 // (R script to convert from kml to geojson - HUBgapMap.R)
 var foodIcon = L.icon({
-    iconUrl: settings[7].icon,
+    iconUrl: settings[11].icon,
     iconSize: [22, 22], // size of the icon
 });
 
-var foodLayer = new L.geoJSON(settings[7].data, {
+var foodLayer = new L.geoJSON(settings[11].data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -521,7 +521,7 @@ var foodLayer = new L.geoJSON(settings[7].data, {
         });
     }
 });
-if (settings[7].checked){
+if (settings[11].checked){
     layerGroup.addLayer(foodLayer);
 }
 
@@ -545,11 +545,11 @@ function onEachFeatureAdopt(feature, layer) {
 }
 
 var adoptIcon = L.icon({
-    iconUrl: settings[8].icon,
+    iconUrl: settings[3].icon,
     iconSize: [22, 22]
 });
 
-var adoptLayer = new L.geoJSON(settings[8].data, {
+var adoptLayer = new L.geoJSON(settings[3].data, {
     onEachFeature: onEachFeatureAdopt,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -557,18 +557,18 @@ var adoptLayer = new L.geoJSON(settings[8].data, {
         });
     }
 });
-if (settings[8].checked){
+if (settings[3].checked){
     layerGroup.addLayer(adoptLayer);
 }
 
 // BIKEMAPS.ORG =========================================
 // data source: received by email on Aug 7, 2021
 var bikeMapsIcon = L.icon({
-    iconUrl: settings[9].icon,
+    iconUrl: settings[4].icon,
     iconSize: [22, 22]
 });
 
-var bikeMapLayer = new L.geoJSON(settings[9].data, {
+var bikeMapLayer = new L.geoJSON(settings[4].data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -576,7 +576,7 @@ var bikeMapLayer = new L.geoJSON(settings[9].data, {
         });
     }
 });
-if (settings[9].checked){
+if (settings[4].checked){
     layerGroup.addLayer(bikeMapLayer);
 }
 
@@ -608,11 +608,11 @@ function onEachFeatureTriCityFix(feature, layer) {
 }
 
 var triCityFixIcon = L.icon({
-    iconUrl: settings[10].icon,
+    iconUrl: settings[5].icon,
     iconSize: [22, 22]
 });
 
-var triCityFixLayer = new L.geoJSON(settings[10].data, {
+var triCityFixLayer = new L.geoJSON(settings[5].data, {
     onEachFeature: onEachFeatureTriCityFix,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -620,18 +620,18 @@ var triCityFixLayer = new L.geoJSON(settings[10].data, {
         });
     }
 });
-if (settings[10].checked){
+if (settings[5].checked){
     layerGroup.addLayer(triCityFixLayer);
 }
 
 // VeloCanadaBikes Pedal Poll
 // data source: https://www.velocanadabikes.org/pedalpoll/pedal-poll-sondo-velo-2021-results/ ====================
 var pedalPollIcon = L.icon({
-    iconUrl: settings[11].icon,
+    iconUrl: settings[6].icon,
     iconSize: [22, 22]
 });
 
-var pedalPollLayer = new L.geoJSON(settings[11].data, {
+var pedalPollLayer = new L.geoJSON(settings[6].data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -639,7 +639,7 @@ var pedalPollLayer = new L.geoJSON(settings[11].data, {
         });
     }
 });
-if (settings[11].checked){
+if (settings[6].checked){
     layerGroup.addLayer(pedalPollLayer);
 }
 
@@ -669,25 +669,25 @@ function addLegend() {
             legendHtml += addLegendLine(setting)
             if (setting.key == "ICBCcrashes"){ //todo: this probably shouldn't be hardcoded
                 legendHtml += '</div>' //end of Gaps and Crashes div that can collapse
-                // add existing facilites note and colapse button
-                //legendHtml += '<div class="button quiet col12">Existing Facilities:</div>'
-                legendHtml += '<div class="button quiet col12">Existing Facilities:' + 
+                // add Community Feedback note and colapse button
+                //legendHtml += '<div class="button quiet col12">Community Feedback:</div>'
+                legendHtml += '<div class="button quiet col12">Community Feedback:' + 
                 '<div id="efchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
                 '<div id="efchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
                 '</div>' +
-                '<div id="existfacil" style="display: block">';  //start of Existing Facilities div element that can collapse
-            }
-            if (setting.key == "food"){ //todo: this probably shouldn't be hardcoded
-                legendHtml += '</div>' //end of Existing Facilities div that can collapse
-                // add community feedback category note and colapse button
-                legendHtml += '<div class="button quiet col12">Community Feedback:' +
-                '<div id="cfchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
-                '<div id="cfchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
-                '</div>' +
-                '<div id="commfeed" style="display: block">';  //start of Community Feedback div element that can collapse
+                '<div id="existfacil" style="display: block">';  //start of Community Feedback div element that can collapse
             }
             if (setting.key == "veloCanada"){ //todo: this probably shouldn't be hardcoded
                 legendHtml += '</div>' //end of Community Feedback div that can collapse
+                // add Existing Facilities category note and colapse button
+                legendHtml += '<div class="button quiet col12">Existing Facilities:' +
+                '<div id="cfchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
+                '<div id="cfchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+                '</div>' +
+                '<div id="commfeed" style="display: block">';  //start of Existing Facilities div element that can collapse
+            }
+            if (setting.key == "food"){ //todo: this probably shouldn't be hardcoded
+                legendHtml += '</div>' //end of Existing Facilities div that can collapse
             }
         }
 
