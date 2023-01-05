@@ -43,7 +43,7 @@ map.attributionControl.addAttribution('<a href="https://www.velocanadabikes.org/
 map.attributionControl.addAttribution('<a href="https://github.com/BikeOttawa">BikeOttawa</a>');
 map.attributionControl.addAttribution('<a href="https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=">SchoolDistrictNo43</a>');
 map.attributionControl.addAttribution('<a href="https://www.google.com/maps/d/u/0/viewer?mid=1NY6gbgDuGzDOrFBa-RNHFzVd4PkRbHM0&ll=49.273934982609674%2C-122.7769743&z=13">FoodAssetMap</a>');
-map.attributionControl.addAttribution('updated May 2022');
+map.attributionControl.addAttribution('updated Jan 2023');
 
 //--------------- add layers ---------------
 var layerGroup = new L.LayerGroup();
