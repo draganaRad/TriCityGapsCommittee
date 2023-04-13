@@ -3,6 +3,168 @@ var triCityFixJson2 = {
   "features": [
     {
       "type": "Feature",
+      "id": "BA_1",
+      "properties": {
+        "key": "BA",
+        "city": "Belcarra",
+        "type": "Problem",
+        "location": "Belcarra, Midden Rd, 4575–4699",
+        "description": "Midden Road at Belcarra Bay Rd ... barrier blocks access and I had to lift my bike over the cement block to get out of Midden Rd",
+        "photo": "",
+        "date": "2020-02-13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.9262295,
+          49.3133385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BA_2",
+      "properties": {
+        "key": "BA",
+        "city": "Anmore",
+        "type": "Problem",
+        "location": "Anmore, 1st Ave, 317–359",
+        "description": "Pothole forces rider into traffic",
+        "photo": "",
+        "date": "2020-08-07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.873419,
+          49.30667
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "BA_3",
+      "properties": {
+        "key": "BA",
+        "city": "Anmore",
+        "type": "Problem",
+        "location": "Anmore, 1st Ave, 317–359",
+        "description": "Push blocks shoulder and forces rider into car lane",
+        "photo": "",
+        "date": "2020-08-07"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.873374,
+          49.30664373
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C_1",
+      "properties": {
+        "key": "C",
+        "city": "Coquitlam",
+        "type": "Suggestion",
+        "location": "Coquitlam, Guildford Way, 3096",
+        "description": "I ride along Guildford Way a lot. I find cars use the bike lane to turn right. It would be great to have pylons on to separate bike lane from cars at the intersections. This would be at every intersection from pipeline to Ioco",
+        "photo": "",
+        "date": "2021-09-13"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7850404,
+          49.285694
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C_2",
+      "properties": {
+        "key": "C",
+        "city": "Coquitlam",
+        "type": "Suggestion",
+        "location": "Coquitlam, Mary Hill By-pass",
+        "description": "Can’t ride trail from Shaughnessy and Mary hill bypass, to United blvd because plants so overground. Please trim. New asphalt also requested as Route almost unrideable due to damage from tree roots.",
+        "photo": "",
+        "date": "2021-06-15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.796032,
+          49.227195
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C_3",
+      "properties": {
+        "key": "C",
+        "city": "Coquitlam",
+        "type": "Problem",
+        "location": "Coquitlam, Barnet heading east at Mariner",
+        "description": "I get really frustrated by the drivers along Barnet heading east at Mariner and where it turns into Lougheed (by the bus depot) who use the very nicely marked green bike lanes as right turn lanes. I think it's especially unsafe there because I'm often moving faster than traffic and drivers don't always look behind them for a bike that's moving faster than they are.<br>When I have my kids with me on a cargo bike, I actually avoid using the bike lanes on Barnet for this reason - I take Aberdeen and go through the parking lot at Coquitlam Central instead. It's too bad that an investment was made in bike infrastructure that feels unsafe because it's not being used correctly by drivers.",
+        "photo": "",
+        "date": "2021-11-30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.798552,
+          49.276522
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C_4",
+      "properties": {
+        "key": "C",
+        "city": "Coquitlam",
+        "type": "Suggestion",
+        "location": "Coquitlam, Trevor Wingrove Way and Pinetree Way along the MUP heading south",
+        "description": "The traffic signal support exactly lines up with the curb drop. This makes riding a bicycle tricky and also wheelchair access very difficult I would think.",
+        "photo": "1.png",
+        "date": "2022-11-09"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.789558,
+          49.290849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C_5",
+      "properties": {
+        "key": "C",
+        "city": "Coquitlam",
+        "type": "Problem",
+        "location": "Coquitlam, Glen Dr. and Pipeline Rd. near Glen Elementary",
+        "description": "There are raised bollards at the corner of Glen Dr. and Pipeline Rd. near Glen Elementary. Can 1 or 2 of the bollards nearest the sidewalk be removed to allow cyclists to bike on the right of the road and access the crosswalk activation sensor? I’ve attached a photo of the area with circles around the areas that need to be addressed.<br>It is currently impossible for cyclists to turn left safely, or indeed legally, from Glen Dr (a city designated bike path) onto Pipeline Rd. as cyclists cannot trigger a green light. The crosswalk sensor is unreachable from the road. Cyclists cannot enter the bollard area to reach the lighting pole where the sensor is mounted. Moreover, the road does not have a bike sensor to generate a green light.<br>If the highlighted bollards are removed, cyclists can continue on the right side of the Glen, cross Pipeline alongside the crosswalk, and turn left once they’ve reached the eastern side of Pipeline.<br>Can this change be prioritized? Glen Dr. is a designated bike lane by the city. In addition, the road also serves the elementary school. I think that this minor change would significantly improve the safety of the cycling path so that it is accessible by all ages, and promote more active transportation to the school.",
+        "photo": "2.jpg",
+        "date": "2022-11-03",
+        "descriptionUpdate": "(Feb 2023) Bollards nearest the sidewalk removed.",
+        "photoUpdate": "2a.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.786206,
+          49.282643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "PC_1",
       "properties": {
         "key": "PC",
@@ -74,6 +236,25 @@ var triCityFixJson2 = {
         "coordinates": [
           -122.779912,
           49.26696
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PC_5",
+      "properties": {
+        "key": "PC",
+        "city": "Port Coquitlam",
+        "type": "Like",
+        "location": "2244 Welcher Ave, Port Coquitlam",
+        "description": "Donald Street Greenway does not get enough praise. Great reuse of existing surplus road space! More network connections needed though both at south end next to elementary school and north end into downtown.",
+        "date": "2022-08-23"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.780539,
+          49.257573
         ]
       }
     },
@@ -174,126 +355,6 @@ var triCityFixJson2 = {
         "coordinates": [
           -122.825795,
           49.277584
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "C_1",
-      "properties": {
-        "key": "C",
-        "city": "Coquitlam",
-        "type": "Suggestion",
-        "location": "Coquitlam, Guildford Way, 3096",
-        "description": "I ride along Guildford Way a lot. I find cars use the bike lane to turn right. It would be great to have pylons on to separate bike lane from cars at the intersections. This would be at every intersection from pipeline to Ioco",
-        "photo": "",
-        "date": "2021-09-13"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.7850404,
-          49.285694
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "C_2",
-      "properties": {
-        "key": "C",
-        "city": "Coquitlam",
-        "type": "Suggestion",
-        "location": "Coquitlam, Mary Hill By-pass",
-        "description": "Can’t ride trail from Shaughnessy and Mary hill bypass, to United blvd because plants so overground. Please trim. New asphalt also requested as Route almost unrideable due to damage from tree roots.",
-        "photo": "",
-        "date": "2021-06-15"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.796032,
-          49.227195
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "C_3",
-      "properties": {
-        "key": "C",
-        "city": "Coquitlam",
-        "type": "Problem",
-        "location": "Coquitlam, Barnet heading east at Mariner",
-        "description": "I get really frustrated by the drivers along Barnet heading east at Mariner and where it turns into Lougheed (by the bus depot) who use the very nicely marked green bike lanes as right turn lanes. I think it's especially unsafe there because I'm often moving faster than traffic and drivers don't always look behind them for a bike that's moving faster than they are.<br>When I have my kids with me on a cargo bike, I actually avoid using the bike lanes on Barnet for this reason - I take Aberdeen and go through the parking lot at Coquitlam Central instead. It's too bad that an investment was made in bike infrastructure that feels unsafe because it's not being used correctly by drivers.",
-        "photo": "",
-        "date": "2021-11-30"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.798552,
-          49.276522
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BA_1",
-      "properties": {
-        "key": "BA",
-        "city": "Belcarra",
-        "type": "Problem",
-        "location": "Belcarra, Midden Rd, 4575–4699",
-        "description": "Midden Road at Belcarra Bay Rd ... barrier blocks access and I had to lift my bike over the cement block to get out of Midden Rd",
-        "photo": "",
-        "date": "2020-02-13"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.9262295,
-          49.3133385
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BA_2",
-      "properties": {
-        "key": "BA",
-        "city": "Anmore",
-        "type": "Problem",
-        "location": "Anmore, 1st Ave, 317–359",
-        "description": "Pothole forces rider into traffic",
-        "photo": "",
-        "date": "2020-08-07"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.873419,
-          49.30667
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "BA_3",
-      "properties": {
-        "key": "BA",
-        "city": "Anmore",
-        "type": "Problem",
-        "location": "Anmore, 1st Ave, 317–359",
-        "description": "Push blocks shoulder and forces rider into car lane",
-        "photo": "",
-        "date": "2020-08-07"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.873374,
-          49.30664373
         ]
       }
     }

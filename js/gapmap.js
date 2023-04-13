@@ -585,23 +585,52 @@ if (settings[4].checked){
 // todo: need to create one files for mulitple for each city. problem: "id" is not unique. also, how to keep track of photos? maybe just one geojson file?
 function onEachFeatureTriCityFix(feature, layer) {
     var popupContent = ""
+    var popupContent = ""
     if (feature.properties) {
-        for (let property in feature.properties) {
-            //console.log('Dragana:: tag ' + JSON.stringify(property) +', value: '+ feature.properties[property])
-            if (feature.properties[property] != null && feature.properties[property] != "" && 
-            property != 'key' && property != 'photo'){
-                if (popupContent != "") {
-                    popupContent += "<br>";
-                }
-                popupContent += "<b>" + property + ": </b>";
-                popupContent += feature.properties[property];
-            }
-            if (property == "photo" && feature.properties["photo"] != "") {
-                //console.log(city)
-                popupContent += "<br><br>"
-                imageSrc = "img/triCityFix/" + feature.properties.photo
-                popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>"
-            }
+        // add type
+        if (feature.properties.type) {
+            popupContent += "<b>Type: </b>";
+            popupContent += feature.properties.type;
+        }
+        // add location
+        if (feature.properties.location) {
+            popupContent += "<br><b>Location: </b>";
+            popupContent += feature.properties.location;
+        }
+        // add description
+        if (feature.properties.description) {
+            popupContent += "<br><b>Description: </b>";
+            popupContent += feature.properties.description;
+        }
+        // add date
+        if (feature.properties.date) {
+          popupContent += "<br><b>Date: </b>";
+          dateProperty = feature.properties.date;
+          var parts = dateProperty.split('-');
+          // Please pay attention to the month (parts[1]); JavaScript counts months from 0:
+          // January - 0, February - 1, etc.
+          var dateStr = new Date(parts[0], parts[1] - 1, parts[2]); 
+          //console.log(dateStr.toDateString());
+          popupContent += dateStr.toDateString();
+        }
+        // add photo(s)
+        // remove white spaces in city if exist. no white spaces in photo names
+        if (feature.properties.photo) {
+            //console.log(city)
+            popupContent += "<br><br>";
+            imageSrc = "img/triCityFix/" + feature.properties.key + "/" + feature.properties.photo;
+            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>";
+        }
+        // add if there's update
+        if (feature.properties.descriptionUpdate) {
+          popupContent += "<br>";
+          popupContent += "<br><b>Update: </b>";
+          popupContent += feature.properties.descriptionUpdate;
+        }
+        if (feature.properties.photoUpdate) {
+          popupContent += "<br>";
+          imageSrc = "img/triCityFix/" + feature.properties.key + "/" + feature.properties.photoUpdate;
+          popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>";
         }
     }
     layer.bindPopup(popupContent);
