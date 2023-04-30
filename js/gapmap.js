@@ -1,7 +1,7 @@
 const settings = [
     { type: "Line", key: 'topGap', zIndex: 1, title: 'HUB Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: showTopGaps},
     //{ type: "Line", key: 'HUBgap', zIndex: 2, title: 'HUB Major Gaps', color: '#CE424C', checked: false},
-    { type: "Line", key: 'HUBgapNov2021', zIndex: 3, title: 'HUB Gaps/Hotspots', data: HUBGapsJson2022, color: '#9031AA', icon:'img/purplePinIcon2.png', checked: showHUBgaps},
+    { type: "Line", key: 'HUBgapNov2021', zIndex: 3, title: 'HUB Gaps/Hotspots', data: HUBGapsJsonApr2023, color: '#9031AA', icon:'img/purplePinIcon2.png', checked: showHUBgaps},
     { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonApr2022, icon:'img/circle-exclamation-solid.svg', checked: showCrashes},
     { type: "Point", key: 'adoptGap', zIndex: 10, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showAdoptGap},
     { type: "Point", key: 'bikeMaps', zIndex: 11, title: 'BikeMaps.org', data: bikeMapsJsonApr2022, icon:'img/BikeMapsRound.png', checked: showBikeMaps},
@@ -28,22 +28,21 @@ if (L.Browser.mobile) {
 // Add OpenStreetMap tile layer to map element
 L.tileLayer(
     'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a>',
     subdomains: 'abcd',
     maxZoom: 19
 }
 ).addTo(map);
 
-map.attributionControl.addAttribution('<a href="https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki">Tri-CitiesHUB</a>');
-map.attributionControl.addAttribution('<a href="https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes">ICBC</a>');
-map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap">HUBAdoptGap</a>');
-map.attributionControl.addAttribution('<a href="https://bikemaps.org">BikeMaps</a>');
-map.attributionControl.addAttribution('<a href="https://apps.apple.com/ca/app/tricityfix/id1476599668">TriCityFix</a>');
-map.attributionControl.addAttribution('<a href="https://www.velocanadabikes.org/pedalpoll/pedal-poll-sondo-velo-2021-results/">VeloPedalPoll</a>');
-map.attributionControl.addAttribution('<a href="https://github.com/BikeOttawa">BikeOttawa</a>');
-map.attributionControl.addAttribution('<a href="https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=">SchoolDistrictNo43</a>');
-map.attributionControl.addAttribution('<a href="https://www.google.com/maps/d/u/0/viewer?mid=1NY6gbgDuGzDOrFBa-RNHFzVd4PkRbHM0&ll=49.273934982609674%2C-122.7769743&z=13">FoodAssetMap</a>');
-map.attributionControl.addAttribution('updated Jan 2023');
+map.attributionControl.addAttribution('<a href="https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki" target="_blank">Tri-CitiesHUB</a>');
+map.attributionControl.addAttribution('<a href="https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes" target="_blank">ICBC</a>');
+map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap" target="_blank">HUBAdoptGap</a>');
+map.attributionControl.addAttribution('<a href="https://bikemaps.org" target="_blank">BikeMaps</a>');
+map.attributionControl.addAttribution('<a href="https://apps.apple.com/ca/app/tricityfix/id1476599668" target="_blank">TriCityFix</a>');
+map.attributionControl.addAttribution('<a href="https://www.velocanadabikes.org/pedalpoll/pedal-poll-sondo-velo-2021-results/" target="_blank">VeloPedalPoll</a>');
+map.attributionControl.addAttribution('<a href="https://github.com/BikeOttawa" target="_blank">BikeOttawa</a>');
+map.attributionControl.addAttribution('<a href="https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=" target="_blank">SchoolDistrictNo43</a>');
+map.attributionControl.addAttribution('<a href="https://www.google.com/maps/d/u/0/viewer?mid=1NY6gbgDuGzDOrFBa-RNHFzVd4PkRbHM0&ll=49.273934982609674%2C-122.7769743&z=13" target="_blank">FoodAssetMap</a>');
 
 //--------------- add layers ---------------
 var layerGroup = new L.LayerGroup();

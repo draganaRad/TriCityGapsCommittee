@@ -162,19 +162,19 @@ var topCommitteeJson = {
       "id": "6",
       "properties": {
         "type": "line",
-        "description": " This important transportation route is dead flat. Let's create a great bike connection here! We're pushing for a connection from the existing multi-use path along Lougheed Highway from its terminus at Holly Road down to Colony Farm Road, where it can connect with the Water Main Trail. <a href=\"https://wiki.bikehub.ca/sites/committees/images/1/1f/Watermain_route_for_public.pdf\" target=\"_blank\">Watermain_route_for_public.pdf</a> | <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=Lougheed_Highway_(near_Riverview)\" target=\"_blank\">Lougheed Highway (near Riverview)</a> | <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=Lougheed_Highway_and_Pitt_River_Road\" target=\"_blank\">Lougheed Highway and Pitt River Road</a> | <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=United_Blvd,Northern_section\" target=\"_blank\">United Blvd,Northern section</a>",
-        "location": "Coquitlam Central Station to Port Mann Bridge, Coquitlam."
+        "description": " Colony Farm Road at Lougheed Highway to the Port Mann Bridge, Coquitlam. This important transportation route would link the existing bike route along and beside Lougheed Highway from Coquitlam Central to Surrey. Let's create a great bike connection here! We're pushing for a connection from the end of the Sumiqwuelu pathway to the Port Mann Bridge. <a href=\"https://wiki.bikehub.ca/sites/committees/images/1/1f/Watermain_route_for_public.pdf\" target=\"_blank\">Watermain_route_for_public.pdf</a> | <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=Lougheed_Highway_(near_Riverview)\" target=\"_blank\">Lougheed Highway (near Riverview)</a> | <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=Lougheed_Highway_and_Pitt_River_Road\" target=\"_blank\">Lougheed Highway and Pitt River Road</a> | <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=United_Blvd,Northern_section\" target=\"_blank\">United Blvd,Northern section</a>",
+        "location": "Colony Farm Road to Port Mann Bridge, Coquitlam."
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.79888868331909,
-            49.25676301224675
+            -122.81386095496978,
+            49.2402020132983
           ],
           [
-            -122.81528234481812,
-            49.22400896148416
+            -122.81527608175918,
+            49.224012602292106
           ]
         ]
       }
