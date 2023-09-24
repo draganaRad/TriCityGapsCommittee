@@ -149,29 +149,50 @@ var HUBemail = {
           49.230592
         ]
       }
-     }
+     },
+    {
+      "type": "Feature",
+      "id": "C_6",
+      "properties": {
+        "email":"true",
+        "key": "C",
+        "city": "Coquitlam",
+        "type": "Problem",
+        "location": "The intersection of Pipeline, Guildford and Ozada",
+        "description": "The reconstruction of Pipeline road at Town Centre park is an opportunity to put a proper north bound bike lane in. The intersection of Pipeline, Guildford and Ozada is a problem and with road widening under way it looks like it will get worse. It’s unclear what the city is planning in this corridor.",
+        "photo": "",
+        "date": "2023-09-08"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.784715,
+          49.285739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C_7",
+      "properties": {
+        "email":"true",
+        "key": "C",
+        "city": "Coquitlam",
+        "type": "Problem",
+        "location": "",
+        "description": "A new traffic island at Westwood and Heffley Cres is a new barrier for cyclists.",
+        "photo": "",
+        "date": "2023-09-08"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.790494,
+          49.281755
+        ]
+      }
+    }
     //,
-    // {
-    //   "type": "Feature",
-    //   "id": "C_3",
-    //   "properties": {
-    //     "email":"true",
-    //     "key": "C",
-    //     "city": "Coquitlam",
-    //     "type": "Problem",
-    //     "location": "",
-    //     "description": "",
-    //     "photo": "3.jpeg",
-    //     "date": "2022-11-03"
-    //   },
-    //   "geometry": {
-    //     "type": "Point",
-    //     "coordinates": [
-    //       -122.849224,
-    //       49.232046
-    //     ]
-    //   }
-    // },
     // {
     //   "type": "Feature",
     //   "id": "C_3",

@@ -143,6 +143,25 @@ var triCityFixJson2 = {
     },
     {
       "type": "Feature",
+      "id": "C_5",
+      "properties": {
+        "key": "C",
+        "city": "Coquitlam",
+        "type": "Problem",
+        "location": "1161 The High St #2, Coquitlam",
+        "description": "There are few bike racks in this area. it's difficult to store my bike while I visit the local merchants.<br>This area is adjacent to the Glen Drive bike route.",
+        "date":"2023-09-14"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7960323,
+          49.2823872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "PC_1",
       "properties": {
         "key": "PC",
@@ -233,6 +252,25 @@ var triCityFixJson2 = {
         "coordinates": [
           -122.780539,
           49.257573
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PC_6",
+      "properties": {
+        "key": "PC",
+        "city": "Port Coquitlam",
+        "type": "Problem",
+        "location": "22 Elgin Ave, Port Coquitlam",
+        "description": "There are few bike racks. Sometimes I ride my bike to places to shop or eat or be Mary.<br>What's the point of a rackless bike district?",
+        "date":"2023-09-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.77810,
+          49.262607
         ]
       }
     },

@@ -74,6 +74,29 @@ function onEachFeatureGeoJson(feature, layer) {
     layer.bindPopup(popupContent);
 }
 
+// add boundaries
+function styleBoundary(feature) {
+    return {
+        fillColor: 'transparent',
+        weight: 0.5,  
+        color: 'red',
+        dashArray: '4',
+        opacity: 0.2
+    };
+}
+var geojsonLayer = L.geoJSON(C_boundary, {
+    style: styleBoundary
+}).addTo(map);
+var geojsonLayer = L.geoJSON(PC_boundary, {
+    style: styleBoundary
+}).addTo(map);
+var geojsonLayer = L.geoJSON(PM_boundary, {
+    style: styleBoundary
+}).addTo(map);
+var geojsonLayer = L.geoJSON(BA_boundary, {
+    style: styleBoundary
+}).addTo(map);
+
 // Committe Top gaps =======================================================
 // data source: https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki
 
