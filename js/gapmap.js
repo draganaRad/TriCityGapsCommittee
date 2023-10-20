@@ -668,6 +668,18 @@ function onEachFeatureTriCityFix(feature, layer) {
             imageSrc += feature.properties.key + "/" + feature.properties.photo;
             popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>";
         }
+        // add second photo if there's one
+        if (feature.properties.photo1) {
+            //console.log(city)
+            popupContent += "<br><br>";
+            if (isEmail === "true"){
+                imageSrc = "img/HUBemail/"
+            }else{
+                imageSrc = "img/triCityFix/"
+            }
+            imageSrc += feature.properties.key + "/" + feature.properties.photo1;
+            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>";
+        }
         // add if there's update
         if (feature.properties.descriptionUpdate) {
           popupContent += "<br>";

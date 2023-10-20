@@ -393,6 +393,46 @@ var triCityFixJson2 = {
                 49.2790451
             ]
         }
+    },
+    {
+      "type": "Feature",
+      "id": "PC_7",
+      "properties": {
+        "key": "PC",
+        "city": "Port Coquitlam",
+        "type": "Like",
+        "location": "bridge over Coquitlam river",
+        "description": "Great trails in POCO!",
+        "date":"2023-09-27"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.776336,
+          49.276651
+        ]
+      }
+    },
+    {
+        "type": "Feature",
+        "id": "PM_7",
+        "properties": {
+            "key": "PM",
+            "city": "Port Moody",
+            "type": "Problem",
+            "location": "Port Moody, Ioco Rd, 221",
+            "description": "There is not enough safe bike parking at Heritage mountain shopping area, when I want to run errands and go to medical appointments. I literally have nowhere to lock my bike or escooter. The only rack at IGA is compromised -> it is not attached to the ground <- screws missing and standing on a brick",
+            "photo": "7.png",
+            "photo1": "7_1.jpeg",
+            "date":"2023-10-11"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -122.827210,
+                49.283402
+            ]
+        }
     }
   ]
 }
