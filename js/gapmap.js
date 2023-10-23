@@ -2,7 +2,7 @@ const settings = [
     { type: "Line", key: 'topGap', zIndex: 1, title: 'HUB Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: showTopGaps},
     //{ type: "Line", key: 'HUBgap', zIndex: 2, title: 'HUB Major Gaps', color: '#CE424C', checked: false},
     { type: "Line", key: 'HUBgapNov2021', zIndex: 3, title: 'HUB Gaps/Hotspots', data: HUBGapsJsonApr2023, color: '#9031AA', icon:'img/purplePinIcon2.png', checked: showHUBgaps},
-    { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonApr2022, icon:'img/circle-exclamation-solid.svg', checked: showCrashes},
+    { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonOct2023, icon:'img/circle-exclamation-solid.svg', checked: showCrashes},
     { type: "Point", key: 'adoptGap', zIndex: 10, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showAdoptGap},
     { type: "Point", key: 'HUBemail', zIndex: 11, title: 'HUB email', data: HUBemail, icon:'img/envelope-solid.svg', checked: showHUBemail},
     { type: "Point", key: 'bikeMaps', zIndex: 11, title: 'BikeMaps.org', data: bikeMapsJsonApr2022, icon:'img/BikeMapsRound.png', checked: showBikeMaps},
