@@ -765,10 +765,10 @@ function addLegend() {
                 // add Community Feedback note and colapse button
                 //legendHtml += '<div class="button quiet col12">Community Feedback:</div>'
                 legendHtml += '<div class="button quiet col12">Community Feedback:' + 
-                '<div id="efchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
-                '<div id="efchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+                '<div id="efchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: block"></div>' +
+                '<div id="efchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: none"></div>' + 
                 '</div>' +
-                '<div id="existfacil" style="display: block">';  //start of Community Feedback div element that can collapse
+                '<div id="existfacil" style="display: none">';  //start of Community Feedback div element that can collapse
             }
             if (setting.key == "veloCanada"){ //todo: this probably shouldn't be hardcoded
                 legendHtml += '</div>' //end of Community Feedback div that can collapse
