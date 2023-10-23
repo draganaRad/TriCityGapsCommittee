@@ -195,3 +195,14 @@ html {
     background-color: rgba(0, 0, 0, .5);
     /* background-color: rgba(214, 11, 129, 1); */
 }
+
+/* marker clusters */
+.marker-crashcluster {
+    background-color: rgba(1, 10, 18, 0.343);
+}
+.marker-crashcluster div {
+    background-color: rgba(1, 10, 15, 0.901);
+}
+.marker-cluster div {
+    color: white;
+}

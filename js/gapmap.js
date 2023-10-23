@@ -97,6 +97,22 @@ var geojsonLayer = L.geoJSON(BA_boundary, {
     style: styleBoundary
 }).addTo(map);
 
+// clusters --------
+function createClusterGroup(clusterStyle) {
+    var newClusterGroup = L.markerClusterGroup({
+      maxClusterRadius: 60,
+      disableClusteringAtZoom: 17,
+      iconCreateFunction: function (cluster) {
+        var childCount = cluster.getChildCount();
+        var styleClassName = 'marker-cluster marker-' + clusterStyle
+        return new L.DivIcon({ html: '<div><span>' + childCount + '</span></div>', className: styleClassName, iconSize: new L.Point(40, 40) });
+      },
+      //Disable all of the defaults:
+      spiderfyOnMaxZoom: false, showCoverageOnHover: false, zoomToBoundsOnClick: false
+    });
+    return newClusterGroup
+  }
+
 // Committe Top gaps =======================================================
 // data source: https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki
 
@@ -318,11 +334,16 @@ var icbcLayer = new L.geoJSON(settings[2].data, {
         return L.marker(latlng, {
             icon: icbcIcon
         });
+    },
+    onAdd: function (map) {
+        map.fire('data:loaded');
     }
 });
-//adoptLayer.addTo(map);
+var icbcCluster = createClusterGroup('crashcluster')
+icbcCluster.addLayer(icbcLayer);
+
 if (settings[2].checked){
-    layerGroup.addLayer(icbcLayer);
+   layerGroup.addLayer(icbcCluster)
 }
 
 // ******** Existing Facilities Category: *************************************************
@@ -882,7 +903,8 @@ function toggleLayer(checkbox) {
         targetLayer = HUBallGapLayer
     }
     if (checkbox.id == "ICBCcrashes"){
-        targetLayer = icbcLayer
+        //targetLayer = icbcLayer
+        targetLayer = icbcCluster
     }
     if (checkbox.id == "designLowStress"){
         targetLayer = lowStressLayer
