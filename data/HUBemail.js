@@ -181,7 +181,7 @@ var HUBemail = {
         "type": "Problem",
         "location": "",
         "description": "A new traffic island at Westwood and Heffley Cres is a new barrier for cyclists.",
-        "photo": "",
+        "photo": "7.jpeg",
         "date": "2023-09-08"
       },
       "geometry": {
