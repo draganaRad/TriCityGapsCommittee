@@ -83,26 +83,6 @@ var triCityFixJson2 = {
     },
     {
       "type": "Feature",
-      "id": "C_2",
-      "properties": {
-        "key": "C",
-        "city": "Coquitlam",
-        "type": "Suggestion",
-        "location": "Coquitlam, Mary Hill By-pass",
-        "description": "Can’t ride trail from Shaughnessy and Mary hill bypass, to United blvd because plants so overground. Please trim. New asphalt also requested as Route almost unrideable due to damage from tree roots.",
-        "photo": "",
-        "date": "2021-06-15"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -122.796032,
-          49.227195
-        ]
-      }
-    },
-    {
-      "type": "Feature",
       "id": "C_3",
       "properties": {
         "key": "C",
@@ -433,6 +413,65 @@ var triCityFixJson2 = {
                 49.283402
             ]
         }
-    }
+    },
+    {
+        "type": "Feature",
+        "id": "PM_8",
+        "properties": {
+            "key": "PM",
+            "city": "Port Moody",
+            "type": "Suggestion",
+            "location": "2771 Clarke St, Port Moody",
+            "description": "It would be nice if the bike lane accommodated southbound travel Moody St to westbound on clark",
+            "photo": "",
+            "date":"2023-11-05"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [
+                -122.850208,
+                49.277752
+            ]
+        }
+    },
+    {
+      "type": "Feature",
+      "id": "PC_8",
+      "properties": {
+        "key": "PC",
+        "city": "Port Coquitlam",
+        "type": "Problem",
+        "location": "Port Coquitlam, Argue St,",
+        "description": "Asphalt bike path on river side of mary hill bypass (shaughnessy to port mann bridge) is totally impassable due to tree roots breaking asphalt. After asphalt, must ride on dirt trail that is muddy for days after a rain. So bike riders are forced to ride in Mary Hill Bypass with highway traffic and a narrow shoulder. Very unsafe",
+        "date":"2023-12-31"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.7956133,
+          49.227262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "PC_9",
+      "properties": {
+        "key": "PC",
+        "city": "Port Coquitlam",
+        "type": "Suggestion",
+        "location": "Port Coquitlam, Mary Hill By-pass",
+        "description": "Can’t ride trail from Shaughnessy and Mary hill bypass, to United blvd because plants so overground. Please trim. New asphalt also requested as Route almost unrideable due to damage from tree roots.",
+        "photo": "",
+        "date": "2021-06-15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.796032,
+          49.227195
+        ]
+      }
+    },
   ]
 }
