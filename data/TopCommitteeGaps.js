@@ -6,7 +6,7 @@ var topCommitteeJson = {
       "id": "1",
       "properties": {
         "description": "Let's extend the Central Valley Greenway all the way to the Port Mann Bridge. We are seeking a multi-use path or protected bike lane along the north side of United Boulevard connecting to the existing multi-use paths at Fawcett Road to the east and the King Edward overpass to the west. <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=United_Boulevard,_King_Edward_to_Fawcett\" target=\"_blank\">United Boulevard, King Edward to Fawcett</a>",
-        "location": "Braid Station to Port Mann Bridge, Coquitlam."
+        "location": "Braid Station to Port Mann Bridge (Coquitlam)."
       },
       "geometry": {
         "type": "LineString",
@@ -18,7 +18,7 @@ var topCommitteeJson = {
       "id": "2",
       "properties": {
         "description": "This stretch is well served for confident grownups, but none of us is going to ride there with our kids anytime soon. It connects two Skytrain stations, many schools, two civic libraries, two city halls, multiple recreation complexes, multiple parks. It is also an existing gap on the TCT/ Great Trail. Our ask is for a protected bike lane on both sides.",
-        "location": "Guildford Way, Coquitlam City Hall to Port Moody City Hall."
+        "location": "Guildford Way, Coquitlam City Hall to Port Moody City Hall (Coquitlam/Port Moody)."
       },
       "geometry": {
         "type": "LineString",
@@ -123,7 +123,7 @@ var topCommitteeJson = {
       "id": "3",
       "properties": {
         "description": "A route is coming between the dike trail along Kingsway into downtown PoCo, and along Lougheed from Westwood to Shaughnessy, but there's still a few gaps left to fill in! <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=Lougheed_Highway,_Port_Coquitlam\" target=\"_blank\">Lougheed Highway, Port Coquitlam</a>",
-        "location": "Pitt River Bridge to Coquitlam Center/ Lincoln Station, PoCo/ Coquitlam."
+        "location": "Pitt River Bridge to Coquitlam Center/ Lincoln Station (Port Coquitlam/Coquitlam)."
       },
       "geometry": {
         "type": "LineString",
@@ -144,7 +144,7 @@ var topCommitteeJson = {
       "id": "4",
       "properties": {
         "description": "Let's connect the Barnet Highway to Rocky Point Park and Moody Central Station! <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=Port_Moody_Commuter_Route\" target=\"_blank\">Port Moody Commuter Route</a>",
-        "location": "Clarke Road, Port Moody."
+        "location": "Clarke Road (Port Moody)."
       },
       "geometry": {
         "type": "LineString",
@@ -159,22 +159,22 @@ var topCommitteeJson = {
     },
     {
       "type": "Feature",
-      "id": "6",
+      "id": "9",
       "properties": {
         "type": "line",
-        "description": " Colony Farm Road at Lougheed Highway to the Port Mann Bridge, Coquitlam. This important transportation route would link the existing bike route along and beside Lougheed Highway from Coquitlam Central to Surrey. Let's create a great bike connection here! We're pushing for a connection from the end of the Sumiqwuelu pathway to the Port Mann Bridge. <a href=\"https://wiki.bikehub.ca/sites/committees/images/1/1f/Watermain_route_for_public.pdf\" target=\"_blank\">Watermain_route_for_public.pdf</a> | <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=Lougheed_Highway_(near_Riverview)\" target=\"_blank\">Lougheed Highway (near Riverview)</a> | <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=Lougheed_Highway_and_Pitt_River_Road\" target=\"_blank\">Lougheed Highway and Pitt River Road</a> | <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=United_Blvd,Northern_section\" target=\"_blank\">United Blvd,Northern section</a>",
-        "location": "Colony Farm Road to Port Mann Bridge, Coquitlam."
+        "description": " This gap would allow for a connection to the Port Mann Bridge while also providing a safe route to the southwest Coquitlam plateau. It would connect nicely with existing infrastructure in Surrey as well as the new Sumiqwuelu pathway to Coquitlam Centre.",
+        "location": "Mariner Way at Austin Avenue south to Port Mann Bridge (Coquitlam)."
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.81386095496978,
-            49.2402020132983
+            -122.81581350151197,
+            49.24910881361083
           ],
           [
-            -122.81527608175918,
-            49.224012602292106
+            -122.81539823518166,
+            49.22414569253874
           ]
         ]
       }
@@ -184,7 +184,7 @@ var topCommitteeJson = {
       "id": "5",
       "properties": {
         "description": "Let's create a connection to Sasamat Lake. Regional Greenway Plan 2050 has also identified the Sasamat Greenway gap. Our ask is for a multi-use path with routing to be determined. <a href=\"https://wiki.bikehub.ca/sites/committees/images/3/36/Sasamat_Greenway_Map.jpg\" target=\"_blank\">Sasamat_Greenway_Map.jpg</a>",
-        "location": "Alderside to Sasamat Lake/Belcarra Park."
+        "location": "Alderside to Sasamat Lake and təmtəmíxʷtən/Belcarra Regional Park."
       },
       "geometry": {
         "type": "LineString",
@@ -398,7 +398,7 @@ var topCommitteeJson = {
       "id": "7",
       "properties": {
         "description": "We are seeking a protected route from Argue Street to United Boulevard, connecting to Maquabeak Park as well as the Port Mann Bridge and United Boulevard multi-use paths. This is crucial for connecting the Traboulay Trail to the Port Mann Bridge. <a href=\"https://wiki.bikehub.ca/sites/committees/index.php?title=Coquitlam_River_Bridge\" target=\"_blank\">Coquitlam River Bridge</a>",
-        "location": "Mary Hill Bypass from Shaughnessy to Port Mann Bridge ",
+        "location": "Mary Hill Bypass from Shaughnessy to Port Mann Bridge (Coquitlam/Port Coquitlam).",
       },
       "geometry": {
         "type": "LineString",
@@ -600,7 +600,7 @@ var topCommitteeJson = {
       "type": "Feature",
       "id": "8",
       "properties": {
-        "location": "Regan Avenue, from Mundy Park to Burquitlam Station"
+        "location": "Regan Avenue, from Mundy Park to Burquitlam Station (Coquitlam)."
       },
       "geometry": {
         "type": "LineString",
@@ -609,20 +609,318 @@ var topCommitteeJson = {
     },
     {
       "type": "Feature",
-      "id": "9",
+      "id": "6",
       "properties": {
-        "location": "Mariner Way at Austin Avenue south to Lougheed Highway at Colony Farm Road"
+        "description": " This route will allow for a connection between the King Albert Greenway and the Austin Heights area while also connecting to Maillardville. A quick trip over the King Edward Overpass will allow users to connect into New Westminster using AAA Infrastructure.",
+        "location": "Nelson Street from King Albert Ave to Lougheed Highway (Coquitlam)."
       },
       "geometry": {
         "type": "LineString",
-        "coordinates": [[-122.815735, 49.249072, 0], [-122.8156457, 49.245719, 0], [-122.8156886, 49.243954, 0], [-122.8157745, 49.2425391, 0], [-122.8158925, 49.2422029, 0], [-122.8161071, 49.2419157, 0], [-122.8163967, 49.2416705, 0], [-122.8171048, 49.2413904, 0], [-122.8182636, 49.2410541, 0], [-122.8190682, 49.240872, 0], [-122.8194652, 49.2406829, 0], [-122.8230701, 49.2390438, 0], [-122.8214715, 49.2376007, 0], [-122.8205806, 49.2368462, 0], [-122.8138013, 49.2401309, 0]]
+        "coordinates": [
+          [
+            -122.8656033,
+            49.2514726
+          ],
+          [
+            -122.8656023,
+            49.2514016
+          ],
+          [
+            -122.8655967,
+            49.2510335
+          ],
+          [
+            -122.865596,
+            49.2506511
+          ],
+          [
+            -122.8655963,
+            49.2505828
+          ],
+          [
+            -122.8655954,
+            49.2505202
+          ],
+          [
+            -122.8655923,
+            49.2501282
+          ],
+          [
+            -122.8655889,
+            49.24978
+          ],
+          [
+            -122.8655863,
+            49.2497351
+          ],
+          [
+            -122.8655862,
+            49.2496696
+          ],
+          [
+            -122.8655867,
+            49.2496139
+          ],
+          [
+            -122.86559,
+            49.2491057
+          ],
+          [
+            -122.8655899,
+            49.249095
+          ],
+          [
+            -122.8655891,
+            49.2490351
+          ],
+          [
+            -122.8655906,
+            49.2489564
+          ],
+          [
+            -122.8655933,
+            49.2488936
+          ],
+          [
+            -122.8655935,
+            49.2488606
+          ],
+          [
+            -122.8655921,
+            49.248793
+          ],
+          [
+            -122.8655771,
+            49.2486974
+          ],
+          [
+            -122.8655549,
+            49.2486429
+          ],
+          [
+            -122.8654984,
+            49.2485033
+          ],
+          [
+            -122.8654481,
+            49.2484069
+          ],
+          [
+            -122.8654322,
+            49.2483799
+          ],
+          [
+            -122.8653867,
+            49.248289
+          ],
+          [
+            -122.8653253,
+            49.2481524
+          ],
+          [
+            -122.8652871,
+            49.2480473
+          ],
+          [
+            -122.8652176,
+            49.2478717
+          ],
+          [
+            -122.8652004,
+            49.2478283
+          ],
+          [
+            -122.86514,
+            49.2475954
+          ],
+          [
+            -122.8651289,
+            49.2471507
+          ],
+          [
+            -122.8651249,
+            49.2466875
+          ],
+          [
+            -122.865124,
+            49.2462973
+          ],
+          [
+            -122.865124,
+            49.2462427
+          ],
+          [
+            -122.8651238,
+            49.2461983
+          ],
+          [
+            -122.8651229,
+            49.245803
+          ],
+          [
+            -122.8651177,
+            49.2453946
+          ],
+          [
+            -122.8651172,
+            49.2453308
+          ],
+          [
+            -122.8651164,
+            49.2452858
+          ],
+          [
+            -122.865111,
+            49.2448774
+          ],
+          [
+            -122.865106,
+            49.2445175
+          ],
+          [
+            -122.8651059,
+            49.2444425
+          ],
+          [
+            -122.8651045,
+            49.2443631
+          ],
+          [
+            -122.8651026,
+            49.2439821
+          ],
+          [
+            -122.8651031,
+            49.2436488
+          ],
+          [
+            -122.8651034,
+            49.2435504
+          ],
+          [
+            -122.865097,
+            49.243085
+          ],
+          [
+            -122.865092,
+            49.2428186
+          ],
+          [
+            -122.8650942,
+            49.2426295
+          ],
+          [
+            -122.8650785,
+            49.2421698
+          ],
+          [
+            -122.8650705,
+            49.2418031
+          ],
+          [
+            -122.8650695,
+            49.2417288
+          ],
+          [
+            -122.8650637,
+            49.2412733
+          ],
+          [
+            -122.8650712,
+            49.2409107
+          ],
+          [
+            -122.8650731,
+            49.2408307
+          ],
+          [
+            -122.8650711,
+            49.2407646
+          ],
+          [
+            -122.8650609,
+            49.240376
+          ],
+          [
+            -122.8650556,
+            49.2398291
+          ],
+          [
+            -122.8650554,
+            49.2398051
+          ],
+          [
+            -122.865055,
+            49.2397473
+          ],
+          [
+            -122.8650521,
+            49.2396881
+          ],
+          [
+            -122.8650508,
+            49.2396629
+          ],
+          [
+            -122.8650585,
+            49.239299
+          ],
+          [
+            -122.865037,
+            49.2388349
+          ],
+          [
+            -122.8650616,
+            49.2383935
+          ],
+          [
+            -122.8650634,
+            49.2382787
+          ],
+          [
+            -122.865063,
+            49.2382566
+          ],
+          [
+            -122.8650632,
+            49.2381646
+          ],
+          [
+            -122.86506216830472,
+            49.2381658433641
+          ],
+          [
+            -122.86487579196185,
+            49.23820436773315
+          ],
+          [
+            -122.86487650752028,
+            49.23820415425442
+          ],
+          [
+            -122.86463439478928,
+            49.23788228620893
+          ],
+          [
+            -122.86460236542355,
+            49.23776662170903
+          ],
+          [
+            -122.8645828534722,
+            49.23593230190659
+          ],
+          [
+            -122.86453776330194,
+            49.23591812639927
+          ]
+        ]
       }
     },
     {
       "type": "Feature",
       "id": "10",
       "properties": {
-        "location": "Moray Street from St. Johns Street to Como Lake Avenue, by either Thermal Drive or Baker Drive"
+        "location": "Moray Street from St. Johns Street to Como Lake Avenue, by either Thermal Drive or Baker Drive (Port Moody/Coquitlam)."
       },
       "geometry": {
         "type": "LineString",
