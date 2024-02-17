@@ -10,9 +10,11 @@ const settings = [
     { type: "Point", key: 'veloCanada', zIndex: 13, title: 'Velo Pedal Poll', data: veloData2021, icon:'img/VeloBikesRound2.png', checked: showVeloBikes},
     { type: "Line", key: 'designLowStress', zIndex: 5, title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExistingLowStress},
     { type: "Line", key: 'designHighStress', zIndex: 6, title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExistingHighStress},
+    { type: "Line", key: 'upcoming', zIndex: 6, title: 'In Progress', data: HUBupcomingProjects, color: '#7D75B3', checked: showUpcoming},
     { type: "Point", key: 'trainParkade', zIndex: 7, title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showStations},
     { type: "Point", key: 'schools', zIndex: 8, title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showShools},
-    { type: "Point", key: 'food', zIndex: 9, title: 'Grocery', data: foodJson, icon:'img/cart-shopping-solid.svg', checked: showFood}]
+    { type: "Point", key: 'food', zIndex: 9, title: 'Grocery', data: foodJson, icon:'img/cart-shopping-solid.svg', checked: showFood}];
+// note: order in settings is the order in legend
 // note: zIndex currently not used. Leaving for future improvments.
 
 // Create variable to hold map element, give initial settings to map
@@ -116,14 +118,16 @@ function createClusterGroup(clusterStyle) {
 // Committe Top gaps =======================================================
 // data source: https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki
 
+const topGapDict = settings.find(dict => dict.key === "topGap");
+
 // style for lines
 var topGapStyle = {
-    "color": settings[0].color, // darkOrange_color ("Paired")
+    "color": topGapDict.color, // darkOrange_color ("Paired")
     "weight": lineWeight,
     "opacity": lineOpacity
 };
 var topGapStyleHighlight = {
-    "color": settings[0].color,
+    "color": topGapDict.color,
     "weight": lineWeight+1,
     "opacity": lineOpacityHighlight
 };
@@ -139,7 +143,7 @@ function styleTop(feature) {
     return {
         weight: weight,
         opacity: opacity,
-        color: settings[0].color
+        color: topGapDict.color
     };
 }
 
@@ -186,11 +190,11 @@ function onEachFeatureTop(feature, layer) {
     });
 }
 
-var topGapLayer = new L.geoJSON(settings[0].data, {
+var topGapLayer = new L.geoJSON(topGapDict.data, {
     style: styleTop,
     onEachFeature: onEachFeatureTop,
 });
-if (settings[0].checked){
+if (topGapDict.checked){
     layerGroup.addLayer(topGapLayer);
 }
 
@@ -252,13 +256,15 @@ if (settings[0].checked){
 // HUB gaps =========================================
 // data source: https://www.google.com/maps/d/u/0/viewer?mid=1wlQVVmwJBDBVMZt2S5-5Ts5z9unilKHJ&ll=49.27104359118351%2C-122.81123126786682&z=14
 // to process - HUBgapMap.R
+const HUBallGapDict = settings.find(dict => dict.key === "HUBgapNov2021");
+
 var HUBallGapStyle = {
-    "color": settings[1].color, // 'darkpurple'
+    "color": HUBallGapDict.color, // 'darkpurple'
     "weight": lineWeight,
     "opacity": lineOpacity
 };
 var HUBallGapStyleHighlight = {
-    "color": settings[1].color, // 'darkpurple'
+    "color": HUBallGapDict.color, // 'darkpurple'
     "weight": lineWeight+1,
     "opacity": lineOpacityHighlight
 };
@@ -299,13 +305,13 @@ function onEachFeatureHUBall(feature, layer) {
 }
 
 var HUBallIcon = L.icon({
-    iconUrl: settings[1].icon,
+    iconUrl: HUBallGapDict.icon,
     iconSize: [22, 31],
     iconAnchor: [11, 30],
     popupAnchor:  [0, -20]
 });
 
-var HUBallGapLayer = new L.geoJSON(settings[1].data, {
+var HUBallGapLayer = new L.geoJSON(HUBallGapDict.data, {
     style: HUBallGapStyle,
     onEachFeature: onEachFeatureHUBall,
     pointToLayer: function (feature, latlng) {
@@ -314,21 +320,23 @@ var HUBallGapLayer = new L.geoJSON(settings[1].data, {
         });
     }
 });
-if (settings[1].checked){
+if (HUBallGapDict.checked){
     layerGroup.addLayer(HUBallGapLayer);
 }
 
 // ICBC cyclists crashes =========================================
 // data source: https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes
 // to process: TriCityHotspots.R
+const icbcDict = settings.find(dict => dict.key === "ICBCcrashes");
+
 var icbcIcon = L.icon({
-    iconUrl: settings[2].icon,
+    iconUrl: icbcDict.icon,
     iconSize: [20, 20], // size of the icon
     // iconAnchor: [11, 30],
     // popupAnchor:  [0, -20]
 });
 
-var icbcLayer = new L.geoJSON(settings[2].data, {
+var icbcLayer = new L.geoJSON(icbcDict.data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -342,20 +350,22 @@ var icbcLayer = new L.geoJSON(settings[2].data, {
 var icbcCluster = createClusterGroup('crashcluster')
 icbcCluster.addLayer(icbcLayer);
 
-if (settings[2].checked){
+if (icbcDict.checked){
    layerGroup.addLayer(icbcCluster)
 }
 
 // ******** Existing Facilities Category: *************************************************
 // LOW TRAFFIC STRESS BIKE DESIGNATED =========================================
 // data source: OSM and Level of Traffic Stres BikeOttawa algorithm. in Notes "How to create LTS map:"
+const designLowStressDict = settings.find(dict => dict.key === "designLowStress");
+
 var lowStressStyle = {
-    "color": settings[8].color, // light blue
+    "color": designLowStressDict.color, // light blue
     "weight": lineWeight - 1,  // had to adjust opacity and then line width becuase data seems messy
     "opacity": lineOpacity + 0.2
 };
 var lowStressHighlight = {
-    "color": settings[8].color,
+    "color": designLowStressDict.color,
     "weight": lineWeight,
     "opacity": lineOpacityHighlight + 0.2
 };
@@ -408,23 +418,25 @@ function onEachFeatureLowStress(feature, layer) {
     });
 }
 
-var lowStressLayer = new L.geoJSON(settings[8].data, {
+var lowStressLayer = new L.geoJSON(designLowStressDict.data, {
     style: lowStressStyle,
     onEachFeature: onEachFeatureLowStress,
 })
-if (settings[8].checked){
+if (designLowStressDict.checked){
     layerGroup.addLayer(lowStressLayer);
 }
 
 // HIGH TRAFFIC STRESS BIKE DESIGNATED =========================================
 // data source: OSM and Level of Traffic Stres BikeOttawa algorithm. in Notes "How to create LTS map:"
+const designHighStressDict = settings.find(dict => dict.key === "designHighStress");
+
 var highStressStyle = {
-    "color": settings[9].color, // brown
+    "color": designHighStressDict.color, // brown
     "weight": lineWeight - 1,
     "opacity": lineOpacity + 0.2
 };
 var highStressHighlight = {
-    "color": settings[9].color,
+    "color": designHighStressDict.color,
     "weight": lineWeight,
     "opacity": lineOpacityHighlight + 0.2
 };
@@ -450,16 +462,77 @@ function onEachFeatureHighStress(feature, layer) {
     });
 }
 
-var highStressLayer = new L.geoJSON(settings[9].data, {
+var highStressLayer = new L.geoJSON(designHighStressDict.data, {
     style: highStressStyle,
     onEachFeature: onEachFeatureHighStress,
 })
-if (settings[9].checked){
+if (designHighStressDict.checked){
     layerGroup.addLayer(highStressLayer);
+}
+
+// UPCOMING PROJECTS  =========================================
+// Note: had to manually add years after importing data from here (Colin):
+// https://umap.openstreetmap.fr/en/map/hub-cycling-upcoming-projects_1020637#12/49.2782/-122.7726
+const upcomingDict = settings.find(dict => dict.key === "upcoming");
+
+var upcomingStyle = {
+    "color": upcomingDict.color,
+    "weight": lineWeight - 1,
+    "opacity": lineOpacity + 0.2
+};
+var upcomingHighlight = {
+    "color": upcomingDict.color,
+    "weight": lineWeight,
+    "opacity": lineOpacityHighlight + 0.2
+};
+
+function highlightFeatureUpcoming(e) {
+    var layer = e.target;
+    layer.setStyle(upcomingHighlight);
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+function resetHighlightUpcoming(e) {
+    upcomingLayer.resetStyle(e.target);
+}
+
+function onEachFeatureUpcoming(feature, layer) {
+    var popupContent = ""
+    if (feature.properties) {
+        if (feature.properties.name) {
+            popupContent += "<b>Name: </b>";
+            popupContent += feature.properties.name;
+        }
+        if (feature.properties.description) {
+            popupContent += "<br><b>Description: </b>";
+            popupContent += feature.properties.description;
+        }
+        if (feature.properties.year) {
+            popupContent += "<br><b>Year: </b>";
+            popupContent += feature.properties.year;
+        }
+    }
+    layer.bindPopup(popupContent);
+
+    layer.on({
+        mouseover: highlightFeatureUpcoming,
+        mouseout: resetHighlightUpcoming,
+    });
+}
+
+var upcomingLayer = new L.geoJSON(upcomingDict.data, {
+    style: upcomingStyle,
+    onEachFeature: onEachFeatureUpcoming,
+})
+if (upcomingDict.checked){
+    layerGroup.addLayer(upcomingLayer);
 }
 
 // TRAIN STATIONS AND PARKADES =====================================================
 // data source: OSM - in Notes "Overpass API" 
+const trainParkadeDict = settings.find(dict => dict.key === "trainParkade");
+
 function onEachFeatureTrain(feature, layer) {
     var popupContent = ""
     if (feature.properties) {
@@ -499,15 +572,15 @@ function onEachFeatureParkade(feature, layer) {
 }
 
 var trainIcon = L.icon({
-    iconUrl: settings[10].icon,
+    iconUrl: trainParkadeDict.icon,
     iconSize: [22, 22]
 });
 var parkadeIcon = L.icon({
-    iconUrl: settings[10].icon1,
+    iconUrl: trainParkadeDict.icon1,
     iconSize: [22, 22]
 });
 
-var trainLayer = new L.geoJSON(settings[10].data, {
+var trainLayer = new L.geoJSON(trainParkadeDict.data, {
     onEachFeature: onEachFeatureTrain,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -515,7 +588,7 @@ var trainLayer = new L.geoJSON(settings[10].data, {
         });
     }
 });
-var parkadeLayer = new L.geoJSON(settings[10].data1, {
+var parkadeLayer = new L.geoJSON(trainParkadeDict.data1, {
     onEachFeature: onEachFeatureParkade,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -523,7 +596,7 @@ var parkadeLayer = new L.geoJSON(settings[10].data1, {
         });
     }
 });
-if (settings[10].checked){
+if (trainParkadeDict.checked){
     layerGroup.addLayer(trainLayer);
     layerGroup.addLayer(parkadeLayer);
 }
@@ -531,12 +604,14 @@ if (settings[10].checked){
 // SCHOOLS =========================================================================
 // data source: https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=
 // (R script to convert from kml to geojson - HUBgapMap.R)
+const schoolsDict = settings.find(dict => dict.key === "schools");
+
 var schoolIcon = L.icon({
-    iconUrl: settings[11].icon,
+    iconUrl: schoolsDict.icon,
     iconSize: [22, 22], // size of the icon
 });
 
-var schoolLayer = new L.geoJSON(settings[11].data, {
+var schoolLayer = new L.geoJSON(schoolsDict.data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -544,7 +619,7 @@ var schoolLayer = new L.geoJSON(settings[11].data, {
         });
     }
 });
-if (settings[11].checked){
+if (schoolsDict.checked){
     layerGroup.addLayer(schoolLayer);
 }
 
@@ -552,12 +627,14 @@ if (settings[11].checked){
 // data source: TriCities Food Asset Map from the report produced by a consultant hired by city of Port Moody 
 // https://www.google.com/maps/d/u/0/viewer?mid=1NY6gbgDuGzDOrFBa-RNHFzVd4PkRbHM0&ll=49.273934982609674%2C-122.7769743&z=13
 // (R script to convert from kml to geojson - HUBgapMap.R)
+const foodDict = settings.find(dict => dict.key === "food");
+
 var foodIcon = L.icon({
-    iconUrl: settings[12].icon,
+    iconUrl: foodDict.icon,
     iconSize: [22, 22], // size of the icon
 });
 
-var foodLayer = new L.geoJSON(settings[12].data, {
+var foodLayer = new L.geoJSON(foodDict.data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -565,7 +642,7 @@ var foodLayer = new L.geoJSON(settings[12].data, {
         });
     }
 });
-if (settings[12].checked){
+if (foodDict.checked){
     layerGroup.addLayer(foodLayer);
 }
 
@@ -573,6 +650,8 @@ if (settings[12].checked){
 // HUB Adopt-a-gap campain markers =========================================
 // data source: https://bikehub.ca/get-involved/ungapthemap/adopt-gap
 // to process - HUBgapMap.R
+const adoptDict = settings.find(dict => dict.key === "adoptGap");
+
 function onEachFeatureAdopt(feature, layer) {
     var popupContent = ""
     if (feature.properties) {
@@ -589,11 +668,11 @@ function onEachFeatureAdopt(feature, layer) {
 }
 
 var adoptIcon = L.icon({
-    iconUrl: settings[3].icon,
+    iconUrl: adoptDict.icon,
     iconSize: [22, 22]
 });
 
-var adoptLayer = new L.geoJSON(settings[3].data, {
+var adoptLayer = new L.geoJSON(adoptDict.data, {
     onEachFeature: onEachFeatureAdopt,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -601,18 +680,20 @@ var adoptLayer = new L.geoJSON(settings[3].data, {
         });
     }
 });
-if (settings[3].checked){
+if (adoptDict.checked){
     layerGroup.addLayer(adoptLayer);
 }
 
 // HUB email =========================================
 // data source: emails received from Colin F.
+const HUBemailDict = settings.find(dict => dict.key === "HUBemail");
+
 var HUBemailIcon = L.icon({
-    iconUrl: settings[4].icon,
+    iconUrl: HUBemailDict.icon,
     iconSize: [22, 22]
 });
 
-var HUBemailLayer = new L.geoJSON(settings[4].data, {
+var HUBemailLayer = new L.geoJSON(HUBemailDict.data, {
     onEachFeature: onEachFeatureTriCityFix,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -620,18 +701,20 @@ var HUBemailLayer = new L.geoJSON(settings[4].data, {
         });
     }
 });
-if (settings[4].checked){
+if (HUBemailDict.checked){
     layerGroup.addLayer(HUBemailLayer);
 }
 
 // BIKEMAPS.ORG =========================================
 // data source: received by email on Aug 7, 2021
+const bikeMapsDict = settings.find(dict => dict.key === "bikeMaps");
+
 var bikeMapsIcon = L.icon({
-    iconUrl: settings[5].icon,
+    iconUrl: bikeMapsDict.icon,
     iconSize: [22, 22]
 });
 
-var bikeMapLayer = new L.geoJSON(settings[5].data, {
+var bikeMapLayer = new L.geoJSON(bikeMapsDict.data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -639,13 +722,15 @@ var bikeMapLayer = new L.geoJSON(settings[5].data, {
         });
     }
 });
-if (settings[5].checked){
+if (bikeMapsDict.checked){
     layerGroup.addLayer(bikeMapLayer);
 }
 
 // TriCityFix / WhatWeHeard map 
 // data source: feedback received in TriCityFix app or tricitiesfix@gmail.com ====================
 // todo: need to create one files for mulitple for each city. problem: "id" is not unique. also, how to keep track of photos? maybe just one geojson file?
+const triCityFixDict = settings.find(dict => dict.key === "triCityFix");
+
 function onEachFeatureTriCityFix(feature, layer) {
     const isEmail = feature.properties.email;  //"true/false"
     var popupContent = ""
@@ -722,11 +807,11 @@ function onEachFeatureTriCityFix(feature, layer) {
 }
 
 var triCityFixIcon = L.icon({
-    iconUrl: settings[6].icon,
+    iconUrl: triCityFixDict.icon,
     iconSize: [22, 22]
 });
 
-var triCityFixLayer = new L.geoJSON(settings[6].data, {
+var triCityFixLayer = new L.geoJSON(triCityFixDict.data, {
     onEachFeature: onEachFeatureTriCityFix,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -734,18 +819,20 @@ var triCityFixLayer = new L.geoJSON(settings[6].data, {
         });
     }
 });
-if (settings[6].checked){
+if (triCityFixDict.checked){
     layerGroup.addLayer(triCityFixLayer);
 }
 
 // VeloCanadaBikes Pedal Poll
 // data source: https://www.velocanadabikes.org/pedalpoll/pedal-poll-sondo-velo-2021-results/ ====================
+const veloCanadaDict = settings.find(dict => dict.key === "veloCanada");
+
 var pedalPollIcon = L.icon({
-    iconUrl: settings[7].icon,
+    iconUrl: veloCanadaDict.icon,
     iconSize: [22, 22]
 });
 
-var pedalPollLayer = new L.geoJSON(settings[7].data, {
+var pedalPollLayer = new L.geoJSON(veloCanadaDict.data, {
     onEachFeature: onEachFeatureGeoJson,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
@@ -753,7 +840,7 @@ var pedalPollLayer = new L.geoJSON(settings[7].data, {
         });
     }
 });
-if (settings[7].checked){
+if (veloCanadaDict.checked){
     layerGroup.addLayer(pedalPollLayer);
 }
 
@@ -911,6 +998,9 @@ function toggleLayer(checkbox) {
     }
     if (checkbox.id == "designHighStress"){
         targetLayer = highStressLayer
+    }
+    if (checkbox.id == "upcoming"){
+        targetLayer = upcomingLayer
     }
     if (checkbox.id == "schools"){
         targetLayer = schoolLayer
