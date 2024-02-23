@@ -1,7 +1,8 @@
 const settings = [
     { type: "Line", key: 'topGap', zIndex: 1, title: 'HUB Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: showTopGaps},
     //{ type: "Line", key: 'HUBgap', zIndex: 2, title: 'HUB Major Gaps', color: '#CE424C', checked: false},
-    { type: "Line", key: 'HUBgapNov2021', zIndex: 3, title: 'HUB Gaps/Hotspots', data: HUBGapsJsonApr2023, color: '#9031AA', icon:'img/purplePinIcon2.png', checked: showHUBgaps},
+    { type: "Line", key: 'HUBgapLine', zIndex: 3, title: 'HUB Gaps', data: HUBGapsLinesApr2023, color: '#9031AA', checked: showHUBgaps},
+    { type: "Point", key: 'HUBgapPoint', zIndex: 3, title: 'HUB Hotspots', data: HUBGapsPointsApr2023, icon:'img/purplePinIcon2.png', checked: showHUBgaps},
     { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonOct2023, icon:'img/circle-exclamation-solid.svg', checked: showCrashes},
     { type: "Point", key: 'adoptGap', zIndex: 10, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showAdoptGap},
     { type: "Point", key: 'HUBemail', zIndex: 11, title: 'HUB email', data: HUBemail, icon:'img/envelope-solid.svg', checked: showHUBemail},
@@ -10,7 +11,7 @@ const settings = [
     { type: "Point", key: 'veloCanada', zIndex: 13, title: 'Velo Pedal Poll', data: veloData2021, icon:'img/VeloBikesRound2.png', checked: showVeloBikes},
     { type: "Line", key: 'designLowStress', zIndex: 5, title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExistingLowStress},
     { type: "Line", key: 'designHighStress', zIndex: 6, title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExistingHighStress},
-    { type: "Line", key: 'upcoming', zIndex: 6, title: 'In Progress', data: HUBupcomingProjects, color: '#7D75B3', checked: showUpcoming},
+    { type: "Line", key: 'upcoming', zIndex: 6, title: 'In Progress', data: HUBupcomingProjects, color: '#6666FF', checked: showUpcoming},
     { type: "Point", key: 'trainParkade', zIndex: 7, title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showStations},
     { type: "Point", key: 'schools', zIndex: 8, title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showShools},
     { type: "Point", key: 'food', zIndex: 9, title: 'Grocery', data: foodJson, icon:'img/cart-shopping-solid.svg', checked: showFood}];
@@ -256,15 +257,15 @@ if (topGapDict.checked){
 // HUB gaps =========================================
 // data source: https://www.google.com/maps/d/u/0/viewer?mid=1wlQVVmwJBDBVMZt2S5-5Ts5z9unilKHJ&ll=49.27104359118351%2C-122.81123126786682&z=14
 // to process - HUBgapMap.R
-const HUBallGapDict = settings.find(dict => dict.key === "HUBgapNov2021");
+const HUBallGapDict = settings.find(dict => dict.key === "HUBgapLine");
 
 var HUBallGapStyle = {
-    "color": HUBallGapDict.color, // 'darkpurple'
+    "color": HUBallGapDict.color,
     "weight": lineWeight,
     "opacity": lineOpacity
 };
 var HUBallGapStyleHighlight = {
-    "color": HUBallGapDict.color, // 'darkpurple'
+    "color": HUBallGapDict.color,
     "weight": lineWeight+1,
     "opacity": lineOpacityHighlight
 };
@@ -304,24 +305,40 @@ function onEachFeatureHUBall(feature, layer) {
     });
 }
 
-var HUBallIcon = L.icon({
-    iconUrl: HUBallGapDict.icon,
+var HUBallGapLayer = new L.geoJSON(HUBallGapDict.data, {
+    style: HUBallGapStyle,
+    onEachFeature: onEachFeatureHUBall,
+});
+if (HUBallGapDict.checked){
+    layerGroup.addLayer(HUBallGapLayer);
+}
+
+// HUB hotspots -------------------
+const HUBhotspotDict = settings.find(dict => dict.key === "HUBgapPoint");
+
+var HUBhotspotIcon = L.icon({
+    iconUrl: HUBhotspotDict.icon,
     iconSize: [22, 31],
     iconAnchor: [11, 30],
     popupAnchor:  [0, -20]
 });
 
-var HUBallGapLayer = new L.geoJSON(HUBallGapDict.data, {
-    style: HUBallGapStyle,
+var HUBhotspotLayer = new L.geoJSON(HUBhotspotDict.data, {
     onEachFeature: onEachFeatureHUBall,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
-            icon: HUBallIcon
+            icon: HUBhotspotIcon
         });
+    },
+    onAdd: function (map) {
+        map.fire('data:loaded');
     }
 });
-if (HUBallGapDict.checked){
-    layerGroup.addLayer(HUBallGapLayer);
+//var HUBhotspotCluster = createClusterGroup('HUBhotspotcluster')
+//HUBhotspotCluster.addLayer(HUBhotspotLayer);
+
+if (HUBhotspotDict.checked){
+   layerGroup.addLayer(HUBhotspotLayer)
 }
 
 // ICBC cyclists crashes =========================================
@@ -844,7 +861,7 @@ if (veloCanadaDict.checked){
     layerGroup.addLayer(pedalPollLayer);
 }
 
-// TODO: maybe add city plans and developments to come
+// TODO: add city plans
 
 // Legend ========================================================================================
 function addLegend() {
@@ -986,8 +1003,11 @@ function toggleLayer(checkbox) {
     if (checkbox.id == "HUBgap"){
         targetLayer = HUBgapLayer
     }
-    if (checkbox.id == "HUBgapNov2021"){
+    if (checkbox.id == "HUBgapLine"){
         targetLayer = HUBallGapLayer
+    }
+    if (checkbox.id == "HUBgapPoint"){
+        targetLayer = HUBhotspotLayer
     }
     if (checkbox.id == "ICBCcrashes"){
         //targetLayer = icbcLayer
