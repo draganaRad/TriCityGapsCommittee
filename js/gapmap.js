@@ -2,7 +2,7 @@ const settings = [
     { type: "Line", key: 'topGap', zIndex: 1, title: 'HUB Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: showTopGaps},
     //{ type: "Line", key: 'HUBgap', zIndex: 2, title: 'HUB Major Gaps', color: '#CE424C', checked: false},
     { type: "Line", key: 'HUBgapLine', zIndex: 3, title: 'HUB Gaps', data: HUBGapsLinesApr2023, color: '#9031AA', checked: showHUBgaps},
-    { type: "Point", key: 'HUBgapPoint', zIndex: 3, title: 'HUB Hotspots', data: HUBGapsPointsApr2023, icon:'img/purplePinIcon2.png', checked: showHUBgaps},
+    { type: "Point", key: 'HUBgapPoint', zIndex: 3, title: 'HUB Hotspots', data: HUBGapsPointsApr2023, icon:'img/purplePinIcon2.png', iconLegend:'img/purplePinIcon2Circle.png', checked: showHUBgaps},
     { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonOct2023, icon:'img/circle-exclamation-solid.svg', checked: showCrashes},
     { type: "Point", key: 'adoptGap', zIndex: 10, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showAdoptGap},
     { type: "Point", key: 'HUBemail', zIndex: 11, title: 'HUB email', data: HUBemail, icon:'img/envelope-solid.svg', checked: showHUBemail},
@@ -949,9 +949,13 @@ function addLegendLine(setting) {
         spanHtml = '<span style="display:inline-block; width:50px; height:8px; background-color:' + setting.color +'"></span>' +
         '&nbsp;' + setting.title
     }
+    legendIcon = setting.icon
+    if (setting.iconLegend){
+        legendIcon = setting.iconLegend
+    }
     if (setting.type == "Point"){
         spanHtml = '<span style="display: inline-block;"><div style="display:flex; justify-content:center; align-items:center;">' + 
-        '<img style="width:20px; height:20px;" src="'+ setting.icon +'"></img>&nbsp;'+ setting.title +'</div></span>'
+        '<img style="width:20px; height:20px;" src="'+ legendIcon +'"></img>&nbsp;'+ setting.title +'</div></span>'
     }
 
     checkedHtml = ""
