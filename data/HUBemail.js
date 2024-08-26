@@ -191,6 +191,48 @@ var HUBemail = {
           49.281755
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "C_8",
+      "properties": {
+        "email":"true",
+        "key": "C",
+        "city": "Coquitlam",
+        "type": "Problem",
+        "location": "",
+        "description": "I'm hoping this is reaching the right person, but let me know if it should be re-directed. I love the work and vision of Hub and I want to bring an especially bad bit of infrastructure to light. This is where cyclists are expected to transition from Lougheed Hwy to United Blvd using the bike bridge. Here is a link to where it is on google maps: <a href=\"https://maps.app.goo.gl/GdYCjPaagqcN7dFBA\" target=\"_blank\">https://maps.app.goo.gl/GdYCjPaagqcN7dFBA</a>\n\nEssentially, when travelling Eastbound, they've constructed this lovely bike bridge to help get you from Lougheed Hwy onto the (Mary-Hill bypass?) off-ramp towards United Blvd. At United, there is a nice separated path.\n\nYesterday, I was on this off-ramp and actually got pulled over by a cop who was convinced I wasn't allowed to be there. I have a video of this encounter. It ended well, but reminded me of how terrible this section of connecting road is. It's loud, dirty, dangerous, and poorly marked. Lots of trucks flying past with two (or more) wheels in the shoulder.\n\nIs there anything being done to improve this section of road? It's always a shame when two nice bits of infrastructure are connected so poorly. There should be plenty of space in the shoulder to put up a barrier, but they have nothing aside from a couple cones at the top of the bike/pedestrian bridge.\n\nI don't know many people but I know several who use this route regularly, including myself. There are no real alternatives due to the train tracks.",
+        "photo": "8.png",
+        "date": "2024-08-08"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.837948,
+          49.229374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C_9",
+      "properties": {
+        "email":"true",
+        "key": "C",
+        "city": "Coquitlam",
+        "type": "Problem",
+        "location": "",
+        "description": "I just figured I would drop you a line about the progress of the pipeline clean up. For years I have been riding from near Eagleridge Hospital to work in the Burbidge industrial park. Before the pipeline, it was a great ride being able to stay out of any major traffic, during the pipeline and COVID the ways of being able to commute got reduced, I had to ride on the Mary Hill bypass, and/or United BLVD. These routes don't necessarily have what one could call safe commuter cycling options. Now to the reason for this email. What used to be a great family-friendly way of getting from Maquabeak Park to Colony Farms has been fenced off with no cycle access via the  Mary Hill Road underpass <a href=\"https://www.google.ca/maps/place/49°13'34.5%22N+122°48'56.9%22W/@49.2262581,-122.8181185,17z/data=!3m1!4b1!4m4!3m3!8m2!3d49.226255!4d-122.815793?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D\" target=\"_blank\">(49.2262546167213, -122.81579308529524)</a> or to the Port Mann Bridge. I may be overdramatizing but it looks like a systematic elimination of any practical commuter cycle routes. Anyway, I'm going back to driving because I don't want to play bet your life or take up mountain biking on goat paths. I invite you to come down and have a look, I hope you'll be disappointed.\n\nThe location is beside and behind the old Coke plant on United Boulevard, 2450 United Blvd, Coquitlam, BC V3K 6G2",
+        "photo": "",
+        "date": "2024-08-15"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.815793,
+          49.226254
+        ]
+      }
     }
     //,
     // {
