@@ -9,9 +9,11 @@ const settings = [
     { type: "Point", key: 'bikeMaps', zIndex: 11, title: 'BikeMaps.org', data: bikeMapsJson, icon:'img/BikeMapsRound.png', checked: showBikeMaps},
     { type: "Point", key: 'triCityFix', zIndex: 12, title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound2.png', checked: showTriCityFix},
     { type: "Point", key: 'veloCanada', zIndex: 13, title: 'Velo Pedal Poll', data: veloData2021, icon:'img/VeloBikesRound2.png', checked: showVeloBikes},
+    { type: "Line", key: 'upcoming', zIndex: 6, title: 'Upcoming', data: HUBupcomingProjects, color: '#6666FF', checked: showUpcoming},
+    { type: "Line", key: 'translinkMBN', zIndex: 6, title: 'TransLink MBN', data: translinkMBNJson, color: '#5B9F94', checked: showTranslinkMBN},
+    { type: "Line", key: 'metrovanGreen', zIndex: 6, title: 'Metrovan Greenways', data: metrovanGreenJson, color: '#8FCD69', checked: showMetrovanGreen},
     { type: "Line", key: 'designLowStress', zIndex: 5, title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExistingLowStress},
     { type: "Line", key: 'designHighStress', zIndex: 6, title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExistingHighStress},
-    { type: "Line", key: 'upcoming', zIndex: 6, title: 'Upcoming', data: HUBupcomingProjects, color: '#6666FF', checked: showUpcoming},
     { type: "Point", key: 'trainParkade', zIndex: 7, title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showStations},
     { type: "Point", key: 'schools', zIndex: 8, title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showShools},
     { type: "Point", key: 'food', zIndex: 9, title: 'Grocery', data: foodJson, icon:'img/cart-shopping-solid.svg', checked: showFood}];
@@ -44,6 +46,7 @@ map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/
 map.attributionControl.addAttribution('<a href="https://bikemaps.org" target="_blank">BikeMaps</a>');
 map.attributionControl.addAttribution('<a href="https://apps.apple.com/ca/app/tricityfix/id1476599668" target="_blank">TriCityFix</a>');
 map.attributionControl.addAttribution('<a href="https://www.velocanadabikes.org/pedalpoll/pedal-poll-sondo-velo-2021-results/" target="_blank">VeloPedalPoll</a>');
+map.attributionControl.addAttribution('<a href="https://open-data-portal-metrovancouver.hub.arcgis.com" target="_blank">MetroVancouver</a>');
 map.attributionControl.addAttribution('<a href="https://github.com/BikeOttawa" target="_blank">BikeOttawa</a>');
 map.attributionControl.addAttribution('<a href="https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=" target="_blank">SchoolDistrictNo43</a>');
 map.attributionControl.addAttribution('<a href="https://www.google.com/maps/d/u/0/viewer?mid=1NY6gbgDuGzDOrFBa-RNHFzVd4PkRbHM0&ll=49.273934982609674%2C-122.7769743&z=13" target="_blank">FoodAssetMap</a>');
@@ -61,10 +64,13 @@ lineOpacityHighlight = 0.8
 
 // generic pop-up function for geojson
 function onEachFeatureGeoJson(feature, layer) {
+    onEachFeaturePopup(feature, layer);
+}
+function onEachFeaturePopup(feature, layer) {
     var popupContent = ""
     if (feature.properties) {
         for (let property in feature.properties) {
-            //console.log('Dragana:: tag ' + JSON.stringify(tag) +', value: '+ way.tags[tag])
+            //console.log('Dragana:: tag ' + JSON.stringify(property)); // +', value: '+ way.tags[tag])
             if (feature.properties[property] != null){
                 if (popupContent != "") {
                     popupContent += "<br>";
@@ -371,7 +377,154 @@ if (icbcDict.checked){
    layerGroup.addLayer(icbcCluster)
 }
 
-// ******** Existing Facilities Category: *************************************************
+// ******** Planned Category: ****************************************************************************************************
+// UPCOMING PROJECTS  =========================================
+// Note: had to manually add years after importing data from here (Colin):
+// https://umap.openstreetmap.fr/en/map/hub-cycling-upcoming-projects_1020637#12/49.2782/-122.7726
+const upcomingDict = settings.find(dict => dict.key === "upcoming");
+
+var upcomingStyle = {
+    "color": upcomingDict.color,
+    "weight": lineWeight - 1,
+    "opacity": lineOpacity + 0.2
+};
+var upcomingHighlight = {
+    "color": upcomingDict.color,
+    "weight": lineWeight,
+    "opacity": lineOpacityHighlight + 0.2
+};
+
+function highlightFeatureUpcoming(e) {
+    var layer = e.target;
+    layer.setStyle(upcomingHighlight);
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+function resetHighlightUpcoming(e) {
+    upcomingLayer.resetStyle(e.target);
+}
+
+function onEachFeatureUpcoming(feature, layer) {
+    var popupContent = ""
+    if (feature.properties) {
+        if (feature.properties.name) {
+            popupContent += "<b>Name: </b>";
+            popupContent += feature.properties.name;
+        }
+        if (feature.properties.description) {
+            popupContent += "<br><b>Description: </b>";
+            popupContent += feature.properties.description;
+        }
+        if (feature.properties.year) {
+            popupContent += "<br><b>Year: </b>";
+            popupContent += feature.properties.year;
+        }
+    }
+    layer.bindPopup(popupContent);
+
+    layer.on({
+        mouseover: highlightFeatureUpcoming,
+        mouseout: resetHighlightUpcoming,
+    });
+}
+
+var upcomingLayer = new L.geoJSON(upcomingDict.data, {
+    style: upcomingStyle,
+    onEachFeature: onEachFeatureUpcoming,
+})
+if (upcomingDict.checked){
+    layerGroup.addLayer(upcomingLayer);
+}
+
+// TRANSLINK MAJOR BIKE NETWORK  ===================================================
+const translinkDict = settings.find(dict => dict.key === "translinkMBN");
+
+var translinkStyle = {
+    "color": translinkDict.color,
+    "weight": lineWeight - 1,
+    "opacity": lineOpacity + 0.2
+};
+var translinkHighlight = {
+    "color": translinkDict.color,
+    "weight": lineWeight,
+    "opacity": lineOpacityHighlight + 0.2
+};
+
+function highlightFeatureTranslink(e) {
+    var layer = e.target;
+    layer.setStyle(translinkHighlight);
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+function resetHighlightTranslink(e) {
+    translinkLayer.resetStyle(e.target);
+}
+
+function onEachFeatureTranslink(feature, layer) {
+    onEachFeaturePopup(feature, layer);
+
+    layer.on({
+        mouseover: highlightFeatureTranslink,
+        mouseout: resetHighlightTranslink,
+    });
+}
+
+var translinkLayer = new L.geoJSON(translinkDict.data, {
+    style: translinkStyle,
+    onEachFeature: onEachFeatureTranslink,
+})
+if (translinkDict.checked){
+    layerGroup.addLayer(translinkLayer);
+}
+
+// METROVANCOUVER REGIONAL GREENWAYS NETWORK  ===================================================
+const metrovanDict = settings.find(dict => dict.key === "metrovanGreen");
+
+var metrovanStyle = {
+    "color": metrovanDict.color,
+    "weight": lineWeight - 1,
+    "opacity": lineOpacity + 0.2
+};
+var metrovanHighlight = {
+    "color": metrovanDict.color,
+    "weight": lineWeight,
+    "opacity": lineOpacityHighlight + 0.2
+};
+
+function highlightFeatureMetrovan(e) {
+    var layer = e.target;
+    layer.setStyle(metrovanHighlight);
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+function resetHighlightMetrovan(e) {
+    metrovanLayer.resetStyle(e.target);
+}
+
+function onEachFeatureMetrovan(feature, layer) {
+    onEachFeaturePopup(feature, layer);
+
+    layer.on({
+        mouseover: highlightFeatureMetrovan,
+        mouseout: resetHighlightMetrovan,
+    });
+}
+
+var metrovanLayer = new L.geoJSON(metrovanDict.data, {
+    style: metrovanStyle,
+    onEachFeature: onEachFeatureMetrovan,
+})
+if (metrovanDict.checked){
+    layerGroup.addLayer(metrovanLayer);
+}
+
+// TODO: add city plans
+
+
+// ******** Existing Category: *********************************************************************************************
 // LOW TRAFFIC STRESS BIKE DESIGNATED =========================================
 // data source: OSM and Level of Traffic Stres BikeOttawa algorithm. in Notes "How to create LTS map:"
 const designLowStressDict = settings.find(dict => dict.key === "designLowStress");
@@ -485,65 +638,6 @@ var highStressLayer = new L.geoJSON(designHighStressDict.data, {
 })
 if (designHighStressDict.checked){
     layerGroup.addLayer(highStressLayer);
-}
-
-// UPCOMING PROJECTS  =========================================
-// Note: had to manually add years after importing data from here (Colin):
-// https://umap.openstreetmap.fr/en/map/hub-cycling-upcoming-projects_1020637#12/49.2782/-122.7726
-const upcomingDict = settings.find(dict => dict.key === "upcoming");
-
-var upcomingStyle = {
-    "color": upcomingDict.color,
-    "weight": lineWeight - 1,
-    "opacity": lineOpacity + 0.2
-};
-var upcomingHighlight = {
-    "color": upcomingDict.color,
-    "weight": lineWeight,
-    "opacity": lineOpacityHighlight + 0.2
-};
-
-function highlightFeatureUpcoming(e) {
-    var layer = e.target;
-    layer.setStyle(upcomingHighlight);
-    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
-        layer.bringToFront();
-    }
-}
-function resetHighlightUpcoming(e) {
-    upcomingLayer.resetStyle(e.target);
-}
-
-function onEachFeatureUpcoming(feature, layer) {
-    var popupContent = ""
-    if (feature.properties) {
-        if (feature.properties.name) {
-            popupContent += "<b>Name: </b>";
-            popupContent += feature.properties.name;
-        }
-        if (feature.properties.description) {
-            popupContent += "<br><b>Description: </b>";
-            popupContent += feature.properties.description;
-        }
-        if (feature.properties.year) {
-            popupContent += "<br><b>Year: </b>";
-            popupContent += feature.properties.year;
-        }
-    }
-    layer.bindPopup(popupContent);
-
-    layer.on({
-        mouseover: highlightFeatureUpcoming,
-        mouseout: resetHighlightUpcoming,
-    });
-}
-
-var upcomingLayer = new L.geoJSON(upcomingDict.data, {
-    style: upcomingStyle,
-    onEachFeature: onEachFeatureUpcoming,
-})
-if (upcomingDict.checked){
-    layerGroup.addLayer(upcomingLayer);
 }
 
 // TRAIN STATIONS AND PARKADES =====================================================
@@ -861,8 +955,6 @@ if (veloCanadaDict.checked){
     layerGroup.addLayer(pedalPollLayer);
 }
 
-// TODO: add city plans
-
 // Legend ========================================================================================
 function addLegend() {
     const legend = L.control({ position: 'topright' })
@@ -890,22 +982,31 @@ function addLegend() {
                 // add Community Feedback note and colapse button
                 //legendHtml += '<div class="button quiet col12">Community Feedback:</div>'
                 legendHtml += '<div class="button quiet col12">Community Feedback:' + 
-                '<div id="efchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: block"></div>' +
-                '<div id="efchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: none"></div>' + 
+                '<div id="cfchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: block"></div>' +
+                '<div id="cfchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: none"></div>' + 
                 '</div>' +
-                '<div id="existfacil" style="display: none">';  //start of Community Feedback div element that can collapse
+                '<div id="commfeed" style="display: none">';  //start of Community Feedback div element that can collapse
             }
             if (setting.key == "veloCanada"){ //todo: this probably shouldn't be hardcoded
-                legendHtml += '</div>' //end of Community Feedback div that can collapse
-                // add Existing Facilities category note and colapse button
-                legendHtml += '<div class="button quiet col12">Existing Facilities:' +
-                '<div id="cfchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
-                '<div id="cfchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+                legendHtml += '</div>' //end of Community Feedback  div that can collapse
+                // add Planned note and colapse button
+                legendHtml += '<div class="button quiet col12">Planned:' + 
+                '<div id="plchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: block"></div>' +
+                '<div id="plchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: none"></div>' + 
                 '</div>' +
-                '<div id="commfeed" style="display: block">';  //start of Existing Facilities div element that can collapse
+                '<div id="planned" style="display: none">';  //start of Planned div element that can collapse
+            }
+            if (setting.key == "metrovanGreen"){ //todo: this probably shouldn't be hardcoded
+                legendHtml += '</div>' //end of Planned div that can collapse
+                // add Existing category note and colapse button
+                legendHtml += '<div class="button quiet col12">Existing:' +
+                '<div id="exchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
+                '<div id="exchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+                '</div>' +
+                '<div id="existing" style="display: block">';  //start of Existing div element that can collapse
             }
             if (setting.key == "food"){ //todo: this probably shouldn't be hardcoded
-                legendHtml += '</div>' //end of Existing Facilities div that can collapse
+                legendHtml += '</div>' //end of Existing div that can collapse
             }
         }
 
@@ -980,13 +1081,18 @@ document.getElementById('closebtn').onclick = function () { toggleDisplay(['lege
 document.getElementById('gcchevright').onclick = function () { toggleDisplay(['gcchevright', 'gcchevdown', 'gapscrash']) };
 document.getElementById('gcchevdown').onclick = function () { toggleDisplay(['gcchevright', 'gcchevdown', 'gapscrash']) };
 
-// show/hide Existing Facilities section
-document.getElementById('efchevright').onclick = function () { toggleDisplay(['efchevright', 'efchevdown', 'existfacil']) };
-document.getElementById('efchevdown').onclick = function () { toggleDisplay(['efchevright', 'efchevdown', 'existfacil']) };
-
 // show/hide Community Feedback section
 document.getElementById('cfchevright').onclick = function () { toggleDisplay(['cfchevright', 'cfchevdown', 'commfeed']) };
 document.getElementById('cfchevdown').onclick = function () { toggleDisplay(['cfchevright', 'cfchevdown', 'commfeed']) };
+
+// show/hide Planned section
+document.getElementById('plchevright').onclick = function () { toggleDisplay(['plchevright', 'plchevdown', 'planned']) };
+document.getElementById('plchevdown').onclick = function () { toggleDisplay(['plchevright', 'plchevdown', 'planned']) };
+
+// show/hide Existing section
+document.getElementById('exchevright').onclick = function () { toggleDisplay(['exchevright', 'exchevdown', 'existing']) };
+document.getElementById('exchevdown').onclick = function () { toggleDisplay(['exchevright', 'exchevdown', 'existing']) };
+
 
 function toggleDisplay(elementIds) {
     elementIds.forEach(function (elementId) {
@@ -1025,6 +1131,12 @@ function toggleLayer(checkbox) {
     }
     if (checkbox.id == "upcoming"){
         targetLayer = upcomingLayer
+    }
+    if (checkbox.id == "translinkMBN"){
+        targetLayer = translinkLayer
+    }
+    if (checkbox.id == "metrovanGreen"){
+        targetLayer = metrovanLayer
     }
     if (checkbox.id == "schools"){
         targetLayer = schoolLayer
