@@ -198,10 +198,12 @@ html {
 
 /* marker clusters */
 .marker-crashcluster {
-    background-color: rgba(1, 10, 18, 0.343);
+/*    background-color: rgba(1, 10, 18, 0.343);*/
+    background-color: #FFB347;
 }
 .marker-crashcluster div {
-    background-color: rgba(1, 10, 15, 0.901);
+/*    background-color: rgba(1, 10, 15, 0.901);*/
+    background-color: #FF7F00;
 }
 .marker-cluster div {
     color: white;
