@@ -834,7 +834,7 @@ function glenayreStyleFeature(feature) {
   return {
     color: color || "#000000", // Default to black if color is missing
     weight: 5,
-    opacity: 1
+    opacity: 0.8
   };
 }
 
@@ -859,10 +859,38 @@ function glenayreOnEachFeature(feature, layer) {
     }
     layer.bindPopup(popupContent);
 
-    // layer.on({
-    //     mouseover: highlightFeatureTop,
-    //     mouseout: resetHighlightTop,
-    // });
+    // Highlight the feature on mouseover
+  layer.on('mouseover', function () {
+    if (feature.geometry.type === "LineString") {
+      layer.setStyle({
+        weight: 7,
+        opacity: 1.0 // Fully opaque on hover
+      });
+    } else if (feature.geometry.type === "Point") {
+      layer.setIcon(
+        L.icon({
+          iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png", // Default blue marker
+          iconSize: [30, 45], // Larger icon for hover
+          iconAnchor: [15, 45] // Adjust anchor to align
+        })
+      );
+    }
+  });
+
+  // Reset the feature style on mouseout
+  layer.on('mouseout', function () {
+    if (feature.geometry.type === "LineString") {
+      layer.setStyle(glenayreStyleFeature(feature)); // Reset to default style
+    } else if (feature.geometry.type === "Point") {
+      layer.setIcon(
+        L.icon({
+          iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png", // Default blue marker
+          iconSize: [25, 41], // Reset to default size
+          iconAnchor: [12, 41]
+        })
+      );
+    }
+  });
 }
 
 // Function to create appropriate Leaflet layer for each feature type
