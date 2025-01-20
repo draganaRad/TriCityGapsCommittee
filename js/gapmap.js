@@ -4,9 +4,10 @@ const settings = [
     { type: "Line", key: 'HUBgapLine', zIndex: 3, title: 'HUB Gaps', data: HUBGapsLinesApr2023, color: '#9031AA', checked: showHUBgaps},
     { type: "Point", key: 'HUBgapPoint', zIndex: 3, title: 'HUB Hotspots', data: HUBGapsPointsApr2023, icon:'img/purplePinIcon2.png', iconLegend:'img/purplePinIcon2Circle.png', checked: showHUBgaps},
     // { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonOct2024, icon:'img/circle-exclamation-solid.svg', checked: showCrashes},
-        { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonOct2024, icon:'img/ICBCCrash.png', checked: showCrashes},
+    { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonOct2024, icon:'img/ICBCCrash.png', checked: showCrashes},
     { type: "Point", key: 'adoptGap', zIndex: 10, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showAdoptGap},
     { type: "Point", key: 'HUBemail', zIndex: 11, title: 'HUB email', data: HUBemail, icon:'img/envelope-solid.svg', checked: showHUBemail},
+    { type: "Line/Point", key: 'glenayre', zIndex: 11, title: 'Glenayre (for kids)', data: glenayre, checked: showGlenayre},
     { type: "Point", key: 'bikeMaps', zIndex: 11, title: 'BikeMaps.org', data: bikeMapsJson, icon:'img/BikeMapsRound.png', checked: showBikeMaps},
     { type: "Point", key: 'triCityFix', zIndex: 12, title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound2.png', checked: showTriCityFix},
     { type: "Point", key: 'veloCanada', zIndex: 13, title: 'Velo Pedal Poll', data: veloData2021, icon:'img/VeloBikesRound2.png', checked: showVeloBikes},
@@ -44,6 +45,7 @@ L.tileLayer(
 map.attributionControl.addAttribution('<a href="https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki" target="_blank">Tri-CitiesHUB</a>');
 map.attributionControl.addAttribution('<a href="https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes" target="_blank">ICBC</a>');
 map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap" target="_blank">HUBAdoptGap</a>');
+map.attributionControl.addAttribution('<a href="https://www.google.com/maps/d/u/0/viewer?mid=1K4Dl701Fpj-rx68w2YdqRKghxzymJFk&ll=49.27449076794508%2C-122.87642890000002&z=13" target="_blank">Glenayre</a>');
 map.attributionControl.addAttribution('<a href="https://bikemaps.org" target="_blank">BikeMaps</a>');
 map.attributionControl.addAttribution('<a href="https://apps.apple.com/ca/app/tricityfix/id1476599668" target="_blank">TriCityFix</a>');
 map.attributionControl.addAttribution('<a href="https://www.velocanadabikes.org/pedalpoll/pedal-poll-sondo-velo-2021-results/" target="_blank">VeloPedalPoll</a>');
@@ -817,6 +819,101 @@ if (HUBemailDict.checked){
     layerGroup.addLayer(HUBemailLayer);
 }
 
+// Glenayre google my map data =========================================
+// data source: email received from Colin F.
+ const glenayreDict = settings.find(dict => dict.key === "glenayre");
+
+// Function to style features based on color property
+function glenayreStyleFeature(feature) {
+  let color = feature.properties.color;
+  // Add # if it's missing
+  if (color && !color.startsWith("#")) {
+    color = `#${color}`;
+  }
+
+  return {
+    color: color || "#000000", // Default to black if color is missing
+    weight: 5,
+    opacity: 1
+  };
+}
+
+// Function to handle popups
+function glenayreOnEachFeature(feature, layer) {
+    var popupContent = ""
+    if (feature.properties) {
+        if (feature.properties.Name) {
+            popupContent += "<b>Name: </b>";
+            popupContent += feature.properties.Name;
+        }
+        if (feature.properties.Description) {
+            popupContent += "<br><b>Description: </b>";
+            popupContent += feature.properties.Description;
+        }
+    }
+
+    // Check if the feature has an image URL to display
+    // console.log("DRAGANA:: glenayreOnEachFeature Enter: " + feature.geometry.type);
+    if (feature.properties.local_image_path) {
+        popupContent += '<img src="img/glenayre/' + feature.properties.local_image_path + '" width="200" />'; // Display image in popup
+    }
+    layer.bindPopup(popupContent);
+
+    // layer.on({
+    //     mouseover: highlightFeatureTop,
+    //     mouseout: resetHighlightTop,
+    // });
+}
+
+// Function to create appropriate Leaflet layer for each feature type
+function glenayreCreateLayer(feature, latlng) {
+    //console.log("DRAGANA:: Geometry Type: " + feature.geometry.type);
+    //console.log("Feature:", feature);
+
+  if (feature.geometry.type === "Point") {
+    // For points, create a marker using the default icon
+    // Create a resized version of the default Leaflet blue marker
+    const resizedDefaultIcon = L.icon({
+      iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png", // Default marker icon
+      shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png", // Default shadow
+      iconSize: [20, 32], // Adjust width and height (default is [25, 41])
+      iconAnchor: [10, 32], // Adjust anchor point
+      popupAnchor: [1, -30], // Adjust popup position
+      shadowSize: [36, 36], // Adjust shadow size
+      shadowAnchor: [12, 36] // Adjust shadow anchor
+    });
+    // Apply the resized icon to the marker
+    const marker = L.marker(latlng, { icon: resizedDefaultIcon });
+    glenayreOnEachFeature(feature, marker);
+    return marker;
+
+  } else if (feature.geometry.type === "LineString") {
+    // For lines, create a polyline
+    var polyline = L.polyline(latlng, glenayreStyleFeature(feature));
+    glenayreOnEachFeature(feature, polyline);
+    return polyline;
+  }
+  console.warn("glenayreCreateLayer::Unsupported geometry type:", feature.geometry.type);
+  return null; // In case it's another geometry type
+}
+
+// Add GeoJSON layer to the map
+var glenayreLayer = new L.geoJSON(glenayreDict.data, {
+  pointToLayer: glenayreCreateLayer, // For point features
+  // Apply styles to non-Point geometries (like LineString)
+  style: function (feature) {
+    if (feature.geometry.type === "LineString") {
+      return glenayreStyleFeature(feature);
+    }
+    return {}; // Default style for unsupported geometries
+  },
+  onEachFeature: glenayreOnEachFeature // For all features to handle popups
+});
+
+if (glenayreDict.checked){
+    layerGroup.addLayer(glenayreLayer);
+}
+
 // BIKEMAPS.ORG =========================================
 // data source: received by email on Aug 7, 2021
 const bikeMapsDict = settings.find(dict => dict.key === "bikeMaps");
@@ -1059,6 +1156,10 @@ function addLegendLine(setting) {
         spanHtml = '<span style="display: inline-block;"><div style="display:flex; justify-content:center; align-items:center;">' + 
         '<img style="width:20px; height:20px;" src="'+ legendIcon +'"></img>&nbsp;'+ setting.title +'</div></span>'
     }
+    if (setting.type == "Line/Point"){ // show just title
+        spanHtml = '<span style="display:inline-block; width:1px; height:1px"></span>' +
+        '&nbsp;' + setting.title
+    }
 
     checkedHtml = ""
     if (setting.checked){
@@ -1153,6 +1254,9 @@ function toggleLayer(checkbox) {
     }
     if (checkbox.id == "HUBemail"){
         targetLayer = HUBemailLayer
+    }
+    if (checkbox.id == "glenayre"){
+        targetLayer = glenayreLayer
     }
     if (checkbox.id == "triCityFix"){
         targetLayer = triCityFixLayer
