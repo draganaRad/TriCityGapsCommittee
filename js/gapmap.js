@@ -415,13 +415,13 @@ function onEachFeatureUpcoming(feature, layer) {
             popupContent += "<b>Name: </b>";
             popupContent += feature.properties.name;
         }
-        if (feature.properties.description) {
-            popupContent += "<br><b>Description: </b>";
-            popupContent += feature.properties.description;
+        if (feature.properties["Improvement Type"]) {
+            popupContent += `<br><b>Improvement Type: </b>`;
+            popupContent += `${feature.properties["Improvement Type"]}`;
         }
-        if (feature.properties.year) {
+        if (feature.properties.Year) {
             popupContent += "<br><b>Year: </b>";
-            popupContent += feature.properties.year;
+            popupContent += feature.properties.Year;
         }
     }
     layer.bindPopup(popupContent);

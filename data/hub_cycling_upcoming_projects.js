@@ -3,225 +3,6 @@ var HUBupcomingProjects = {
   "features": [
     {
       "type": "Feature",
-      "properties": {
-        "name": "Anmore MUP, section 1",
-        "styleUrl": "#line-9C27B0-7781-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#9c27b0",
-        "stroke-width": 7.781,
-        "year":2024
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.855681,
-            49.314712,
-            0
-          ],
-          [
-            -122.855681,
-            49.313089,
-            0
-          ],
-          [
-            -122.860873,
-            49.307913,
-            0
-          ],
-          [
-            -122.864307,
-            49.307885,
-            0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Donald Street Pathway",
-        "styleUrl": "#line-000000-8944-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#000000",
-        "stroke-width": 8.944,
-        "year":2024
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.779503,
-            49.262123,
-            0
-          ],
-          [
-            -122.779782,
-            49.261836,
-            0
-          ],
-          [
-            -122.780308,
-            49.261682,
-            0
-          ],
-          [
-            -122.780946,
-            49.261108,
-            0
-          ],
-          [
-            -122.780989,
-            49.260867,
-            0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Guildford Greenway, Phase 2",
-        "styleUrl": "#line-000000-6619-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#000000",
-        "stroke-width": 6.619,
-        "year":2024
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.801762,
-            49.285256,
-            0
-          ],
-          [
-            -122.798208,
-            49.285316,
-            0
-          ],
-          [
-            -122.792285,
-            49.284784,
-            0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Kingsway Avenue Multi-Use Path",
-        "styleUrl": "#line-9C27B0-9138-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#9c27b0",
-        "stroke-width": 9.138,
-        "year":2024
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.744917,
-            49.245071,
-            0
-          ],
-          [
-            -122.747921,
-            49.246556,
-            0
-          ],
-          [
-            -122.775366,
-            49.258405,
-            0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Maillardville Greenway",
-        "styleUrl": "#line-9C27B0-9331-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#9c27b0",
-        "stroke-width": 9.331,
-        "year":2024
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.852509,
-            49.24127,
-            0
-          ],
-          [
-            -122.856511,
-            49.241305,
-            0
-          ],
-          [
-            -122.859644,
-            49.241291,
-            0
-          ],
-          [
-            -122.862197,
-            49.241298,
-            0
-          ],
-          [
-            -122.862219,
-            49.240864,
-            0
-          ],
-          [
-            -122.86503,
-            49.240807,
-            0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "St Johns Street Multi-Use Path",
-        "styleUrl": "#line-9C27B0-8169-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#9c27b0",
-        "stroke-width": 8.169,
-        "year":2024
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.85024,
-            49.276674,
-            0
-          ],
-          [
-            -122.866827,
-            49.276646,
-            0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Anmore MUP, section 2",
-        "styleUrl": "#line-000000-7006-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#000000",
-        "stroke-width": 7.006,
-        "year":2025
-      },
       "geometry": {
         "type": "LineString",
         "coordinates": [
@@ -241,18 +22,20 @@ var HUBupcomingProjects = {
             0
           ]
         ]
-      }
+      },
+      "properties": {
+        "name": "Anmore MUP, section 2",
+        "styleUrl": "#line-000000-7006-nodesc",
+        "stroke-opacity": 1,
+        "stroke": "#000000",
+        "stroke-width": 7.006,
+        "Year": "2025",
+        "Improvement Type": "Multi-Use Pathway"
+      },
+      "id": "cxMTQ"
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Anmore MUP, section 3",
-        "styleUrl": "#line-3949AB-8944-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#3949ab",
-        "stroke-width": 8.944,
-        "year":2025
-      },
       "geometry": {
         "type": "LineString",
         "coordinates": [
@@ -267,18 +50,20 @@ var HUBupcomingProjects = {
             0
           ]
         ]
-      }
+      },
+      "properties": {
+        "name": "Anmore MUP, section 3",
+        "styleUrl": "#line-3949AB-8944-nodesc",
+        "stroke-opacity": 1,
+        "stroke": "#3949ab",
+        "stroke-width": 8.944,
+        "Year": "2025",
+        "Improvement Type": "Multi-Use Pathway"
+      },
+      "id": "czNTA"
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Barnet Highway Eastbound Protected Bike Lane",
-        "styleUrl": "#line-000000-8944-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#000000",
-        "stroke-width": 8.944,
-        "year":2025
-      },
       "geometry": {
         "type": "LineString",
         "coordinates": [
@@ -293,21 +78,238 @@ var HUBupcomingProjects = {
             0
           ]
         ]
-      }
+      },
+      "properties": {
+        "name": "Barnet Highway Eastbound Protected Bike Lane",
+        "styleUrl": "#line-000000-8944-nodesc",
+        "stroke-opacity": 1,
+        "stroke": "#000000",
+        "stroke-width": 8.944,
+        "Year": "2025",
+        "Improvement Type": "Protected Bike Lane"
+      },
+      "id": "E0OTY"
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Cedar Drive Multi-Use Path",
-        "styleUrl": "#line-9C27B0-9331-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#9c27b0",
-        "stroke-width": 9.331,
-        "description": "Pending completion of Cedar Drive upgrade project.",
-        "year":2025
+      "geometry": {
+        "coordinates": [
+          [
+            -122.792151,
+            49.284968
+          ],
+          [
+            -122.78949,
+            49.284786
+          ],
+          [
+            -122.785006,
+            49.285863
+          ]
+        ],
+        "type": "LineString"
       },
+      "properties": {
+        "name": "Guildford Greenway Phase 3",
+        "Improvement Type": "Protected Bike Lane",
+        "Year": "2025"
+      },
+      "id": "Y4MDI"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -122.801762,
+            49.285256,
+            0
+          ],
+          [
+            -122.798208,
+            49.285316,
+            0
+          ],
+          [
+            -122.792285,
+            49.284784,
+            0
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "name": "Guildford Greenway, Phase 2",
+        "styleUrl": "#line-000000-6619-nodesc",
+        "stroke-opacity": 1,
+        "stroke": "#000000",
+        "stroke-width": 6.619,
+        "Year": "Protected Bike Lane",
+        "Improvement Type": "2024"
+      },
+      "id": "AyNzc"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -122.835517,
+            49.250933
+          ],
+          [
+            -122.824488,
+            49.250933
+          ],
+          [
+            -122.82438,
+            49.249757
+          ],
+          [
+            -122.821612,
+            49.249812
+          ],
+          [
+            -122.821569,
+            49.249098
+          ],
+          [
+            -122.815711,
+            49.249056
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "name": "King Albert Greenway Phase 3",
+        "Year": "2025",
+        "Improvement Type": "To Be Determined"
+      },
+      "id": "A1OTg"
+    },
+    {
+      "type": "Feature",
       "geometry": {
         "type": "LineString",
+        "coordinates": [
+          [
+            -122.78337,
+            49.263728,
+            0
+          ],
+          [
+            -122.784341,
+            49.264432,
+            0
+          ]
+        ]
+      },
+      "properties": {
+        "name": "McAllister Footbridge Replacement",
+        "styleUrl": "#line-3949AB-10300-nodesc",
+        "stroke-opacity": 1,
+        "stroke": "#3949ab",
+        "stroke-width": 10.3,
+        "Year": "2025",
+        "Improvement Type": "Multi-Use Pathway"
+      },
+      "id": "czODA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -122.865644,
+            49.251531
+          ],
+          [
+            -122.865601,
+            49.248816
+          ],
+          [
+            -122.865043,
+            49.247556
+          ],
+          [
+            -122.865129,
+            49.244087
+          ],
+          [
+            -122.865043,
+            49.238398
+          ],
+          [
+            -122.864614,
+            49.237807
+          ],
+          [
+            -122.864592,
+            49.23593
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "name": "Nelson Avenue",
+        "Year": "2025",
+        "Improvement Type": "Protected Bike Lane"
+      },
+      "id": "cyMTA"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "coordinates": [
+          [
+            -122.784877,
+            49.285667
+          ],
+          [
+            -122.788224,
+            49.278809
+          ]
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "name": "Pipeline Road Quick-Build Bike Lanes",
+        "Improvement Type": "Protected Bike Lane",
+        "Year": "2025"
+      },
+      "id": "I4NTg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.775289,
+            49.271272,
+            0
+          ],
+          [
+            -122.756177,
+            49.271219,
+            0
+          ]
+        ]
+      },
+      "properties": {
+        "name": "Prairie Avenue Multi-Use Path, Phase 3",
+        "styleUrl": "#line-3949AB-9719-nodesc",
+        "stroke-opacity": 1,
+        "stroke": "#3949ab",
+        "stroke-width": 9.719,
+        "Year": "2025",
+        "Improvement Type": "Multi-Use Pathway"
+      },
+      "id": "I5Njg"
+    },
+    {
+      "type": "Feature",
+      "geometry": {
         "coordinates": [
           [
             -122.727893,
@@ -349,185 +351,62 @@ var HUBupcomingProjects = {
             49.292981,
             0
           ]
-        ]
-      }
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "name": "Cedar Drive Multi-Use Path",
+        "styleUrl": "#line-9C27B0-9331-nodesc",
+        "stroke-opacity": 1,
+        "stroke": "#9c27b0",
+        "stroke-width": 9.331,
+        "description": "Pending completion of Cedar Drive upgrade project.",
+        "Year": "2025",
+        "Improvement Type": "Multi-Use Pathway"
+      },
+      "id": "cwMzM"
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Guildford Greenway, Phase 3",
-        "styleUrl": "#line-000000-4488-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#000000",
-        "stroke-width": 4.488,
-        "year":2025
-      },
       "geometry": {
-        "type": "LineString",
         "coordinates": [
           [
-            -122.792172,
-            49.284948,
-            0
+            -122.784855,
+            49.285779
           ],
           [
-            -122.789147,
-            49.284766,
-            0
+            -122.784576,
+            49.285751
           ],
           [
-            -122.785005,
-            49.2859,
-            0
+            -122.780178,
+            49.285737
           ],
           [
-            -122.783804,
-            49.285844,
-            0
-          ],
-          [
-            -122.780049,
-            49.285802,
-            0
-          ],
-          [
-            -122.778826,
-            49.285368,
-            0
-          ],
-          [
-            -122.778547,
-            49.28492,
-            0
-          ],
-          [
-            -122.778375,
-            49.284458,
-            0
+            -122.779019,
+            49.285415
           ],
           [
             -122.778354,
-            49.280847,
-            0
+            49.284786
+          ],
+          [
+            -122.778375,
+            49.280908
           ]
-        ]
-      }
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "name": "Guildford Greenway Phase 4",
+        "Improvement Type": "Protected Bike Lane",
+        "Year": "2026"
+      },
+      "id": "MwNDc"
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "King Albert Greenway East",
-        "year":2025
-      },
       "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.835517,
-            49.250933
-          ],
-          [
-            -122.824488,
-            49.250933
-          ],
-          [
-            -122.82438,
-            49.249757
-          ],
-          [
-            -122.821612,
-            49.249812
-          ],
-          [
-            -122.821569,
-            49.249098
-          ],
-          [
-            -122.815711,
-            49.249056
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "McAllister Footbridge Replacement",
-        "styleUrl": "#line-3949AB-10300-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#3949ab",
-        "stroke-width": 10.3,
-        "year":2025
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.78337,
-            49.263728,
-            0
-          ],
-          [
-            -122.784341,
-            49.264432,
-            0
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Nelson Avenue",
-        "year":2025
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.865644,
-            49.251531
-          ],
-          [
-            -122.865601,
-            49.248816
-          ],
-          [
-            -122.865043,
-            49.247556
-          ],
-          [
-            -122.865129,
-            49.244087
-          ],
-          [
-            -122.865043,
-            49.238398
-          ],
-          [
-            -122.864614,
-            49.237807
-          ],
-          [
-            -122.864592,
-            49.23593
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Pipeline Road Multi-Use Path",
-        "styleUrl": "#line-3949AB-10300-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#3949ab",
-        "stroke-width": 10.3,
-        "description": "Pending completion of Metro Vancouver watermain project.",
-        "year":2025
-      },
-      "geometry": {
-        "type": "LineString",
         "coordinates": [
           [
             -122.78156,
@@ -539,43 +418,24 @@ var HUBupcomingProjects = {
             49.285771,
             0
           ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
+        ],
+        "type": "LineString"
+      },
       "properties": {
-        "name": "Prairie Avenue Multi-Use Path, Phase 3",
-        "styleUrl": "#line-3949AB-9719-nodesc",
+        "name": "Pipeline Road Protected Bike Lane",
+        "styleUrl": "#line-3949AB-10300-nodesc",
         "stroke-opacity": 1,
         "stroke": "#3949ab",
-        "stroke-width": 9.719,
-        "year":2025
+        "stroke-width": 10.3,
+        "description": "Pending completion of Metro Vancouver watermain project.",
+        "Year": "2025",
+        "Improvement Type": "Multi-Use Pathway"
       },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.775289,
-            49.271272,
-            0
-          ],
-          [
-            -122.756177,
-            49.271219,
-            0
-          ]
-        ]
-      }
+      "id": "cyMDE"
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Smith-Regan Greenway",
-        "year":2026
-      },
       "geometry": {
-        "type": "LineString",
         "coordinates": [
           [
             -122.835302,
@@ -629,19 +489,18 @@ var HUBupcomingProjects = {
             -122.891436,
             49.260358
           ]
-        ]
-      }
+        ],
+        "type": "LineString"
+      },
+      "properties": {
+        "name": "Smith-Regan Greenway",
+        "Year": "2026",
+        "Improvement Type": "Local Street Bikeway"
+      },
+      "id": "I2OTQ"
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Coquitlam River Bridge Replacement & Bi-Directional MUPs on both sides",
-        "styleUrl": "#line-BCAAA4-6270-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#bcaaa4",
-        "stroke-width": 6.27,
-        "year":2028
-      },
       "geometry": {
         "type": "LineString",
         "coordinates": [
@@ -656,19 +515,20 @@ var HUBupcomingProjects = {
             0
           ]
         ]
-      }
+      },
+      "properties": {
+        "name": "Coquitlam River Bridge Replacement & Bi-Directional MUPs on both sides",
+        "styleUrl": "#line-BCAAA4-6270-nodesc",
+        "stroke-opacity": 1,
+        "stroke": "#bcaaa4",
+        "stroke-width": 6.27,
+        "Year": "2028",
+        "Improvement Type": "Multi-Use Pathway"
+      },
+      "id": "MxODk"
     },
     {
       "type": "Feature",
-      "properties": {
-        "name": "Fremont Connector",
-        "styleUrl": "#line-3949AB-8944-nodesc",
-        "stroke-opacity": 1,
-        "stroke": "#3949ab",
-        "stroke-width": 8.944,
-        "description": "Pending completion of work which has not yet started. Timeline tentative.",
-        "year":2028
-      },
       "geometry": {
         "type": "LineString",
         "coordinates": [
@@ -723,7 +583,18 @@ var HUBupcomingProjects = {
             0
           ]
         ]
-      }
+      },
+      "properties": {
+        "name": "Fremont Connector",
+        "styleUrl": "#line-3949AB-8944-nodesc",
+        "stroke-opacity": 1,
+        "stroke": "#3949ab",
+        "stroke-width": 8.944,
+        "description": "Pending completion of work which has not yet started. Timeline tentative.",
+        "Year": "2028",
+        "Improvement Type": "Multi-Use Pathway"
+      },
+      "id": "Q3NTE"
     }
   ]
 }
