@@ -838,6 +838,23 @@ function glenayreStyleFeature(feature) {
   };
 }
 
+const defaultIcon = L.icon({
+  iconUrl: "img/glenayre/marker-icon-2x.png", // Default marker icon
+  iconSize: [20, 32], // Adjusted width and height
+  iconAnchor: [10, 32], // Adjust anchor point for the smaller size
+  popupAnchor: [1, -30], // Adjust popup position
+  shadowUrl: null, // No shadow
+});
+
+// for markers using default blue icon
+const resizedDefaultIcon = L.icon({
+  iconUrl: "img/glenayre/marker-icon-2x.png", // Default marker icon
+  iconSize: [25, 41], // Original size
+  iconAnchor: [12, 41], // Original anchor
+  popupAnchor: [1, -30], // Popup position
+  shadowUrl: null, // No shadow
+});
+
 // Function to handle popups
 function glenayreOnEachFeature(feature, layer) {
     var popupContent = ""
@@ -855,7 +872,10 @@ function glenayreOnEachFeature(feature, layer) {
     // Check if the feature has an image URL to display
     // console.log("DRAGANA:: glenayreOnEachFeature Enter: " + feature.geometry.type);
     if (feature.properties.local_image_path) {
-        popupContent += '<img src="img/glenayre/' + feature.properties.local_image_path + '" width="200" />'; // Display image in popup
+        popupContent += "<br>"
+        //popupContent += '<img src="img/glenayre/' + feature.properties.local_image_path + '" width="200" />'; // Display image in popup
+        imageSrc = "img/glenayre/" + feature.properties.local_image_path;
+        popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' style='width: 150px; height: auto;'></img></a>";
     }
     layer.bindPopup(popupContent);
 
@@ -867,13 +887,7 @@ function glenayreOnEachFeature(feature, layer) {
         opacity: 1.0 // Fully opaque on hover
       });
     } else if (feature.geometry.type === "Point") {
-      layer.setIcon(
-        L.icon({
-          iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png", // Default blue marker
-          iconSize: [30, 45], // Larger icon for hover
-          iconAnchor: [15, 45] // Adjust anchor to align
-        })
-      );
+      layer.setIcon(resizedDefaultIcon);
     }
   });
 
@@ -882,13 +896,7 @@ function glenayreOnEachFeature(feature, layer) {
     if (feature.geometry.type === "LineString") {
       layer.setStyle(glenayreStyleFeature(feature)); // Reset to default style
     } else if (feature.geometry.type === "Point") {
-      layer.setIcon(
-        L.icon({
-          iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png", // Default blue marker
-          iconSize: [25, 41], // Reset to default size
-          iconAnchor: [12, 41]
-        })
-      );
+      layer.setIcon(defaultIcon);
     }
   });
 }
@@ -900,18 +908,8 @@ function glenayreCreateLayer(feature, latlng) {
 
   if (feature.geometry.type === "Point") {
     // For points, create a marker using the default icon
-    // Create a resized version of the default Leaflet blue marker
-    const resizedDefaultIcon = L.icon({
-      iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png", // Default marker icon
-      shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png", // Default shadow
-      iconSize: [20, 32], // Adjust width and height (default is [25, 41])
-      iconAnchor: [10, 32], // Adjust anchor point
-      popupAnchor: [1, -30], // Adjust popup position
-      shadowSize: [36, 36], // Adjust shadow size
-      shadowAnchor: [12, 36] // Adjust shadow anchor
-    });
     // Apply the resized icon to the marker
-    const marker = L.marker(latlng, { icon: resizedDefaultIcon });
+    const marker = L.marker(latlng, { icon: defaultIcon });
     glenayreOnEachFeature(feature, marker);
     return marker;
 
@@ -1009,7 +1007,7 @@ function onEachFeatureTriCityFix(feature, layer) {
                 imageSrc = "img/triCityFix/"
             }
             imageSrc += feature.properties.key + "/" + feature.properties.photo;
-            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>";
+            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height: auto></img></a>";
         }
         // add second photo if there's one
         if (feature.properties.photo1) {
@@ -1021,7 +1019,7 @@ function onEachFeatureTriCityFix(feature, layer) {
                 imageSrc = "img/triCityFix/"
             }
             imageSrc += feature.properties.key + "/" + feature.properties.photo1;
-            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>";
+            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height: auto'></img></a>";
         }
         // add if there's update
         if (feature.properties.descriptionUpdate) {
@@ -1037,7 +1035,7 @@ function onEachFeatureTriCityFix(feature, layer) {
             imageSrc = "img/triCityFix/"
         }
           imageSrc += feature.properties.key + "/" + feature.properties.photoUpdate;
-          popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='148' height='100'></img></a>";
+          popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height: auto;></img></a>";
         }
     }
     layer.bindPopup(popupContent);
