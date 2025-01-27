@@ -1,24 +1,22 @@
 const settings = [
-    { type: "Line", key: 'topGap', zIndex: 1, title: 'HUB Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: showTopGaps},
-    //{ type: "Line", key: 'HUBgap', zIndex: 2, title: 'HUB Major Gaps', color: '#CE424C', checked: false},
-    { type: "Line", key: 'HUBgapLine', zIndex: 3, title: 'HUB Gaps', data: HUBGapsLinesApr2023, color: '#9031AA', checked: showHUBgaps},
-    { type: "Point", key: 'HUBgapPoint', zIndex: 3, title: 'HUB Hotspots', data: HUBGapsPointsApr2023, icon:'img/purplePinIcon2.png', iconLegend:'img/purplePinIcon2Circle.png', checked: showHUBgaps},
-    // { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonOct2024, icon:'img/circle-exclamation-solid.svg', checked: showCrashes},
-    { type: "Point", key: 'ICBCcrashes', zIndex: 4, title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonOct2024, icon:'img/ICBCCrash.png', checked: showCrashes},
-    { type: "Point", key: 'adoptGap', zIndex: 10, title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showAdoptGap},
-    { type: "Point", key: 'HUBemail', zIndex: 11, title: 'HUB email', data: HUBemail, icon:'img/envelope-solid.svg', checked: showHUBemail},
-    { type: "Line/Point", key: 'glenayre', zIndex: 11, title: 'Glenayre (for kids)', data: glenayre, checked: showGlenayre},
-    { type: "Point", key: 'bikeMaps', zIndex: 11, title: 'BikeMaps.org', data: bikeMapsJson, icon:'img/BikeMapsRound.png', checked: showBikeMaps},
-    { type: "Point", key: 'triCityFix', zIndex: 12, title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound2.png', checked: showTriCityFix},
-    { type: "Point", key: 'veloCanada', zIndex: 13, title: 'Velo Pedal Poll', data: veloData2021, icon:'img/VeloBikesRound2.png', checked: showVeloBikes},
-    { type: "Line", key: 'upcoming', zIndex: 6, title: 'Upcoming', data: HUBupcomingProjects, color: '#6666FF', checked: showUpcoming},
-    { type: "Line", key: 'translinkMBN', zIndex: 6, title: 'TransLink MBN', data: translinkMBNJson, color: '#5B9F94', checked: showTranslinkMBN},
-    { type: "Line", key: 'metrovanGreen', zIndex: 6, title: 'Metrovan Greenways', data: metrovanGreenJson, color: '#8FCD69', checked: showMetrovanGreen},
-    { type: "Line", key: 'designLowStress', zIndex: 5, title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExistingLowStress},
-    { type: "Line", key: 'designHighStress', zIndex: 6, title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExistingHighStress},
-    { type: "Point", key: 'trainParkade', zIndex: 7, title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showStations},
-    { type: "Point", key: 'schools', zIndex: 8, title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showShools},
-    { type: "Point", key: 'food', zIndex: 9, title: 'Grocery', data: foodJson, icon:'img/cart-shopping-solid.svg', checked: showFood}];
+    { type: "Line", key: 'designLowStress', title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExistingLowStress},
+    { type: "Line", key: 'designHighStress', title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExistingHighStress},
+    { type: "Point", key: 'trainParkade', title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showStations},
+    { type: "Point", key: 'schools', title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showShools},
+    { type: "Point", key: 'food', title: 'Grocery', data: foodJson, icon:'img/cart-shopping-solid.svg', checked: showFood},
+    { type: "Line", key: 'upcoming', title: 'Upcoming', data: HUBupcomingProjects, color: '#6666FF', checked: showUpcoming},
+    { type: "Line", key: 'translinkMBN', title: 'TransLink MBN', data: translinkMBNJson, color: '#5B9F94', checked: showTranslinkMBN},
+    { type: "Line", key: 'metrovanGreen', title: 'Metrovan Greenways', data: metrovanGreenJson, color: '#8FCD69', checked: showMetrovanGreen},
+    { type: "Point", key: 'adoptGap', title: 'HUB Adopt a Gap', data: adoptGapsJson, icon:'img/adopt.png', checked: showAdoptGap},
+    { type: "Point", key: 'HUBemail', title: 'HUB email', data: HUBemail, icon:'img/envelope-solid.svg', checked: showHUBemail},
+    { type: "Line/Point", key: 'glenayre', title: 'Glenayre (for kids)', data: glenayre, checked: showGlenayre},
+    { type: "Point", key: 'bikeMaps', title: 'BikeMaps.org', data: bikeMapsJson, icon:'img/BikeMapsRound.png', checked: showBikeMaps},
+    { type: "Point", key: 'triCityFix', title: 'TriCityFix App', data: triCityFixJson2, icon:'img/TriCityFixRound2.png', checked: showTriCityFix},
+    { type: "Point", key: 'veloCanada', title: 'Velo Pedal Poll', data: veloData2021, icon:'img/VeloBikesRound2.png', checked: showVeloBikes},
+    { type: "Line", key: 'topGap', title: 'HUB Top Gaps', data: topCommitteeJson, color: '#FF7F00', checked: showTopGaps},
+    { type: "Line", key: 'HUBgapLine', title: 'HUB Gaps', data: HUBGapsLinesApr2023, color: '#9031AA', checked: showHUBgaps},
+    { type: "Point", key: 'HUBgapPoint', title: 'HUB Hotspots', data: HUBGapsPointsApr2023, icon:'img/purplePinIcon2.png', iconLegend:'img/purplePinIcon2Circle.png', checked: showHUBgaps},
+    { type: "Point", key: 'ICBCcrashes', title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonOct2024, icon:'img/ICBCCrash.png', checked: showCrashes}];
 // note: order in settings is the order in legend
 // note: zIndex currently not used. Leaving for future improvments.
 
@@ -1093,44 +1091,43 @@ function addLegend() {
 
         legendHtml += '<div class="button quiet col12">Tri-Cities Cycling Data</div>'
 
-        //Gaps and Crashes div element that can collapse
-        legendHtml += '<div class="button quiet col12">Gaps, Hotspots and Crashes:' + 
-        '<div id="gcchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
-        '<div id="gcchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+        //"Existing infrastructure" div element that can collapse
+        legendHtml += '<div class="button quiet col12">Existing infrastructure:' + 
+        '<div id="exchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
+        '<div id="exchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
         '</div>' +
-        '<div id="gapscrash" style="display: block">';
+        '<div id="existing" style="display: block">';
 
          for (let setting of settings) {
             legendHtml += addLegendLine(setting)
-            if (setting.key == "ICBCcrashes"){ //todo: this probably shouldn't be hardcoded
-                legendHtml += '</div>' //end of Gaps and Crashes div that can collapse
-                // add Community Feedback note and colapse button
-                //legendHtml += '<div class="button quiet col12">Community Feedback:</div>'
-                legendHtml += '<div class="button quiet col12">Community Feedback:' + 
-                '<div id="cfchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: block"></div>' +
-                '<div id="cfchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: none"></div>' + 
-                '</div>' +
-                '<div id="commfeed" style="display: none">';  //start of Community Feedback div element that can collapse
-            }
-            if (setting.key == "veloCanada"){ //todo: this probably shouldn't be hardcoded
-                legendHtml += '</div>' //end of Community Feedback  div that can collapse
-                // add Planned note and colapse button
+            if (setting.key == "food"){ //todo: this probably shouldn't be hardcoded
+                legendHtml += '</div>' //end of "Existing infrastructure" div that can collapse
+                // add "Planned" title and colapse button
                 legendHtml += '<div class="button quiet col12">Planned:' + 
                 '<div id="plchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: block"></div>' +
                 '<div id="plchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: none"></div>' + 
                 '</div>' +
-                '<div id="planned" style="display: none">';  //start of Planned div element that can collapse
+                '<div id="planned" style="display: none">';  //start of Community Feedback div element that can collapse
             }
             if (setting.key == "metrovanGreen"){ //todo: this probably shouldn't be hardcoded
-                legendHtml += '</div>' //end of Planned div that can collapse
-                // add Existing category note and colapse button
-                legendHtml += '<div class="button quiet col12">Existing infrastructure:' +
-                '<div id="exchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
-                '<div id="exchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+                legendHtml += '</div>' //end of Community Feedback  div that can collapse
+                // add "Planned" note and colapse button
+                legendHtml += '<div class="button quiet col12">Community Feedback:' + 
+                '<div id="cfchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: block"></div>' +
+                '<div id="cfchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: none"></div>' + 
                 '</div>' +
-                '<div id="existing" style="display: block">';  //start of Existing div element that can collapse
+                '<div id="commfeed" style="display: none">';  //start of Planned div element that can collapse
             }
-            if (setting.key == "food"){ //todo: this probably shouldn't be hardcoded
+            if (setting.key == "veloCanada"){ //todo: this probably shouldn't be hardcoded
+                legendHtml += '</div>' //end of Planned div that can collapse
+                // add "Gaps, Hotspots and Crashes" note and colapse button
+                legendHtml += '<div class="button quiet col12">Gaps, Hotspots and Crashes:' +
+                '<div id="gcchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
+                '<div id="gcchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+                '</div>' +
+                '<div id="gapscrash" style="display: block">';  //start of Existing div element that can collapse
+            }
+            if (setting.key == "ICBCcrashes"){ //todo: this probably shouldn't be hardcoded
                 legendHtml += '</div>' //end of Existing div that can collapse
             }
         }
@@ -1206,21 +1203,21 @@ addLegend()
 document.getElementById('legendbtn').onclick = function () { toggleDisplay(['legendbtn', 'legend']) };
 document.getElementById('closebtn').onclick = function () { toggleDisplay(['legendbtn', 'legend']) };
 
-// show/hide Gaps and Crashes section
-document.getElementById('gcchevright').onclick = function () { toggleDisplay(['gcchevright', 'gcchevdown', 'gapscrash']) };
-document.getElementById('gcchevdown').onclick = function () { toggleDisplay(['gcchevright', 'gcchevdown', 'gapscrash']) };
-
-// show/hide Community Feedback section
-document.getElementById('cfchevright').onclick = function () { toggleDisplay(['cfchevright', 'cfchevdown', 'commfeed']) };
-document.getElementById('cfchevdown').onclick = function () { toggleDisplay(['cfchevright', 'cfchevdown', 'commfeed']) };
+// show/hide Existing section
+document.getElementById('exchevright').onclick = function () { toggleDisplay(['exchevright', 'exchevdown', 'existing']) };
+document.getElementById('exchevdown').onclick = function () { toggleDisplay(['exchevright', 'exchevdown', 'existing']) };
 
 // show/hide Planned section
 document.getElementById('plchevright').onclick = function () { toggleDisplay(['plchevright', 'plchevdown', 'planned']) };
 document.getElementById('plchevdown').onclick = function () { toggleDisplay(['plchevright', 'plchevdown', 'planned']) };
 
-// show/hide Existing section
-document.getElementById('exchevright').onclick = function () { toggleDisplay(['exchevright', 'exchevdown', 'existing']) };
-document.getElementById('exchevdown').onclick = function () { toggleDisplay(['exchevright', 'exchevdown', 'existing']) };
+// show/hide Community Feedback section
+document.getElementById('cfchevright').onclick = function () { toggleDisplay(['cfchevright', 'cfchevdown', 'commfeed']) };
+document.getElementById('cfchevdown').onclick = function () { toggleDisplay(['cfchevright', 'cfchevdown', 'commfeed']) };
+
+// show/hide Gaps and Crashes section
+document.getElementById('gcchevright').onclick = function () { toggleDisplay(['gcchevright', 'gcchevdown', 'gapscrash']) };
+document.getElementById('gcchevdown').onclick = function () { toggleDisplay(['gcchevright', 'gcchevdown', 'gapscrash']) };
 
 
 function toggleDisplay(elementIds) {
