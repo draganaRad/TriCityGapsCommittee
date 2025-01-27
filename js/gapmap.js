@@ -876,6 +876,7 @@ function glenayreOnEachFeature(feature, layer) {
         //popupContent += '<img src="img/glenayre/' + feature.properties.local_image_path + '" width="200" />'; // Display image in popup
         imageSrc = "img/glenayre/" + feature.properties.local_image_path;
         popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' style='width: 150px; height: auto;'></img></a>";
+        //console.log("DRAGANA:: glenayreOnEachFeature popup content: " + popupContent);
     }
     layer.bindPopup(popupContent);
 

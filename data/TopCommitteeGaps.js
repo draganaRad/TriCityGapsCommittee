@@ -18,79 +18,11 @@ var topCommitteeJson = {
       "id": "2",
       "properties": {
         "description": "This stretch is well served for confident grownups, but none of us is going to ride there with our kids anytime soon. It connects two Skytrain stations, many schools, two civic libraries, two city halls, multiple recreation complexes, multiple parks. It is also an existing gap on the TCT/ Great Trail. Our ask is for a protected bike lane on both sides.",
-        "location": "Guildford Way, Coquitlam City Hall to Port Moody City Hall (Coquitlam/Port Moody)."
+        "location": "Guildford Way, Ioco Road (Port Moody) to Coquitlam border."
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [
-            -122.79242992401122,
-            49.284883609895566
-          ],
-          [
-            -122.79657125473021,
-            49.28519153864841
-          ],
-          [
-            -122.79906034469604,
-            49.28527551888364
-          ],
-          [
-            -122.801034450531,
-            49.285205535364206
-          ],
-          [
-            -122.80208587646484,
-            49.28517754192863
-          ],
-          [
-            -122.80397415161133,
-            49.28509356152657
-          ],
-          [
-            -122.8056263923645,
-            49.28498158743462
-          ],
-          [
-            -122.80723571777344,
-            49.284757638487875
-          ],
-          [
-            -122.80880212783813,
-            49.28456168232514
-          ],
-          [
-            -122.81008958816528,
-            49.28426774662085
-          ],
-          [
-            -122.81137704849243,
-            49.28386183252964
-          ],
-          [
-            -122.81249284744261,
-            49.28352590109962
-          ],
-          [
-            -122.81384468078613,
-            49.28332994004192
-          ],
-          [
-            -122.81551837921144,
-            49.283511903907026
-          ],
-          [
-            -122.8169560432434,
-            49.283959812098956
-          ],
-          [
-            -122.81923055648804,
-            49.28474364164494
-          ],
-          [
-            -122.82032489776611,
-            49.28482762264301
-          ],
           [
             -122.82144069671632,
             49.28457567921971
