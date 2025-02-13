@@ -43,15 +43,18 @@ L.tileLayer(
 map.attributionControl.addAttribution('<a href="https://draganarad.github.io/TriCityStressMapMobile2/" target="_blank">TriCityStressMap</a>');
 map.attributionControl.addAttribution('<a href="https://catalogue.data.gov.bc.ca/dataset/bc-schools-k-12-with-francophone-indicators" target="_blank">BCschools</a>');
 map.attributionControl.addAttribution('<a href="https://www.google.com/maps/d/u/0/viewer?mid=1NY6gbgDuGzDOrFBa-RNHFzVd4PkRbHM0&ll=49.273934982609674%2C-122.7769743&z=13" target="_blank">FoodAssetMap</a>');
+
 map.attributionControl.addAttribution('<a href="https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki" target="_blank">Tri-CitiesHUB</a>');
-map.attributionControl.addAttribution('<a href="https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes" target="_blank">ICBC</a>');
+map.attributionControl.addAttribution('<a href="https://regionalroads.com/biccswitteligibility" target="_blank">TransLink</a>');
+map.attributionControl.addAttribution('<a href="https://open-data-portal-metrovancouver.hub.arcgis.com" target="_blank">MetroVancouver</a>');
+
 map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap" target="_blank">HUBAdoptGap</a>');
 map.attributionControl.addAttribution('<a href="https://www.google.com/maps/d/u/0/viewer?mid=1K4Dl701Fpj-rx68w2YdqRKghxzymJFk&ll=49.27449076794508%2C-122.87642890000002&z=13" target="_blank">Glenayre</a>');
 map.attributionControl.addAttribution('<a href="https://bikemaps.org" target="_blank">BikeMaps</a>');
 map.attributionControl.addAttribution('<a href="https://apps.apple.com/ca/app/tricityfix/id1476599668" target="_blank">TriCityFix</a>');
 map.attributionControl.addAttribution('<a href="https://www.velocanadabikes.org/pedalpoll/pedal-poll-sondo-velo-2021-results/" target="_blank">VeloPedalPoll</a>');
-map.attributionControl.addAttribution('<a href="https://open-data-portal-metrovancouver.hub.arcgis.com" target="_blank">MetroVancouver</a>');
-map.attributionControl.addAttribution('<a href="https://catalogue.data.gov.bc.ca/dataset/bc-schools-k-12-with-francophone-indicators" target="_blank">BCschools</a>');
+
+map.attributionControl.addAttribution('<a href="https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes" target="_blank">ICBC</a>');
 
 //--------------- add layers ---------------
 var layerGroup = new L.LayerGroup();
