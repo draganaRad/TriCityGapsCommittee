@@ -40,6 +40,9 @@ L.tileLayer(
 }
 ).addTo(map);
 
+map.attributionControl.addAttribution('<a href="https://draganarad.github.io/TriCityStressMapMobile2/" target="_blank">TriCityStressMap</a>');
+map.attributionControl.addAttribution('<a href="https://catalogue.data.gov.bc.ca/dataset/bc-schools-k-12-with-francophone-indicators" target="_blank">BCschools</a>');
+map.attributionControl.addAttribution('<a href="https://www.google.com/maps/d/u/0/viewer?mid=1NY6gbgDuGzDOrFBa-RNHFzVd4PkRbHM0&ll=49.273934982609674%2C-122.7769743&z=13" target="_blank">FoodAssetMap</a>');
 map.attributionControl.addAttribution('<a href="https://wiki.bikehub.ca/sites/committees/index.php?title=Tri-Cities_Committee_Wiki" target="_blank">Tri-CitiesHUB</a>');
 map.attributionControl.addAttribution('<a href="https://public.tableau.com/app/profile/icbc/viz/ICBCReportedCrashes/ICBCReportedCrashes" target="_blank">ICBC</a>');
 map.attributionControl.addAttribution('<a href="https://bikehub.ca/get-involved/ungapthemap" target="_blank">HUBAdoptGap</a>');
@@ -48,11 +51,7 @@ map.attributionControl.addAttribution('<a href="https://bikemaps.org" target="_b
 map.attributionControl.addAttribution('<a href="https://apps.apple.com/ca/app/tricityfix/id1476599668" target="_blank">TriCityFix</a>');
 map.attributionControl.addAttribution('<a href="https://www.velocanadabikes.org/pedalpoll/pedal-poll-sondo-velo-2021-results/" target="_blank">VeloPedalPoll</a>');
 map.attributionControl.addAttribution('<a href="https://open-data-portal-metrovancouver.hub.arcgis.com" target="_blank">MetroVancouver</a>');
-//map.attributionControl.addAttribution('<a href="https://github.com/BikeOttawa" target="_blank">BikeOttawa</a>');
-map.attributionControl.addAttribution('<a href="https://draganarad.github.io/TriCityStressMapMobile2/" target="_blank">TriCityStressMap</a>');
-//map.attributionControl.addAttribution('<a href="https://www.sd43.bc.ca/Schools/DistrictMap/Pages/default.aspx#/=" target="_blank">SchoolDistrictNo43</a>');
 map.attributionControl.addAttribution('<a href="https://catalogue.data.gov.bc.ca/dataset/bc-schools-k-12-with-francophone-indicators" target="_blank">BCschools</a>');
-map.attributionControl.addAttribution('<a href="https://www.google.com/maps/d/u/0/viewer?mid=1NY6gbgDuGzDOrFBa-RNHFzVd4PkRbHM0&ll=49.273934982609674%2C-122.7769743&z=13" target="_blank">FoodAssetMap</a>');
 
 //--------------- add layers ---------------
 var layerGroup = new L.LayerGroup();
@@ -725,8 +724,27 @@ var schoolIcon = L.icon({
     iconSize: [22, 22], // size of the icon
 });
 
+function onEachFeatureSchool(feature, layer) {
+    if (!feature.properties) return;
+
+    // Define the specific properties to display
+    const allowedProperties = ["OCCUPANT_NAME", "SCHOOL_EDUCATION_LEVEL", "SCHOOL_CATEGORY", "LOCALITY", "PHYSICAL_ADDRESS", "DISTRICT_NUMBER",
+        "CORE_FRENCH_OFFERED", "EARLY_FRENCH_IMMERSION_OFFERED", "LATE_FRENCH_IMMERSION_OFFERED", "FRANCOPHONE_PROGRAM_OFFERED"];
+
+    let popupContent = "";
+
+    allowedProperties.forEach(property => {
+        if (feature.properties[property]) {
+            popupContent += `<b>${property}:</b> ${feature.properties[property]}<br>`;
+        }
+    });
+
+    layer.bindPopup(popupContent);
+}
+
+
 var schoolLayer = new L.geoJSON(schoolsDict.data, {
-    onEachFeature: onEachFeatureGeoJson,
+    onEachFeature: onEachFeatureSchool,
     pointToLayer: function (feature, latlng) {
         return L.marker(latlng, {
             icon: schoolIcon
