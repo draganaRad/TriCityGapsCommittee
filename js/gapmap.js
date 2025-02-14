@@ -1114,12 +1114,38 @@ function addLegend() {
 
         legendHtml += '<div class="button quiet col12">Tri-Cities Cycling Data</div>'
 
+        // create strings whether to hide or show sections
+        var existingSectionStr = "none"
+        var existingSectionOtherStr = "block"  // this is for showing chevron right (hidden secion)
+        if (showExistingSection){
+            existingSectionStr = "block"
+            existingSectionOtherStr = "none"
+        }
+        var plannedSectionStr = "none"
+        var plannedSectionOtherStr = "block" 
+        if (showPlannedSection){
+            plannedSectionStr= "block"
+            plannedSectionOtherStr = "none"
+        }
+        var communitySectionStr = "none"
+        var communitySectionOtherStr = "block" 
+        if (showCommunitySection){
+            communitySectionStr = "block"
+            communitySectionOtherStr = "none"
+        }
+        var gapsSectionStr = "none"
+        var gapsSectionOtherStr = "block" 
+        if (showGapsSection){
+            gapsSectionStr = "block"
+            gapsSectionOtherStr = "none"
+        }
+
         //"Existing infrastructure" div element that can collapse
         legendHtml += '<div class="button quiet col12">Existing infrastructure:' + 
-        '<div id="exchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
-        '<div id="exchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+        '<div id="exchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: '+ existingSectionOtherStr +'"></div>' +
+        '<div id="exchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: '+ existingSectionStr +'"></div>' + 
         '</div>' +
-        '<div id="existing" style="display: block">';
+        '<div id="existing" style="display: '+ existingSectionStr +'">';
 
          for (let setting of settings) {
             legendHtml += addLegendLine(setting)
@@ -1127,28 +1153,28 @@ function addLegend() {
                 legendHtml += '</div>' //end of "Existing infrastructure" div that can collapse
                 // add "Planned" title and colapse button
                 legendHtml += '<div class="button quiet col12">Planned:' + 
-                '<div id="plchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: block"></div>' +
-                '<div id="plchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: none"></div>' + 
+                '<div id="plchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: '+ plannedSectionOtherStr +'"></div>' +
+                '<div id="plchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: '+ plannedSectionStr +'"></div>' + 
                 '</div>' +
-                '<div id="planned" style="display: none">';  //start of Community Feedback div element that can collapse
+                '<div id="planned" style="display: '+ plannedSectionStr +'">';  //start of Community Feedback div element that can collapse
             }
             if (setting.key == "metrovanGreen"){ //todo: this probably shouldn't be hardcoded
                 legendHtml += '</div>' //end of Community Feedback  div that can collapse
                 // add "Planned" note and colapse button
                 legendHtml += '<div class="button quiet col12">Community Feedback:' + 
-                '<div id="cfchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: block"></div>' +
-                '<div id="cfchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: none"></div>' + 
+                '<div id="cfchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: '+ communitySectionOtherStr +'"></div>' +
+                '<div id="cfchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: '+ communitySectionStr +'"></div>' + 
                 '</div>' +
-                '<div id="commfeed" style="display: none">';  //start of Planned div element that can collapse
+                '<div id="commfeed" style="display: '+ communitySectionStr +'">';  //start of Planned div element that can collapse
             }
             if (setting.key == "veloCanada"){ //todo: this probably shouldn't be hardcoded
                 legendHtml += '</div>' //end of Planned div that can collapse
                 // add "Gaps, Hotspots and Crashes" note and colapse button
                 legendHtml += '<div class="button quiet col12">Gaps, Hotspots and Crashes:' +
-                '<div id="gcchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: none"></div>' +
-                '<div id="gcchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: block"></div>' + 
+                '<div id="gcchevright" class="fill-darken2 icon chevronright button fr" style="padding: 0px; display: '+ gapsSectionOtherStr +'"></div>' +
+                '<div id="gcchevdown" class="fill-darken2 icon chevrondown button fr" style="padding: 0px; display: '+ gapsSectionStr +'"></div>' + 
                 '</div>' +
-                '<div id="gapscrash" style="display: block">';  //start of Existing div element that can collapse
+                '<div id="gapscrash" style="display: '+ gapsSectionStr +'">';  //start of Existing div element that can collapse
             }
             if (setting.key == "ICBCcrashes"){ //todo: this probably shouldn't be hardcoded
                 legendHtml += '</div>' //end of Existing div that can collapse
