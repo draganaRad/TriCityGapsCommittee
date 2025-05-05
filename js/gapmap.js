@@ -1,6 +1,7 @@
 const settings = [
     { type: "Line", key: 'designLowStress', title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExistingLowStress},
     { type: "Line", key: 'designHighStress', title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExistingHighStress},
+    { type: "Line", key: 'aaa', title: 'AAA', data: aaaJson, color: '#08306b', checked: showAAA},
     { type: "Point", key: 'trainParkade', title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showStations},
     { type: "Point", key: 'schools', title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showShools},
     { type: "Point", key: 'food', title: 'Grocery', data: foodJson, icon:'img/cart-shopping-solid.svg', checked: showFood},
@@ -18,7 +19,6 @@ const settings = [
     { type: "Point", key: 'HUBgapPoint', title: 'HUB Hotspots', data: HUBGapsPointsApr2023, icon:'img/purplePinIcon2.png', iconLegend:'img/purplePinIcon2Circle.png', checked: showHUBgaps},
     { type: "Point", key: 'ICBCcrashes', title: 'ICBC Cyclist Crashes', data: ICBCcrashesJsonOct2024, icon:'img/ICBCCrash.png', checked: showCrashes}];
 // note: order in settings is the order in legend
-// note: zIndex currently not used. Leaving for future improvments.
 
 // Create variable to hold map element, give initial settings to map
 //var centerCoord = [49.254667, -122.825015]
@@ -643,6 +643,51 @@ var highStressLayer = new L.geoJSON(designHighStressDict.data, {
 })
 if (designHighStressDict.checked){
     layerGroup.addLayer(highStressLayer);
+}
+
+
+// AAA BIKE DESIGNATED =========================================
+// data source: TriCityRoadsAndSchoolsSummary.R
+const aaaDict = settings.find(dict => dict.key === "aaa");
+
+var aaaStyle = {
+    "color": aaaDict.color, // brown
+    "weight": lineWeight - 1,
+    "opacity": lineOpacity + 0.2
+};
+var aaaHighlight = {
+    "color": aaaDict.color,
+    "weight": lineWeight,
+    "opacity": lineOpacityHighlight + 0.2
+};
+
+function highlightFeatureAAA(e) {
+    var layer = e.target;
+    layer.setStyle(aaaHighlight);
+    if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
+        layer.bringToFront();
+    }
+}
+function resetHighlightAAA(e) {
+    aaaLayer.resetStyle(e.target);
+}
+
+function onEachFeatureAAA(feature, layer) {
+    var popupContent = createPopupContent(feature)
+    layer.bindPopup(popupContent);
+
+    layer.on({
+        mouseover: highlightFeatureAAA,
+        mouseout: resetHighlightAAA,
+    });
+}
+
+var aaaLayer = new L.geoJSON(aaaDict.data, {
+    style: aaaStyle,
+    onEachFeature: onEachFeatureAAA,
+})
+if (aaaDict.checked){
+    layerGroup.addLayer(aaaLayer);
 }
 
 // TRAIN STATIONS AND PARKADES =====================================================
@@ -1303,6 +1348,9 @@ function toggleLayer(checkbox) {
     }
     if (checkbox.id == "designHighStress"){
         targetLayer = highStressLayer
+    }
+    if (checkbox.id == "aaa"){
+        targetLayer = aaaLayer
     }
     if (checkbox.id == "upcoming"){
         targetLayer = upcomingLayer
