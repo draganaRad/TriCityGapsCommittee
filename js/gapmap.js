@@ -1,7 +1,7 @@
 const settings = [
     { type: "Line", key: 'designLowStress', title: 'Low Traffic Stress', data: designLowStressJson, color: '#4292C6', checked: showExistingLowStress},
     { type: "Line", key: 'designHighStress', title: 'High Traffic Stress', data: designHighStressJson, color: '#A63603', checked: showExistingHighStress},
-    { type: "Line", key: 'aaa', title: 'AAA', data: aaaJson, color: '#08306b', checked: showAAA},
+    { type: "Line", key: 'aaa', title: 'AAA', data: aaaJson, color: '#0000FF', checked: showAAA},
     { type: "Point", key: 'trainParkade', title: 'Train Stations/Parkades', data: trainStationsJson, data1: bikeParkadesJson, icon:'img/train-subway-solid.svg', icon1:'img/square-parking-solid.svg', checked: showStations},
     { type: "Point", key: 'schools', title: 'Schools', data: schoolsJson, icon:'img/graduation-cap-solid.svg', checked: showShools},
     { type: "Point", key: 'food', title: 'Grocery', data: foodJson, icon:'img/cart-shopping-solid.svg', checked: showFood},
@@ -651,7 +651,7 @@ if (designHighStressDict.checked){
 const aaaDict = settings.find(dict => dict.key === "aaa");
 
 var aaaStyle = {
-    "color": aaaDict.color, // brown
+    "color": aaaDict.color,
     "weight": lineWeight - 1,
     "opacity": lineOpacity + 0.2
 };
