@@ -233,6 +233,27 @@ var HUBemail = {
           49.226254
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "id": "PC_10",
+      "properties": {
+        "email":"true",
+        "key": "PC",
+        "city": "Port Coquitlam",
+        "type": "Problem",
+        "location": "Pitt River Bridge - Pedestrian and Cycling Ramp Safety",
+        "description": "As part of a safety moment I presented for my company (and as someone who has used this cycling infrastructure), we took a closer look at the ramps around the West Side of the Pitt River Bridge and had some safety concerns we would like to share. <br>No barriers or fences around the corner at the first switch back at top of the slope. <br>This has allowed the creation of an elephant path with loose gravel surface that we have observed both cyclists and pedestrians to use. <br>No barriers around the bottom corner of the second switch back. <br>If a cyclist loses control of their bike or has trouble stopping for the bottom switch back they have nowhere to go and nothing preventing them to rapidly enter the roadway around a tight corner with no ability to see the oncoming traffic from under the bridge, and the traffic in the same direction is behind them. <br>No illumination or signal for the crosswalk (although we appreciate it is in a much better spot than at the bottom of the ramp, which appears to be the original design) <br>Below is a quick sketch of some simple improvements we brainstormed that may be able to increase safety of the ramps and help users feel safer using the existing infrastructure. ",
+        "photo": "10.png",
+        "date":"2025-05-21"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+        -122.732036,
+        49.249590
+        ]
+      }
     }
         //,
     // {
