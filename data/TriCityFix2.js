@@ -502,7 +502,9 @@ var triCityFixJson2 = {
             "location": "Port Moody, Knowle St, 300",
             "description": "Parking my bike and escooter at the PoMo rec centre is very hard. The only bike locking stands that are in safe spot in front are rusted through and have missing screws. Finding better spot is next to impossible.",
             "photo": "9.png",
-            "date":"2025-05-02"
+            "date":"2025-05-02",
+            "descriptionUpdate": "(Oct 2025) Bike racks replaced.",
+            "photoUpdate": "9_1.jpeg"
         },
         "geometry": {
             "type": "Point",

@@ -1074,7 +1074,9 @@ function onEachFeatureTriCityFix(feature, layer) {
                 imageSrc = "img/triCityFix/"
             }
             imageSrc += feature.properties.key + "/" + feature.properties.photo;
-            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height: auto></img></a>";
+            // photos were a bit too big
+            //popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height: auto></img></a>";
+            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' style='max-width:148px; max-height:100px; width:auto; height:auto;'></a>";
         }
         // add second photo if there's one
         if (feature.properties.photo1) {
@@ -1086,7 +1088,8 @@ function onEachFeatureTriCityFix(feature, layer) {
                 imageSrc = "img/triCityFix/"
             }
             imageSrc += feature.properties.key + "/" + feature.properties.photo1;
-            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height: auto'></img></a>";
+            //popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height: auto'></img></a>";
+            popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' style='max-width:148px; max-height:100px; width:auto; height:auto;'></a>";
         }
         // add if there's update
         if (feature.properties.descriptionUpdate) {
@@ -1102,7 +1105,8 @@ function onEachFeatureTriCityFix(feature, layer) {
             imageSrc = "img/triCityFix/"
         }
           imageSrc += feature.properties.key + "/" + feature.properties.photoUpdate;
-          popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height: auto;></img></a>";
+          //popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' width='150' height: auto;></img></a>";
+          popupContent += "<a href='" + imageSrc + "' target='_blank'><img src='" + imageSrc + "' style='max-width:148px; max-height:100px; width:auto; height:auto;'></a>";
         }
     }
     layer.bindPopup(popupContent);
