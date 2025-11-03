@@ -11,7 +11,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Chilko Drive",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -657,7 +659,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Whiting Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -763,6 +767,10 @@ var designHighStressJson = {
             49.2493733
           ],
           [
+            -122.8896222,
+            49.249235
+          ],
+          [
             -122.8896212,
             49.2492131
           ],
@@ -783,7 +791,9 @@ var designHighStressJson = {
         "name": "Foster Avenue",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -797,36 +807,16 @@ var designHighStressJson = {
             49.2567762
           ],
           [
-            -122.8886615,
-            49.2567706
+            -122.8870725,
+            49.2567666
           ],
           [
-            -122.8879774,
-            49.2567654
+            -122.8869612,
+            49.2567645
           ],
           [
-            -122.8876325,
-            49.2567641
-          ],
-          [
-            -122.8874313,
-            49.2567604
-          ],
-          [
-            -122.8874,
-            49.2567598
-          ],
-          [
-            -122.8870786,
-            49.2567526
-          ],
-          [
-            -122.8869428,
-            49.2567495
-          ],
-          [
-            -122.8862651,
-            49.2567486
+            -122.8862616,
+            49.2567592
           ],
           [
             -122.883678,
@@ -837,8 +827,8 @@ var designHighStressJson = {
             49.2567284
           ],
           [
-            -122.8830359,
-            49.256704
+            -122.8830327,
+            49.2567093
           ],
           [
             -122.8829376,
@@ -879,7 +869,9 @@ var designHighStressJson = {
         "cycleway": "shared_lane",
         "highway": "tertiary",
         "name": "Westview Street",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -891,6 +883,10 @@ var designHighStressJson = {
           [
             -122.8896257,
             49.2489881
+          ],
+          [
+            -122.8896259,
+            49.2489602
           ],
           [
             -122.8896273,
@@ -1009,6 +1005,10 @@ var designHighStressJson = {
             49.2462942
           ],
           [
+            -122.8900284,
+            49.2462835
+          ],
+          [
             -122.8900315,
             49.2462625
           ],
@@ -1039,7 +1039,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Glenayre Drive",
         "surface": "paved",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -1070,7 +1072,9 @@ var designHighStressJson = {
         "cycleway": "shared_lane",
         "highway": "unclassified",
         "name": "Hartley Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -1171,7 +1175,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Ailsa Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -1299,7 +1305,9 @@ var designHighStressJson = {
         "maxspeed.type": "sign",
         "name": "Glencoe Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -1388,7 +1396,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Alderson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -1471,7 +1481,9 @@ var designHighStressJson = {
         "cycleway": "shared_lane",
         "foot": "yes",
         "highway": "service",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -1529,87 +1541,168 @@ var designHighStressJson = {
         "id": "way/34363583",
         "cycleway": "shared_lane",
         "highway": "unclassified",
+        "lanes": "2",
+        "maxspeed": "30",
         "name": "April Road",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8648501,
-            49.299215
+            -122.8646861,
+            49.3000025
           ],
           [
-            -122.8648471,
-            49.2997957
+            -122.864577,
+            49.3000409
           ],
           [
-            -122.8648009,
-            49.2999209
+            -122.8644518,
+            49.3000673
           ],
           [
-            -122.8646722,
-            49.3000092
+            -122.8643793,
+            49.3000775
           ],
           [
-            -122.8645919,
-            49.3000436
+            -122.8642961,
+            49.3000826
           ],
           [
-            -122.8644631,
-            49.3000756
+            -122.8642427,
+            49.3000824
           ],
           [
-            -122.8643064,
-            49.300082
+            -122.8641803,
+            49.3000785
           ],
           [
-            -122.8641675,
-            49.3000714
+            -122.8641173,
+            49.3000712
           ],
           [
-            -122.8639176,
-            49.2999998
+            -122.8640583,
+            49.3000601
           ],
           [
-            -122.8638522,
-            49.2999809
+            -122.8639917,
+            49.3000422
           ],
           [
-            -122.8615414,
-            49.2989546
+            -122.8639071,
+            49.3000102
           ],
           [
-            -122.8613235,
-            49.2989227
+            -122.8638538,
+            49.29999
           ],
           [
-            -122.8610884,
-            49.2989233
+            -122.8633149,
+            49.2997522
+          ],
+          [
+            -122.8625764,
+            49.2994356
+          ],
+          [
+            -122.8616168,
+            49.2990184
+          ],
+          [
+            -122.8615095,
+            49.2989701
+          ],
+          [
+            -122.8614384,
+            49.2989533
+          ],
+          [
+            -122.8613506,
+            49.2989373
+          ],
+          [
+            -122.8612667,
+            49.2989268
+          ],
+          [
+            -122.8611935,
+            49.2989229
+          ],
+          [
+            -122.8611334,
+            49.2989232
+          ],
+          [
+            -122.8610648,
+            49.2989275
+          ],
+          [
+            -122.8609783,
+            49.2989412
+          ],
+          [
+            -122.8609012,
+            49.2989569
           ],
           [
             -122.8608217,
             49.2989807
           ],
           [
+            -122.8607348,
+            49.2990184
+          ],
+          [
+            -122.8606454,
+            49.2990693
+          ],
+          [
             -122.8605537,
             49.2991283
           ],
           [
-            -122.860491,
-            49.2992097
+            -122.8605068,
+            49.299197
           ],
           [
-            -122.8604497,
-            49.299392
+            -122.8604765,
+            49.2992535
           ],
           [
-            -122.8604818,
-            49.2995181
+            -122.8604537,
+            49.2993076
           ],
           [
-            -122.8605708,
-            49.299971
+            -122.8604396,
+            49.2993698
+          ],
+          [
+            -122.8604414,
+            49.2994295
+          ],
+          [
+            -122.8604584,
+            49.2995332
+          ],
+          [
+            -122.8604605,
+            49.2995459
+          ],
+          [
+            -122.8604966,
+            49.2997136
+          ],
+          [
+            -122.8605546,
+            49.2999786
+          ],
+          [
+            -122.8608235,
+            49.3012293
           ],
           [
             -122.8609938,
@@ -1648,40 +1741,76 @@ var designHighStressJson = {
             49.3033781
           ],
           [
-            -122.8604547,
-            49.3035106
+            -122.8604766,
+            49.3035109
           ],
           [
-            -122.8601366,
-            49.303596
+            -122.860344,
+            49.3035605
           ],
           [
-            -122.85974,
-            49.303642
+            -122.8601838,
+            49.3036015
           ],
           [
-            -122.8594905,
-            49.3036316
+            -122.8600552,
+            49.3036269
           ],
           [
-            -122.8592411,
-            49.3035943
+            -122.8599392,
+            49.3036439
           ],
           [
-            -122.8589736,
-            49.3035087
+            -122.859804,
+            49.3036549
           ],
           [
-            -122.8586712,
-            49.3033863
+            -122.8597011,
+            49.3036568
           ],
           [
-            -122.8584062,
-            49.303227
+            -122.8595822,
+            49.3036546
           ],
           [
-            -122.8583292,
-            49.3031806
+            -122.859459,
+            49.3036455
+          ],
+          [
+            -122.8593415,
+            49.30363
+          ],
+          [
+            -122.8592328,
+            49.30361
+          ],
+          [
+            -122.8592106,
+            49.3036045
+          ],
+          [
+            -122.8590918,
+            49.3035745
+          ],
+          [
+            -122.8589625,
+            49.303533
+          ],
+          [
+            -122.8588017,
+            49.3034688
+          ],
+          [
+            -122.8586464,
+            49.3033916
+          ],
+          [
+            -122.8583805,
+            49.3032343
+          ],
+          [
+            -122.8583152,
+            49.3031833
           ],
           [
             -122.8577999,
@@ -1711,7 +1840,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Hastings Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -1779,7 +1910,9 @@ var designHighStressJson = {
         "highway": "unclassified",
         "lanes": "2",
         "name": "Parkside Drive",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -1816,7 +1949,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Patricia Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -1860,7 +1995,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "lanes": "2",
         "name": "Shaughnessy Street",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2138,19 +2275,13 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
-          [
-            -122.8304984,
-            49.2804893
-          ],
-          [
-            -122.8297004,
-            49.2804862
-          ],
           [
             -122.8295492,
             49.2804807
@@ -2179,7 +2310,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Langan Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2249,7 +2382,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2287,7 +2422,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2313,7 +2450,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Shaughnessy Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2327,20 +2466,24 @@ var designHighStressJson = {
             49.2570002
           ],
           [
-            -122.7826902,
-            49.2572482
+            -122.7826897,
+            49.257253
+          ],
+          [
+            -122.7826922,
+            49.2575587
+          ],
+          [
+            -122.7826941,
+            49.2578608
           ],
           [
             -122.7826942,
             49.2578831
           ],
           [
-            -122.7826959,
-            49.2581496
-          ],
-          [
-            -122.7826981,
-            49.2584927
+            -122.7826955,
+            49.2581592
           ],
           [
             -122.7827001,
@@ -2355,8 +2498,8 @@ var designHighStressJson = {
             49.2595257
           ],
           [
-            -122.782708,
-            49.2599076
+            -122.7827075,
+            49.259912
           ],
           [
             -122.782708,
@@ -2376,7 +2519,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Spuraway Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2514,7 +2659,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Taylor Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2608,7 +2755,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2676,7 +2825,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "McLean Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2735,7 +2886,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2780,7 +2933,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Apel Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2826,6 +2981,10 @@ var designHighStressJson = {
             49.2822128
           ],
           [
+            -122.7547234,
+            49.2823245
+          ],
+          [
             -122.7543167,
             49.2826521
           ],
@@ -2836,14 +2995,6 @@ var designHighStressJson = {
           [
             -122.7529014,
             49.28379
-          ],
-          [
-            -122.7528663,
-            49.2838193
-          ],
-          [
-            -122.7527231,
-            49.2839378
           ],
           [
             -122.7524202,
@@ -2862,8 +3013,16 @@ var designHighStressJson = {
             49.2848228
           ],
           [
-            -122.7505937,
-            49.2856574
+            -122.7514725,
+            49.2849422
+          ],
+          [
+            -122.7506054,
+            49.2856455
+          ],
+          [
+            -122.75058,
+            49.2856661
           ],
           [
             -122.7504828,
@@ -2881,22 +3040,28 @@ var designHighStressJson = {
         "lanes": "1",
         "motor_vehicle.conditional": "no @ (Mo-Fr 06:00-08:30)",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8666724,
-            49.2778511
+            -122.86668,
+            49.2778395
           ],
           [
-            -122.8667095,
-            49.2779145
+            -122.8667078,
+            49.2778721
           ],
           [
-            -122.866723,
-            49.2779608
+            -122.8667277,
+            49.277906
+          ],
+          [
+            -122.8667475,
+            49.277941
           ],
           [
             -122.8668007,
@@ -2915,7 +3080,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -2961,7 +3128,9 @@ var designHighStressJson = {
         "maxspeed.type": "CA:urban",
         "name": "Hastings Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3006,7 +3175,10 @@ var designHighStressJson = {
         "highway": "tertiary",
         "lanes": "2",
         "name": "Forest Park Way",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3057,7 +3229,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3083,7 +3257,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3122,7 +3298,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3156,7 +3334,9 @@ var designHighStressJson = {
         "maxspeed": "25",
         "name": "Holly Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3341,7 +3521,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Turner Creek Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3466,7 +3648,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Panorama Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3827,7 +4011,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Kingsway Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3868,7 +4054,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Holland Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3901,7 +4089,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Perkins Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3927,7 +4117,9 @@ var designHighStressJson = {
         "lit": "yes",
         "name": "Citadel Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -3939,6 +4131,10 @@ var designHighStressJson = {
           [
             -122.7852971,
             49.2319657
+          ],
+          [
+            -122.7852616,
+            49.2319778
           ],
           [
             -122.7850177,
@@ -4134,7 +4330,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -4299,7 +4497,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -4333,7 +4533,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Citadel Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -4611,7 +4813,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Pooley Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -4696,7 +4900,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Cape Horn Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -4742,7 +4948,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -4761,6 +4969,475 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
+        "id": "way/41685205",
+        "bicycle": "designated",
+        "foot": "designated",
+        "highway": "service",
+        "name": "Quarry Road",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.6553694,
+            49.3495003
+          ],
+          [
+            -122.6551768,
+            49.349604
+          ],
+          [
+            -122.6548474,
+            49.3499677
+          ],
+          [
+            -122.6546943,
+            49.3501872
+          ],
+          [
+            -122.6545577,
+            49.350298
+          ],
+          [
+            -122.6543395,
+            49.3507046
+          ],
+          [
+            -122.6542159,
+            49.3510136
+          ],
+          [
+            -122.6541908,
+            49.3511846
+          ],
+          [
+            -122.6541651,
+            49.3513253
+          ],
+          [
+            -122.6541274,
+            49.3514631
+          ],
+          [
+            -122.6540098,
+            49.3517375
+          ],
+          [
+            -122.6538865,
+            49.3519227
+          ],
+          [
+            -122.6536506,
+            49.3522138
+          ],
+          [
+            -122.6535993,
+            49.352341
+          ],
+          [
+            -122.6534575,
+            49.3528587
+          ],
+          [
+            -122.6533266,
+            49.3532039
+          ],
+          [
+            -122.6532778,
+            49.353372
+          ],
+          [
+            -122.6530842,
+            49.3537145
+          ],
+          [
+            -122.6530179,
+            49.3539467
+          ],
+          [
+            -122.6528957,
+            49.3541297
+          ],
+          [
+            -122.6525886,
+            49.3544198
+          ],
+          [
+            -122.6525163,
+            49.3544885
+          ],
+          [
+            -122.6524318,
+            49.3545582
+          ],
+          [
+            -122.6523026,
+            49.3546317
+          ],
+          [
+            -122.6521583,
+            49.3547061
+          ],
+          [
+            -122.6520823,
+            49.3547369
+          ],
+          [
+            -122.6517413,
+            49.3548847
+          ],
+          [
+            -122.6514415,
+            49.3550028
+          ],
+          [
+            -122.6507726,
+            49.355586
+          ],
+          [
+            -122.6504244,
+            49.355763
+          ],
+          [
+            -122.6502215,
+            49.355943
+          ],
+          [
+            -122.650079,
+            49.356071
+          ],
+          [
+            -122.6498742,
+            49.3562768
+          ],
+          [
+            -122.649671,
+            49.3565291
+          ],
+          [
+            -122.6493104,
+            49.3568123
+          ],
+          [
+            -122.6488722,
+            49.3572825
+          ],
+          [
+            -122.6483327,
+            49.3577842
+          ],
+          [
+            -122.6481346,
+            49.3583406
+          ],
+          [
+            -122.6481114,
+            49.3585328
+          ],
+          [
+            -122.6481156,
+            49.3586756
+          ],
+          [
+            -122.6481453,
+            49.3587339
+          ],
+          [
+            -122.6481729,
+            49.35878
+          ],
+          [
+            -122.6482034,
+            49.3588065
+          ],
+          [
+            -122.6482521,
+            49.3588349
+          ],
+          [
+            -122.6483237,
+            49.3588553
+          ],
+          [
+            -122.6484195,
+            49.3588717
+          ],
+          [
+            -122.6486245,
+            49.3588959
+          ],
+          [
+            -122.6490257,
+            49.3589573
+          ],
+          [
+            -122.6491343,
+            49.3589724
+          ],
+          [
+            -122.6492066,
+            49.3589964
+          ],
+          [
+            -122.6492721,
+            49.3590299
+          ],
+          [
+            -122.6493074,
+            49.3590641
+          ],
+          [
+            -122.6493312,
+            49.3591034
+          ],
+          [
+            -122.6493427,
+            49.3591543
+          ],
+          [
+            -122.649328,
+            49.3592189
+          ],
+          [
+            -122.6492977,
+            49.3592894
+          ],
+          [
+            -122.6492551,
+            49.3593346
+          ],
+          [
+            -122.6489477,
+            49.3595857
+          ],
+          [
+            -122.6486494,
+            49.3597756
+          ],
+          [
+            -122.6482571,
+            49.3600325
+          ],
+          [
+            -122.6479921,
+            49.3602898
+          ],
+          [
+            -122.6478614,
+            49.3605045
+          ],
+          [
+            -122.6477652,
+            49.3607016
+          ],
+          [
+            -122.6475027,
+            49.360928
+          ],
+          [
+            -122.6472728,
+            49.3611048
+          ],
+          [
+            -122.6470645,
+            49.3613402
+          ],
+          [
+            -122.6470247,
+            49.3614929
+          ],
+          [
+            -122.646993,
+            49.3616929
+          ],
+          [
+            -122.6469989,
+            49.3618783
+          ],
+          [
+            -122.6470345,
+            49.362025
+          ],
+          [
+            -122.6470864,
+            49.3621291
+          ],
+          [
+            -122.6474559,
+            49.3629068
+          ],
+          [
+            -122.6474787,
+            49.3629613
+          ],
+          [
+            -122.6474922,
+            49.3630745
+          ],
+          [
+            -122.6474928,
+            49.3631849
+          ],
+          [
+            -122.6474482,
+            49.3633417
+          ],
+          [
+            -122.647398,
+            49.3634966
+          ],
+          [
+            -122.6471651,
+            49.3639854
+          ],
+          [
+            -122.647078,
+            49.3641248
+          ],
+          [
+            -122.6470221,
+            49.3642106
+          ],
+          [
+            -122.6469474,
+            49.3643657
+          ],
+          [
+            -122.6469023,
+            49.3645083
+          ],
+          [
+            -122.6468894,
+            49.3646816
+          ],
+          [
+            -122.6468808,
+            49.3649876
+          ],
+          [
+            -122.6468746,
+            49.3652968
+          ],
+          [
+            -122.6468843,
+            49.3655368
+          ],
+          [
+            -122.6468747,
+            49.3656078
+          ],
+          [
+            -122.6468506,
+            49.3656658
+          ],
+          [
+            -122.6467931,
+            49.3657378
+          ],
+          [
+            -122.6466969,
+            49.3658279
+          ],
+          [
+            -122.6465684,
+            49.3659187
+          ],
+          [
+            -122.64618,
+            49.3661577
+          ],
+          [
+            -122.6458655,
+            49.3665197
+          ],
+          [
+            -122.6455879,
+            49.366905
+          ],
+          [
+            -122.6455441,
+            49.3670538
+          ],
+          [
+            -122.6455859,
+            49.3672211
+          ],
+          [
+            -122.6456096,
+            49.3678172
+          ],
+          [
+            -122.6456205,
+            49.3681545
+          ],
+          [
+            -122.645629,
+            49.368379
+          ],
+          [
+            -122.6456166,
+            49.3687023
+          ],
+          [
+            -122.6456489,
+            49.3688993
+          ],
+          [
+            -122.6456529,
+            49.3691812
+          ],
+          [
+            -122.645611,
+            49.3695131
+          ],
+          [
+            -122.6455897,
+            49.3696035
+          ],
+          [
+            -122.6455479,
+            49.3697251
+          ],
+          [
+            -122.6455108,
+            49.3697964
+          ],
+          [
+            -122.6454575,
+            49.3698676
+          ],
+          [
+            -122.6454104,
+            49.369917
+          ],
+          [
+            -122.6440412,
+            49.3710038
+          ],
+          [
+            -122.6434825,
+            49.371987
+          ],
+          [
+            -122.6433264,
+            49.37238
+          ],
+          [
+            -122.6432564,
+            49.3728338
+          ],
+          [
+            -122.6431935,
+            49.3732477
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": "way/41745868",
         "bicycle": "designated",
         "cycleway.left": "no",
@@ -4770,7 +5447,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Mariner Way",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -4856,7 +5535,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Kingsway Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -4907,7 +5588,8 @@ var designHighStressJson = {
         "bicycle": "designated",
         "highway": "service",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -4930,7 +5612,8 @@ var designHighStressJson = {
         "bicycle": "designated",
         "highway": "service",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -4961,7 +5644,9 @@ var designHighStressJson = {
         "cycleway": "shared",
         "highway": "tertiary",
         "name": "Foster Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -4985,6 +5670,10 @@ var designHighStressJson = {
           [
             -122.8785468,
             49.2563504
+          ],
+          [
+            -122.8784873,
+            49.2563499
           ],
           [
             -122.8702658,
@@ -5015,7 +5704,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Alderson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5040,7 +5731,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Soball Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5088,7 +5781,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "lanes": "2",
         "name": "Soball Street",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5140,7 +5835,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "lanes": "2",
         "name": "Soball Street",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5206,7 +5903,9 @@ var designHighStressJson = {
         "lanes": "2",
         "maxspeed": "50",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5245,7 +5944,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5275,26 +5976,32 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8332121,
-            49.2805264
+            -122.8332556,
+            49.2805225
           ],
           [
             -122.8327259,
             49.2805119
           ],
           [
-            -122.8319051,
-            49.2804914
+            -122.8319031,
+            49.2804889
           ],
           [
-            -122.8313839,
-            49.2804909
+            -122.8315728,
+            49.2804862
+          ],
+          [
+            -122.8313831,
+            49.2804859
           ]
         ]
       }
@@ -5311,7 +6018,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5360,7 +6069,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5401,7 +6112,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5433,15 +6146,18 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8615466,
-            49.2343728
+            -122.8616486,
+            49.2343967
           ],
           [
             -122.8614383,
@@ -5467,7 +6183,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5500,7 +6218,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5541,7 +6261,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5580,7 +6302,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5649,7 +6373,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5678,7 +6404,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5705,7 +6433,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5747,7 +6477,9 @@ var designHighStressJson = {
         "lanes": "4",
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5778,7 +6510,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5817,7 +6551,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Mariner Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5873,7 +6609,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5900,8 +6638,11 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5929,7 +6670,9 @@ var designHighStressJson = {
         "maxspeed.type": "CA:urban",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5954,7 +6697,9 @@ var designHighStressJson = {
         "highway": "primary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -5987,7 +6732,9 @@ var designHighStressJson = {
         "lanes": "2",
         "maxspeed": "30",
         "name": "Parkside Drive",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6134,7 +6881,8 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='separate'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='separate'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6253,7 +7001,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6281,7 +7031,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6325,7 +7077,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Mariner Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6354,7 +7108,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "King Edward Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6393,7 +7149,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Ungless Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6428,7 +7186,10 @@ var designHighStressJson = {
         "cycleway": "shared",
         "highway": "tertiary",
         "name": "Robinson Street",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6458,7 +7219,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6484,6 +7247,10 @@ var designHighStressJson = {
             49.2532519
           ],
           [
+            -122.8578678,
+            49.2537516
+          ],
+          [
             -122.8578666,
             49.2537948
           ],
@@ -6496,12 +7263,20 @@ var designHighStressJson = {
             49.2539217
           ],
           [
+            -122.8578623,
+            49.2539499
+          ],
+          [
             -122.8578488,
             49.2544553
           ],
           [
             -122.8578321,
             49.2550698
+          ],
+          [
+            -122.8578047,
+            49.2560583
           ],
           [
             -122.8578038,
@@ -6525,7 +7300,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6602,7 +7379,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6635,7 +7414,9 @@ var designHighStressJson = {
         "highway": "primary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6673,14 +7454,16 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.7469366,
-            49.2550349
+            -122.7470303,
+            49.2550874
           ],
           [
             -122.7460021,
@@ -6704,7 +7487,8 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6748,7 +7532,8 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='trunk_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='trunk_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6868,7 +7653,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6896,7 +7683,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6929,14 +7718,16 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.7473957,
-            49.2554721
+            -122.7473019,
+            49.2554332
           ],
           [
             -122.7475197,
@@ -6961,7 +7752,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -6993,7 +7786,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7026,7 +7821,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7055,7 +7852,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7087,7 +7886,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7116,7 +7917,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7140,7 +7943,9 @@ var designHighStressJson = {
         "highway": "secondary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='secondary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='secondary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7169,7 +7974,9 @@ var designHighStressJson = {
         "highway": "primary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7202,7 +8009,9 @@ var designHighStressJson = {
         "highway": "secondary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='secondary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='secondary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7252,9 +8061,12 @@ var designHighStressJson = {
         "id": "way/138526245",
         "cycleway": "shared_lane",
         "highway": "tertiary",
+        "lanes": "2",
         "name": "Rochester Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7292,6 +8104,10 @@ var designHighStressJson = {
             49.2453849
           ],
           [
+            -122.8771447,
+            49.2453825
+          ],
+          [
             -122.877058,
             49.2453821
           ],
@@ -7312,6 +8128,10 @@ var designHighStressJson = {
             49.2453593
           ],
           [
+            -122.8730202,
+            49.2453588
+          ],
+          [
             -122.8729727,
             49.2453588
           ],
@@ -7330,7 +8150,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Foster Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7380,6 +8202,10 @@ var designHighStressJson = {
             49.256227
           ],
           [
+            -122.8635196,
+            49.2562101
+          ],
+          [
             -122.8634791,
             49.2562096
           ],
@@ -7399,7 +8225,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Henry Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7436,7 +8264,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7446,8 +8276,8 @@ var designHighStressJson = {
             49.2357015
           ],
           [
-            -122.8683521,
-            49.2359697
+            -122.8682231,
+            49.2359447
           ]
         ]
       }
@@ -7466,15 +8296,18 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8686654,
-            49.23599
+            -122.8686768,
+            49.2359916
           ],
           [
             -122.8689131,
@@ -7496,7 +8329,9 @@ var designHighStressJson = {
         "highway": "primary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7633,7 +8468,9 @@ var designHighStressJson = {
         "foot": "designated",
         "footway": "crossing",
         "highway": "footway",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='crossing'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='footway'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='crossing'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='footway'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Shared Crossing",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7667,7 +8504,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7716,7 +8555,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7746,7 +8587,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7795,7 +8638,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Fawcett Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7821,6 +8666,14 @@ var designHighStressJson = {
             49.2272337
           ],
           [
+            -122.8342145,
+            49.2274174
+          ],
+          [
+            -122.8342237,
+            49.2277317
+          ],
+          [
             -122.8342247,
             49.2277676
           ],
@@ -7840,7 +8693,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Brigantine Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7888,7 +8743,9 @@ var designHighStressJson = {
         "highway": "unclassified",
         "name": "Brigantine Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7940,7 +8797,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Mariner Way",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -7976,7 +8835,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Princeton Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8100,34 +8961,6 @@ var designHighStressJson = {
           [
             -122.7418778,
             49.2955787
-          ],
-          [
-            -122.741834,
-            49.29555
-          ],
-          [
-            -122.7417903,
-            49.2955202
-          ],
-          [
-            -122.7417048,
-            49.295455
-          ],
-          [
-            -122.7416187,
-            49.2953789
-          ],
-          [
-            -122.7415429,
-            49.2952999
-          ],
-          [
-            -122.741518,
-            49.2952737
-          ],
-          [
-            -122.7414443,
-            49.2951986
           ]
         ]
       }
@@ -8138,23 +8971,19 @@ var designHighStressJson = {
         "id": "way/305506091",
         "cycleway": "shared_lane",
         "highway": "tertiary",
+        "lanes": "2",
         "name": "Princeton Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.7414443,
-            49.2951986
-          ],
-          [
-            -122.741354,
-            49.2951071
-          ],
-          [
-            -122.7413188,
-            49.2950708
+            -122.7411649,
+            49.2949116
           ],
           [
             -122.7410874,
@@ -8165,8 +8994,8 @@ var designHighStressJson = {
             49.2946745
           ],
           [
-            -122.7408422,
-            49.2945807
+            -122.7408122,
+            49.2945593
           ],
           [
             -122.7407421,
@@ -8339,38 +9168,6 @@ var designHighStressJson = {
           [
             -122.7382119,
             49.2946101
-          ],
-          [
-            -122.7381424,
-            49.2946125
-          ],
-          [
-            -122.7380593,
-            49.294611
-          ],
-          [
-            -122.7379982,
-            49.2946067
-          ],
-          [
-            -122.7378935,
-            49.2945947
-          ],
-          [
-            -122.7378073,
-            49.2945805
-          ],
-          [
-            -122.7377179,
-            49.2945599
-          ],
-          [
-            -122.737654,
-            49.2945427
-          ],
-          [
-            -122.7375093,
-            49.2945012
           ]
         ]
       }
@@ -8386,7 +9183,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8425,7 +9224,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8450,7 +9251,9 @@ var designHighStressJson = {
         "lanes": "4",
         "maxspeed": "50",
         "name": "Ioco Road",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8477,7 +9280,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Saint Johns Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8503,7 +9308,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Ungless Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='shared_lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='shared_lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8538,7 +9345,9 @@ var designHighStressJson = {
         "cycleway": "shared",
         "highway": "tertiary",
         "name": "Foster Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8552,8 +9361,16 @@ var designHighStressJson = {
             49.2560975
           ],
           [
+            -122.8462509,
+            49.2560973
+          ],
+          [
             -122.8446135,
             49.2560884
+          ],
+          [
+            -122.8410525,
+            49.2560637
           ],
           [
             -122.84101,
@@ -8575,7 +9392,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Foster Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8587,6 +9406,10 @@ var designHighStressJson = {
           [
             -122.8407899,
             49.256061
+          ],
+          [
+            -122.8407513,
+            49.2560607
           ],
           [
             -122.8399271,
@@ -8613,6 +9436,10 @@ var designHighStressJson = {
             49.2560287
           ],
           [
+            -122.835548,
+            49.2560212
+          ],
+          [
             -122.835503,
             49.2560209
           ],
@@ -8633,7 +9460,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.right": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8675,7 +9504,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.right": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8736,7 +9567,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Glen Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8769,7 +9602,9 @@ var designHighStressJson = {
         "highway": "primary_link",
         "lanes": "2",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8797,7 +9632,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8877,7 +9714,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8899,7 +9738,11 @@ var designHighStressJson = {
         "id": "way/350713576",
         "cycleway": "shared_lane",
         "highway": "primary_link",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "lanes": "1",
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8942,7 +9785,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -8986,7 +9831,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Loring Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9022,7 +9869,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Dunlop Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9030,6 +9879,10 @@ var designHighStressJson = {
           [
             -122.887234,
             49.2412369
+          ],
+          [
+            -122.8872357,
+            49.2411502
           ],
           [
             -122.8872432,
@@ -9058,7 +9911,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Sunset Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9066,6 +9921,10 @@ var designHighStressJson = {
           [
             -122.8881387,
             49.2412431
+          ],
+          [
+            -122.8873708,
+            49.2412378
           ],
           [
             -122.887234,
@@ -9087,7 +9946,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9183,7 +10044,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Foster Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9197,8 +10060,16 @@ var designHighStressJson = {
             49.2562064
           ],
           [
+            -122.8632272,
+            49.2562059
+          ],
+          [
             -122.8626805,
             49.2561966
+          ],
+          [
+            -122.857966,
+            49.2561564
           ],
           [
             -122.8579213,
@@ -9220,7 +10091,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9228,6 +10101,10 @@ var designHighStressJson = {
           [
             -122.857802,
             49.256155
+          ],
+          [
+            -122.8576669,
+            49.2562575
           ],
           [
             -122.8576601,
@@ -9354,8 +10231,8 @@ var designHighStressJson = {
             49.2590706
           ],
           [
-            -122.8563022,
-            49.2597672
+            -122.8563025,
+            49.2597657
           ],
           [
             -122.8562978,
@@ -9458,8 +10335,12 @@ var designHighStressJson = {
             49.2630419
           ],
           [
-            -122.8576178,
-            49.2633641
+            -122.8576159,
+            49.2633528
+          ],
+          [
+            -122.8576153,
+            49.2633679
           ],
           [
             -122.8576163,
@@ -9477,7 +10358,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Foster Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9491,8 +10374,16 @@ var designHighStressJson = {
             49.2561538
           ],
           [
+            -122.8575234,
+            49.2561531
+          ],
+          [
             -122.8556977,
             49.2561412
+          ],
+          [
+            -122.8523719,
+            49.256152
           ],
           [
             -122.8523232,
@@ -9505,6 +10396,10 @@ var designHighStressJson = {
           [
             -122.8521022,
             49.2561497
+          ],
+          [
+            -122.8520483,
+            49.2561483
           ],
           [
             -122.8514215,
@@ -9535,6 +10430,10 @@ var designHighStressJson = {
             49.2561077
           ],
           [
+            -122.8465809,
+            49.2560998
+          ],
+          [
             -122.846515,
             49.256099
           ],
@@ -9560,7 +10459,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9626,7 +10527,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9658,14 +10561,16 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8666574,
-            49.2808062
+            -122.8666553,
+            49.280959
           ],
           [
             -122.8666611,
@@ -9702,7 +10607,9 @@ var designHighStressJson = {
         "motor_vehicle.conditional": "no @ (Mo-Fr 06:00-08:30)",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9712,12 +10619,12 @@ var designHighStressJson = {
             49.2782504
           ],
           [
-            -122.866668,
-            49.278627
+            -122.8666764,
+            49.2786072
           ],
           [
-            -122.8666037,
-            49.278857
+            -122.8666223,
+            49.2788377
           ],
           [
             -122.8665729,
@@ -9747,7 +10654,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Union Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9796,7 +10705,9 @@ var designHighStressJson = {
         "highway": "primary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9820,7 +10731,8 @@ var designHighStressJson = {
         "highway": "primary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9847,7 +10759,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9871,7 +10785,9 @@ var designHighStressJson = {
         "highway": "primary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9898,7 +10814,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9933,7 +10851,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9960,7 +10880,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -9992,8 +10914,11 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10027,7 +10952,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10060,7 +10987,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10093,7 +11022,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10130,7 +11061,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10149,75 +11082,6 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/456406734",
-        "bicycle": "yes",
-        "cycleway": "lane",
-        "foot": "no",
-        "highway": "secondary",
-        "lanes": "2",
-        "lanes.backward": "4",
-        "lanes.forward": "2",
-        "maxspeed": "50",
-        "name": "King Edward Street",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8617288,
-            49.2344103
-          ],
-          [
-            -122.8617261,
-            49.234316
-          ],
-          [
-            -122.8617264,
-            49.2342741
-          ],
-          [
-            -122.8617212,
-            49.2342156
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/456406735",
-        "bicycle": "yes",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "foot": "no",
-        "highway": "secondary",
-        "lanes": "2",
-        "lanes.backward": "4",
-        "lanes.forward": "2",
-        "maxspeed": "50",
-        "name": "King Edward Street",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.861719,
-            49.2340624
-          ],
-          [
-            -122.8617048,
-            49.2333282
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/456406739",
         "bicycle": "designated",
         "cycleway.left": "no",
@@ -10228,7 +11092,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10268,8 +11134,11 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10287,8 +11156,8 @@ var designHighStressJson = {
             49.2345065
           ],
           [
-            -122.8615585,
-            49.2345272
+            -122.8616432,
+            49.2345465
           ]
         ]
       }
@@ -10297,7 +11166,7 @@ var designHighStressJson = {
       "type": "Feature",
       "properties": {
         "id": "way/456406743",
-        "bicycle": "yes",
+        "bicycle": "designated",
         "cycleway.left": "no",
         "cycleway.right": "lane",
         "highway": "primary",
@@ -10305,8 +11174,11 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10324,8 +11196,8 @@ var designHighStressJson = {
             49.2344355
           ],
           [
-            -122.8617288,
-            49.2344103
+            -122.8616486,
+            49.2343967
           ]
         ]
       }
@@ -10342,15 +11214,18 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8617356,
-            49.2345599
+            -122.8616432,
+            49.2345465
           ],
           [
             -122.8618322,
@@ -10375,27 +11250,30 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8683521,
-            49.2359697
+            -122.8683659,
+            49.2359707
           ],
           [
-            -122.8684844,
-            49.2359961
+            -122.8685135,
+            49.2359806
           ],
           [
-            -122.86855,
-            49.2360097
+            -122.8685494,
+            49.235983
           ],
           [
-            -122.8686654,
-            49.23599
+            -122.8686768,
+            49.2359916
           ]
         ]
       }
@@ -10412,23 +11290,26 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8686654,
-            49.23599
+            -122.8686768,
+            49.2359916
           ],
           [
-            -122.868543,
-            49.2358793
+            -122.868547,
+            49.2359233
           ],
           [
-            -122.8682881,
-            49.235825
+            -122.8684081,
+            49.2358502
           ]
         ]
       }
@@ -10443,7 +11324,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.right": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10489,7 +11372,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.lane.right": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Found tag 'parking:lane:right'='parallel'. Parking is present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 2 because the maxspeed is between 41-50 km/h and parking present.,Increasing LTS to 3 because highway is not 'residential'."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Found tag 'parking:lane:right'='parallel'. Parking is present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 2 because the maxspeed is between 41-50 km/h and parking present.,Increasing LTS to 3 because highway is not 'residential'.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10515,7 +11400,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.right": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10568,7 +11455,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10616,8 +11505,11 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10646,7 +11538,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Fawcett Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10683,7 +11577,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10712,7 +11608,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10744,7 +11642,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Spuraway Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10771,7 +11671,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10802,7 +11704,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Saint Johns Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10832,7 +11736,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10867,7 +11773,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10902,7 +11810,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10932,7 +11842,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -10966,7 +11878,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11001,7 +11915,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11031,7 +11947,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11065,7 +11983,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11095,7 +12015,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11128,7 +12050,9 @@ var designHighStressJson = {
         "lanes": "2",
         "maxspeed": "50",
         "name": "Ioco Road",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11158,7 +12082,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11193,7 +12119,9 @@ var designHighStressJson = {
         "lanes.forward": "1",
         "name": "Ungless Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11228,7 +12156,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Ungless Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11262,7 +12192,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11296,7 +12228,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11327,7 +12261,9 @@ var designHighStressJson = {
         "lanes.forward": "1",
         "name": "Ungless Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11360,7 +12296,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Hastings Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11393,7 +12331,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Hastings Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11417,7 +12357,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "lanes": "2",
         "name": "Hastings Street",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11451,7 +12393,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11486,7 +12430,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11520,7 +12466,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11551,7 +12499,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11580,7 +12530,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11611,7 +12563,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11641,7 +12595,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11678,7 +12634,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Parkside Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11707,7 +12665,9 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "Turner Creek Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11740,7 +12700,9 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "Turner Creek Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11769,7 +12731,9 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "Turner Creek Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11806,7 +12770,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11837,8 +12803,11 @@ var designHighStressJson = {
         "cycleway": "shared",
         "highway": "tertiary",
         "name": "Alderson Avenue",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11869,8 +12838,11 @@ var designHighStressJson = {
         "cycleway": "shared",
         "highway": "tertiary",
         "name": "Alderson Avenue",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11896,7 +12868,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11923,7 +12897,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11954,7 +12930,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -11988,7 +12966,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12019,7 +12999,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12050,7 +13032,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12085,7 +13069,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12120,7 +13106,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12155,7 +13143,9 @@ var designHighStressJson = {
         "lanes.forward": "1",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12189,7 +13179,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12216,7 +13208,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12243,7 +13237,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12294,7 +13290,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12324,7 +13322,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12355,7 +13355,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12390,7 +13392,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12429,7 +13433,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12456,7 +13462,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12500,7 +13508,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "College Park Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12548,7 +13558,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Glenayre Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12572,7 +13584,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "College Park Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12627,7 +13641,9 @@ var designHighStressJson = {
         "cycleway": "shared_lane",
         "highway": "tertiary",
         "name": "College Park Way",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12653,22 +13669,24 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8313839,
-            49.2804909
+            -122.8313831,
+            49.2804859
           ],
           [
-            -122.831273,
-            49.280489
+            -122.8312757,
+            49.280486
           ],
           [
-            -122.830859,
-            49.280489
+            -122.8308591,
+            49.2804863
           ]
         ]
       }
@@ -12683,7 +13701,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12713,7 +13733,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12761,8 +13783,11 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12794,8 +13819,11 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12827,7 +13855,9 @@ var designHighStressJson = {
         "lanes.forward": "1",
         "name": "Ungless Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='shared_lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='shared_lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12851,7 +13881,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Alderson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12883,7 +13915,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Alderson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12912,7 +13946,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12948,8 +13984,11 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -12977,7 +14016,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13003,7 +14044,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Cecile Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13095,7 +14138,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "College Park Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13123,7 +14168,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "College Park Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13149,7 +14196,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Spuraway Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13181,7 +14230,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Alderson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13207,8 +14258,16 @@ var designHighStressJson = {
             49.2398204
           ],
           [
+            -122.8853967,
+            49.2398176
+          ],
+          [
             -122.885252,
             49.2398163
+          ],
+          [
+            -122.8850874,
+            49.2398148
           ],
           [
             -122.8839228,
@@ -13238,7 +14297,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Glen Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13276,6 +14337,10 @@ var designHighStressJson = {
             49.2826565
           ],
           [
+            -122.786437,
+            49.2826547
+          ],
+          [
             -122.786341,
             49.2826544
           ],
@@ -13295,7 +14360,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Wilson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13340,7 +14407,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Mary Hill Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13350,8 +14419,8 @@ var designHighStressJson = {
             49.254062
           ],
           [
-            -122.7785325,
-            49.2541591
+            -122.7785312,
+            49.2541626
           ],
           [
             -122.7785331,
@@ -13382,7 +14451,7 @@ var designHighStressJson = {
             49.2560042
           ],
           [
-            -122.7785505,
+            -122.7785504,
             49.2560381
           ],
           [
@@ -13390,8 +14459,8 @@ var designHighStressJson = {
             49.2560944
           ],
           [
-            -122.7785515,
-            49.2561605
+            -122.7785516,
+            49.2561597
           ],
           [
             -122.778552,
@@ -13414,10 +14483,6 @@ var designHighStressJson = {
             49.2580921
           ],
           [
-            -122.7785786,
-            49.2585774
-          ],
-          [
             -122.7785788,
             49.2586182
           ],
@@ -13437,7 +14502,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Wellington Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13451,8 +14518,8 @@ var designHighStressJson = {
             49.2785236
           ],
           [
-            -122.7616944,
-            49.2794394
+            -122.7616969,
+            49.2794384
           ],
           [
             -122.7616848,
@@ -13499,8 +14566,12 @@ var designHighStressJson = {
             49.2834396
           ],
           [
+            -122.7616557,
+            49.2842194
+          ],
+          [
             -122.7616555,
-            49.2842394
+            49.2842491
           ],
           [
             -122.761655,
@@ -13518,7 +14589,10 @@ var designHighStressJson = {
         "highway": "tertiary",
         "lanes": "2",
         "name": "Forest Park Way",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13576,7 +14650,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13615,7 +14691,9 @@ var designHighStressJson = {
         "parking.left": "no",
         "parking.right": "street_side",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13653,7 +14731,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "street_side",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13687,7 +14767,8 @@ var designHighStressJson = {
         "id": "way/587906262",
         "bicycle": "designated",
         "highway": "service",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13740,7 +14821,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13769,7 +14852,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13795,7 +14880,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13836,7 +14923,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13865,7 +14954,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13893,7 +14984,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13918,7 +15011,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Wilson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -13934,6 +15029,10 @@ var designHighStressJson = {
           [
             -122.7783621,
             49.2608842
+          ],
+          [
+            -122.7782696,
+            49.2608844
           ],
           [
             -122.7778426,
@@ -13984,7 +15083,9 @@ var designHighStressJson = {
         "lit": "yes",
         "name": "Wilson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14038,7 +15139,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14080,7 +15183,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14104,7 +15209,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "lanes": "2",
         "name": "Turner Creek Drive",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14199,7 +15306,10 @@ var designHighStressJson = {
         "cycleway": "shared_lane",
         "highway": "tertiary",
         "name": "Rochester Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14238,7 +15348,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14250,6 +15362,10 @@ var designHighStressJson = {
           [
             -122.8273917,
             49.2781748
+          ],
+          [
+            -122.8273764,
+            49.2780877
           ],
           [
             -122.8273324,
@@ -14267,7 +15383,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Hartley Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14325,7 +15443,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Alderson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14393,7 +15513,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Mariner Way",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14423,7 +15545,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14491,7 +15615,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14518,7 +15644,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14551,7 +15679,8 @@ var designHighStressJson = {
         "name": "Poco Trail/TCT",
         "segregated": "no",
         "surface": "gravel",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14579,7 +15708,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14612,7 +15743,9 @@ var designHighStressJson = {
         "highway": "primary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14652,7 +15785,8 @@ var designHighStressJson = {
         "highway": "primary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14685,7 +15819,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14715,7 +15851,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14742,7 +15880,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14797,7 +15937,9 @@ var designHighStressJson = {
         "cycleway": "shared_lane",
         "highway": "tertiary",
         "name": "Harper Road",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -14807,48 +15949,56 @@ var designHighStressJson = {
             49.3020664
           ],
           [
-            -122.741113,
-            49.3014382
+            -122.7411447,
+            49.3014302
           ],
           [
-            -122.7410914,
-            49.3013897
+            -122.7411144,
+            49.3013545
           ],
           [
-            -122.7410748,
-            49.3013637
+            -122.741078,
+            49.3012766
           ],
           [
-            -122.741019,
-            49.3012772
+            -122.7410352,
+            49.3012223
           ],
           [
-            -122.7409903,
-            49.3012315
+            -122.7409494,
+            49.3011195
           ],
           [
-            -122.7408293,
-            49.301031
+            -122.7408407,
+            49.301027
+          ],
+          [
+            -122.7407375,
+            49.3009558
           ],
           [
             -122.7406263,
             49.3008944
           ],
           [
-            -122.7404291,
-            49.3008174
+            -122.7404353,
+            49.3008099
           ],
           [
-            -122.7402389,
-            49.3007588
+            -122.7402495,
+            49.3007531
           ],
           [
-            -122.7399685,
-            49.3007196
+            -122.7401019,
+            49.3007188
           ],
           [
-            -122.7393595,
-            49.3007247
+            -122.7399509,
+            49.3006995
+          ],
+          [
+            -122.7397731,
+            49.3006895
           ],
           [
             -122.7359752,
@@ -14936,7 +16086,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15028,7 +16180,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15125,7 +16279,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15139,8 +16295,8 @@ var designHighStressJson = {
             49.2556456
           ],
           [
-            -122.7479561,
-            49.255715
+            -122.7480198,
+            49.25574
           ],
           [
             -122.7482538,
@@ -15162,7 +16318,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15195,7 +16353,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15236,7 +16396,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15272,7 +16434,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Glenayre Drive",
         "surface": "paved",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15300,7 +16464,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Glenayre Drive",
         "surface": "paved",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15332,7 +16498,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Glenayre Drive",
         "surface": "paved",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15372,7 +16540,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Glenayre Drive",
         "surface": "paved",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15397,7 +16567,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Glenayre Drive",
         "surface": "paved",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15449,7 +16621,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "College Park Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15480,7 +16654,9 @@ var designHighStressJson = {
         "maxspeed.type": "sign",
         "name": "Glencoe Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15509,7 +16685,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Smith Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15533,7 +16711,9 @@ var designHighStressJson = {
         "cycleway": "shared_lane",
         "highway": "tertiary",
         "name": "Poirier Street",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15575,7 +16755,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15594,13 +16776,51 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
+        "id": "way/924634750",
+        "cycleway.right": "lane",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Murray Street",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8406427,
+            49.2788311
+          ],
+          [
+            -122.8403925,
+            49.2788048
+          ],
+          [
+            -122.8402356,
+            49.2788075
+          ],
+          [
+            -122.8401494,
+            49.278809
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": "way/924862418",
         "cycleway.left": "shared_lane",
         "cycleway.right": "lane",
         "highway": "tertiary",
         "lanes": "2",
         "name": "Forest Park Way",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15626,7 +16846,8 @@ var designHighStressJson = {
         "id": "way/929368098",
         "bicycle": "designated",
         "highway": "service",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15655,7 +16876,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Kebet Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15685,7 +16908,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Dominion Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15754,7 +16979,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15780,7 +17007,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.right": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15810,7 +17039,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.right": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15844,7 +17075,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.right": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15906,7 +17139,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.right": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15943,7 +17178,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15972,7 +17209,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -15996,7 +17235,9 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Delestre Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16033,7 +17274,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16067,7 +17310,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16177,7 +17422,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16279,7 +17526,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Shaughnessy Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16289,8 +17538,8 @@ var designHighStressJson = {
             49.2599679
           ],
           [
-            -122.7826657,
-            49.2600642
+            -122.7826756,
+            49.2600416
           ],
           [
             -122.7826535,
@@ -16322,7 +17571,9 @@ var designHighStressJson = {
         "name": "Foster Avenue",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16336,16 +17587,8 @@ var designHighStressJson = {
             49.2568054
           ],
           [
-            -122.8908929,
-            49.2567911
-          ],
-          [
-            -122.8906305,
-            49.2567881
-          ],
-          [
-            -122.8903025,
-            49.2567856
+            -122.8917,
+            49.2568047
           ],
           [
             -122.8896484,
@@ -16370,7 +17613,9 @@ var designHighStressJson = {
         "lit": "yes",
         "name": "Foster Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16382,6 +17627,14 @@ var designHighStressJson = {
           [
             -122.8928135,
             49.2568176
+          ],
+          [
+            -122.8927646,
+            49.2568171
+          ],
+          [
+            -122.8920454,
+            49.2568096
           ],
           [
             -122.8919065,
@@ -16400,7 +17653,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16429,7 +17684,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Wilson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16482,7 +17739,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Wellington Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16500,8 +17759,482 @@ var designHighStressJson = {
             49.2783092
           ],
           [
+            -122.7617076,
+            49.2783332
+          ],
+          [
             -122.761707,
             49.278418
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1058687648",
+        "bicycle": "designated",
+        "foot": "designated",
+        "highway": "service",
+        "name": "Quarry Road",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.6714885,
+            49.3264468
+          ],
+          [
+            -122.6710161,
+            49.3268328
+          ],
+          [
+            -122.6707852,
+            49.3270925
+          ],
+          [
+            -122.670599,
+            49.3273605
+          ],
+          [
+            -122.6702073,
+            49.3279612
+          ],
+          [
+            -122.6700474,
+            49.3281651
+          ],
+          [
+            -122.669816,
+            49.3283653
+          ],
+          [
+            -122.669701,
+            49.3284961
+          ],
+          [
+            -122.6696547,
+            49.3285495
+          ],
+          [
+            -122.6695893,
+            49.3286957
+          ],
+          [
+            -122.6695405,
+            49.3288478
+          ],
+          [
+            -122.6695041,
+            49.329148
+          ],
+          [
+            -122.6694874,
+            49.3292913
+          ],
+          [
+            -122.6694999,
+            49.3294895
+          ],
+          [
+            -122.6694728,
+            49.3298536
+          ],
+          [
+            -122.6694842,
+            49.3300997
+          ],
+          [
+            -122.6695185,
+            49.3303234
+          ],
+          [
+            -122.6694865,
+            49.330523
+          ],
+          [
+            -122.6694383,
+            49.3306046
+          ],
+          [
+            -122.6693794,
+            49.3306778
+          ],
+          [
+            -122.6692725,
+            49.3307736
+          ],
+          [
+            -122.66878,
+            49.3311178
+          ],
+          [
+            -122.6686259,
+            49.3312263
+          ],
+          [
+            -122.6684353,
+            49.3315749
+          ],
+          [
+            -122.6683553,
+            49.3317791
+          ],
+          [
+            -122.6682693,
+            49.3319228
+          ],
+          [
+            -122.6682119,
+            49.3319937
+          ],
+          [
+            -122.6681681,
+            49.3320482
+          ],
+          [
+            -122.6679072,
+            49.3324157
+          ],
+          [
+            -122.6676495,
+            49.3328313
+          ],
+          [
+            -122.6675632,
+            49.3330549
+          ],
+          [
+            -122.6675033,
+            49.3331361
+          ],
+          [
+            -122.6674529,
+            49.3331895
+          ],
+          [
+            -122.6673964,
+            49.333235
+          ],
+          [
+            -122.6671802,
+            49.3333396
+          ],
+          [
+            -122.6665455,
+            49.3336438
+          ],
+          [
+            -122.6661977,
+            49.3340455
+          ],
+          [
+            -122.666047,
+            49.3342716
+          ],
+          [
+            -122.6659084,
+            49.3346934
+          ],
+          [
+            -122.6658315,
+            49.3348876
+          ],
+          [
+            -122.6656608,
+            49.3351126
+          ],
+          [
+            -122.6654365,
+            49.3353619
+          ],
+          [
+            -122.6651708,
+            49.3355793
+          ],
+          [
+            -122.664708,
+            49.3358957
+          ],
+          [
+            -122.6644753,
+            49.3360509
+          ],
+          [
+            -122.6642697,
+            49.3362156
+          ],
+          [
+            -122.6640592,
+            49.3363759
+          ],
+          [
+            -122.6638854,
+            49.3364838
+          ],
+          [
+            -122.6638205,
+            49.3365244
+          ],
+          [
+            -122.6633982,
+            49.3367432
+          ],
+          [
+            -122.6625477,
+            49.3371685
+          ],
+          [
+            -122.6622847,
+            49.3373273
+          ],
+          [
+            -122.6620397,
+            49.3375084
+          ],
+          [
+            -122.6615663,
+            49.3378729
+          ],
+          [
+            -122.6611187,
+            49.3381841
+          ],
+          [
+            -122.6609909,
+            49.3383081
+          ],
+          [
+            -122.6609026,
+            49.3384271
+          ],
+          [
+            -122.6608,
+            49.3386214
+          ],
+          [
+            -122.6606138,
+            49.3390355
+          ],
+          [
+            -122.660477,
+            49.3394873
+          ],
+          [
+            -122.6602862,
+            49.3408772
+          ],
+          [
+            -122.6602954,
+            49.3410808
+          ],
+          [
+            -122.6603341,
+            49.3413203
+          ],
+          [
+            -122.6604297,
+            49.3416017
+          ],
+          [
+            -122.6604948,
+            49.3418151
+          ],
+          [
+            -122.6605021,
+            49.3419115
+          ],
+          [
+            -122.6604944,
+            49.3420065
+          ],
+          [
+            -122.6604701,
+            49.3420865
+          ],
+          [
+            -122.6604405,
+            49.3421581
+          ],
+          [
+            -122.6603705,
+            49.3422733
+          ],
+          [
+            -122.6602263,
+            49.3425164
+          ],
+          [
+            -122.6601942,
+            49.3426273
+          ],
+          [
+            -122.6601883,
+            49.3427143
+          ],
+          [
+            -122.6601927,
+            49.342798
+          ],
+          [
+            -122.6602474,
+            49.3430785
+          ],
+          [
+            -122.6602905,
+            49.3432549
+          ],
+          [
+            -122.6603281,
+            49.343429
+          ],
+          [
+            -122.660335,
+            49.3436971
+          ],
+          [
+            -122.6603185,
+            49.3437841
+          ],
+          [
+            -122.6602494,
+            49.3439349
+          ],
+          [
+            -122.6601797,
+            49.3440378
+          ],
+          [
+            -122.66003,
+            49.3442119
+          ],
+          [
+            -122.6597611,
+            49.344479
+          ],
+          [
+            -122.6594649,
+            49.3449133
+          ],
+          [
+            -122.6593387,
+            49.3450339
+          ],
+          [
+            -122.6592528,
+            49.3450952
+          ],
+          [
+            -122.6586325,
+            49.345458
+          ],
+          [
+            -122.6585651,
+            49.3455246
+          ],
+          [
+            -122.6584297,
+            49.345689
+          ],
+          [
+            -122.6581337,
+            49.3461193
+          ],
+          [
+            -122.6578111,
+            49.3466147
+          ],
+          [
+            -122.6576104,
+            49.3468236
+          ],
+          [
+            -122.6574143,
+            49.3470761
+          ],
+          [
+            -122.657351,
+            49.3472343
+          ],
+          [
+            -122.6573393,
+            49.3473409
+          ],
+          [
+            -122.6573352,
+            49.3474382
+          ],
+          [
+            -122.6573567,
+            49.3478135
+          ],
+          [
+            -122.6573331,
+            49.348055
+          ],
+          [
+            -122.6573111,
+            49.3481454
+          ],
+          [
+            -122.6572816,
+            49.3482205
+          ],
+          [
+            -122.6572406,
+            49.3482982
+          ],
+          [
+            -122.6571454,
+            49.3484095
+          ],
+          [
+            -122.6570438,
+            49.34852
+          ],
+          [
+            -122.6567597,
+            49.3487368
+          ],
+          [
+            -122.6559543,
+            49.3491776
+          ],
+          [
+            -122.6556407,
+            49.3493494
+          ],
+          [
+            -122.6554787,
+            49.3494254
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1058687649",
+        "bicycle": "designated",
+        "foot": "designated",
+        "highway": "service",
+        "name": "Quarry Road",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.6554787,
+            49.3494254
+          ],
+          [
+            -122.6553694,
+            49.3495003
           ]
         ]
       }
@@ -16518,7 +18251,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16598,7 +18333,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='motorway_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16663,7 +18400,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16686,97 +18425,13 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/1064110885",
-        "bicycle": "yes",
-        "cycleway": "shared_lane",
-        "highway": "tertiary",
-        "lanes": "2",
-        "name": "Whiting Way",
-        "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8918871,
-            49.2588728
-          ],
-          [
-            -122.8918867,
-            49.2587834
-          ],
-          [
-            -122.8918832,
-            49.257769
-          ],
-          [
-            -122.8918613,
-            49.2574646
-          ],
-          [
-            -122.8918602,
-            49.2574265
-          ],
-          [
-            -122.8918578,
-            49.2572749
-          ],
-          [
-            -122.8918917,
-            49.2571307
-          ],
-          [
-            -122.8919014,
-            49.2569187
-          ],
-          [
-            -122.8919021,
-            49.2568947
-          ],
-          [
-            -122.8919065,
-            49.2568082
-          ],
-          [
-            -122.8919067,
-            49.2567221
-          ],
-          [
-            -122.8919074,
-            49.2566897
-          ],
-          [
-            -122.8919383,
-            49.2561564
-          ],
-          [
-            -122.8919439,
-            49.2560889
-          ],
-          [
-            -122.8919474,
-            49.2560469
-          ],
-          [
-            -122.8919601,
-            49.2556158
-          ],
-          [
-            -122.8919621,
-            49.2555388
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/1086050055",
         "cycleway.right": "lane",
         "highway": "primary_link",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16805,7 +18460,9 @@ var designHighStressJson = {
         "lanes": "2",
         "maxspeed": "30",
         "name": "Shaughnessy Street",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16855,7 +18512,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16882,7 +18541,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16921,7 +18582,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -16961,7 +18624,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17007,7 +18672,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17069,7 +18736,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17132,7 +18801,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17160,7 +18831,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17196,7 +18869,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17232,7 +18907,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17268,7 +18945,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17308,7 +18987,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17348,7 +19029,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17380,7 +19063,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17414,7 +19099,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17449,7 +19136,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17540,7 +19229,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17574,7 +19265,9 @@ var designHighStressJson = {
         "name": "Panorama Drive",
         "parking.lane.left": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17605,14 +19298,16 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='advisory'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='advisory'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8278922,
-            49.2807411
+            -122.8279002,
+            49.2807305
           ],
           [
             -122.8281549,
@@ -17633,7 +19328,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Mariner Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17660,7 +19357,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17691,7 +19390,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17718,7 +19419,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17745,7 +19448,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17772,7 +19477,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17805,7 +19512,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17834,7 +19543,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17860,7 +19571,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17870,8 +19583,8 @@ var designHighStressJson = {
             49.2805784
           ],
           [
-            -122.8337456,
-            49.2805506
+            -122.8337539,
+            49.2805347
           ]
         ]
       }
@@ -17886,34 +19599,36 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8391391,
-            49.279051
+            -122.8391284,
+            49.2790423
           ],
           [
-            -122.839034,
-            49.2791003
+            -122.8390273,
+            49.2790959
           ],
           [
-            -122.8389368,
-            49.2791462
+            -122.8389261,
+            49.2791576
           ],
           [
-            -122.8387096,
-            49.2793129
+            -122.8387244,
+            49.2793146
           ],
           [
-            -122.8385655,
-            49.2794546
+            -122.8385803,
+            49.2794598
           ],
           [
-            -122.8381486,
-            49.2799935
+            -122.8381566,
+            49.2799952
           ],
           [
             -122.8381075,
@@ -17932,7 +19647,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -17979,36 +19696,6 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/1201175290",
-        "bicycle": "yes",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "lanes.backward": "4",
-        "lanes.forward": "2",
-        "maxspeed": "50",
-        "name": "King Edward Street",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8617212,
-            49.2342156
-          ],
-          [
-            -122.861719,
-            49.2340624
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/1211734877",
         "cycleway.left": "no",
         "cycleway.right": "lane",
@@ -18016,7 +19703,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18035,89 +19724,6 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/1212146180",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "maxspeed": "50",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.801571,
-            49.2852359
-          ],
-          [
-            -122.801752,
-            49.2852287
-          ],
-          [
-            -122.8018848,
-            49.2852227
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/1212146181",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "3",
-        "maxspeed": "50",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8095441,
-            49.2844823
-          ],
-          [
-            -122.8096825,
-            49.28445
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/1212146182",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "1",
-        "maxspeed": "50",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8096825,
-            49.28445
-          ],
-          [
-            -122.8098045,
-            49.2844209
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/1212146183",
         "cycleway.left": "no",
         "cycleway.right": "lane",
@@ -18127,7 +19733,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18146,87 +19754,6 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/1212146184",
-        "cycleway.right": "lane",
-        "cycleway.right.lane": "exclusive",
-        "highway": "secondary",
-        "lanes": "2",
-        "maxspeed": "50",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8018755,
-            49.2851158
-          ],
-          [
-            -122.801745,
-            49.2851206
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/1212146185",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "cycleway.right.lane": "exclusive",
-        "highway": "secondary",
-        "lanes": "3",
-        "maxspeed": "50",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8097448,
-            49.2843233
-          ],
-          [
-            -122.809626,
-            49.2843462
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/1212146189",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "3",
-        "maxspeed": "50",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8186318,
-            49.2845178
-          ],
-          [
-            -122.8185338,
-            49.2844888
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/1212146190",
         "cycleway.right": "lane",
         "highway": "secondary",
@@ -18234,7 +19761,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18263,7 +19792,9 @@ var designHighStressJson = {
         "lanes": "2",
         "maxspeed": "30",
         "name": "Parkside Drive",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18348,7 +19879,9 @@ var designHighStressJson = {
         "lanes": "1",
         "maxspeed": "30",
         "name": "Parkside Drive",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18382,7 +19915,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18411,7 +19946,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Patricia Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18446,7 +19983,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18481,7 +20020,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18512,7 +20053,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18547,7 +20090,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18594,7 +20139,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18623,7 +20170,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18676,7 +20225,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18709,7 +20260,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18746,7 +20299,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18779,7 +20334,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18806,7 +20363,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Mariner Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18841,7 +20400,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18900,7 +20461,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18931,7 +20494,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18958,7 +20523,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -18985,7 +20552,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19012,7 +20581,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19049,7 +20620,9 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Gatensbury Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19061,6 +20634,10 @@ var designHighStressJson = {
           [
             -122.8576118,
             49.2635956
+          ],
+          [
+            -122.8576111,
+            49.2636162
           ],
           [
             -122.8575951,
@@ -19080,7 +20657,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19118,7 +20697,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19156,7 +20737,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19192,7 +20775,9 @@ var designHighStressJson = {
         "name": "Barnet Highway",
         "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19220,7 +20805,9 @@ var designHighStressJson = {
         "name": "Barnet Highway",
         "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19251,7 +20838,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19278,7 +20867,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19304,7 +20895,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19335,7 +20928,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19345,8 +20940,8 @@ var designHighStressJson = {
             49.2554398
           ],
           [
-            -122.7469366,
-            49.2550349
+            -122.7470303,
+            49.2550874
           ]
         ]
       }
@@ -19365,7 +20960,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19399,7 +20996,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Whiting Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19437,28 +21036,28 @@ var designHighStressJson = {
             49.2542706
           ],
           [
-            -122.892063,
-            49.2539738
+            -122.8920675,
+            49.253979
           ],
           [
-            -122.8920562,
-            49.2539219
+            -122.8920652,
+            49.2539313
           ],
           [
-            -122.8920451,
-            49.2538807
+            -122.8920625,
+            49.2538872
           ],
           [
             -122.8920016,
             49.2537897
           ],
           [
-            -122.8919663,
-            49.253735
+            -122.8919708,
+            49.2537487
           ],
           [
-            -122.8919409,
-            49.2536957
+            -122.8919369,
+            49.2537071
           ],
           [
             -122.8919148,
@@ -19477,8 +21076,8 @@ var designHighStressJson = {
             49.2528424
           ],
           [
-            -122.8918991,
-            49.2528007
+            -122.8918994,
+            49.2527997
           ],
           [
             -122.8919146,
@@ -19502,7 +21101,7 @@ var designHighStressJson = {
           ],
           [
             -122.891924,
-            49.2520737
+            49.2520755
           ],
           [
             -122.8919288,
@@ -19521,7 +21120,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19547,7 +21148,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19572,7 +21175,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19599,7 +21204,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Ungless Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19624,7 +21231,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Ungless Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19650,7 +21259,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19680,7 +21291,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19718,7 +21331,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19748,7 +21363,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19758,20 +21375,24 @@ var designHighStressJson = {
             49.278809
           ],
           [
-            -122.8398004,
-            49.2788456
+            -122.8399615,
+            49.2788221
           ],
           [
-            -122.8394983,
-            49.2789085
+            -122.8397521,
+            49.2788526
           ],
           [
-            -122.8392991,
-            49.2789874
+            -122.8395117,
+            49.278905
           ],
           [
-            -122.8391391,
-            49.279051
+            -122.8392784,
+            49.2789763
+          ],
+          [
+            -122.8391284,
+            49.2790423
           ]
         ]
       }
@@ -19786,22 +21407,28 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8337456,
-            49.2805506
+            -122.8337539,
+            49.2805347
           ],
           [
-            -122.833468,
-            49.2805354
+            -122.8335072,
+            49.2805294
           ],
           [
-            -122.8332121,
-            49.2805264
+            -122.8334694,
+            49.2805286
+          ],
+          [
+            -122.8332556,
+            49.2805225
           ]
         ]
       }
@@ -19818,7 +21445,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19854,7 +21483,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19890,7 +21521,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19918,7 +21551,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19954,7 +21589,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19981,7 +21618,10 @@ var designHighStressJson = {
         "lanes.forward": "1",
         "maxspeed": "50",
         "name": "David Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -19993,6 +21633,10 @@ var designHighStressJson = {
           [
             -122.819622,
             49.2962473
+          ],
+          [
+            -122.8196701,
+            49.2962631
           ],
           [
             -122.8200623,
@@ -20013,7 +21657,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "McLean Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20044,6 +21690,40 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
+        "id": "way/1263652819",
+        "cycleway.left": "lane",
+        "highway": "secondary",
+        "lanes": "4",
+        "lanes.backward": "1",
+        "lanes.forward": "3",
+        "maxspeed": "50",
+        "name": "Murray Street",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8406427,
+            49.2788311
+          ],
+          [
+            -122.8412502,
+            49.2788398
+          ],
+          [
+            -122.841354,
+            49.2788413
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": "way/1263653975",
         "cycleway": "lane",
         "highway": "tertiary",
@@ -20052,7 +21732,9 @@ var designHighStressJson = {
         "lanes.forward": "1",
         "name": "Ungless Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20087,7 +21769,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20127,7 +21811,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20179,7 +21865,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20214,7 +21902,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20249,7 +21939,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20278,7 +21970,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20305,7 +21999,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Spuraway Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20337,7 +22033,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Spuraway Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20375,7 +22073,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='shared_lane'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20385,8 +22085,8 @@ var designHighStressJson = {
             49.2360709
           ],
           [
-            -122.869163,
-            49.2360954
+            -122.8692785,
+            49.2361238
           ]
         ]
       }
@@ -20394,56 +22094,40 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/1276593440",
+        "id": "way/1276593428",
         "bicycle": "yes",
-        "cycleway.right": "lane",
-        "highway": "primary",
-        "lanes": "4",
-        "maxspeed": "60",
-        "name": "Lougheed Highway",
-        "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8615585,
-            49.2345272
-          ],
-          [
-            -122.8617356,
-            49.2345599
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/1276593449",
-        "bicycle": "yes",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
+        "cycleway": "lane",
         "foot": "no",
         "highway": "secondary",
-        "lanes": "2",
+        "lanes": "6",
+        "lanes.backward": "2",
+        "lanes.forward": "4",
         "maxspeed": "50",
         "name": "King Edward Street",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8617048,
-            49.2333282
+            -122.8616522,
+            49.2341581
           ],
           [
-            -122.8616185,
-            49.2328284
+            -122.8616548,
+            49.2342678
+          ],
+          [
+            -122.8616534,
+            49.2343027
+          ],
+          [
+            -122.8616486,
+            49.2343967
           ]
         ]
       }
@@ -20459,7 +22143,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "King Edward Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20488,7 +22174,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20525,7 +22213,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20562,7 +22252,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20588,7 +22280,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Alderson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20638,6 +22332,10 @@ var designHighStressJson = {
             49.2396914
           ],
           [
+            -122.8731741,
+            49.2397095
+          ],
+          [
             -122.8731275,
             49.2397127
           ],
@@ -20648,6 +22346,10 @@ var designHighStressJson = {
           [
             -122.8728723,
             49.2397508
+          ],
+          [
+            -122.8728211,
+            49.2397538
           ],
           [
             -122.8723466,
@@ -20697,7 +22399,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20734,7 +22438,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20763,7 +22469,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20796,7 +22504,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20825,7 +22535,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20862,7 +22574,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20891,7 +22605,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20919,7 +22635,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20948,7 +22666,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -20978,14 +22698,16 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Murray Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.830859,
-            49.280489
+            -122.8308591,
+            49.2804863
           ],
           [
             -122.8304984,
@@ -21007,7 +22729,9 @@ var designHighStressJson = {
         "parking.left": "street_side",
         "parking.right": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21041,7 +22765,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21076,7 +22802,9 @@ var designHighStressJson = {
         "parking.left": "no",
         "parking.right": "street_side",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21105,7 +22833,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='separate'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='separate'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21144,7 +22874,9 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='separate'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='separate'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21174,7 +22906,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21206,7 +22940,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21240,7 +22976,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21269,7 +23007,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21303,7 +23043,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21330,7 +23072,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21355,7 +23099,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21394,7 +23140,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21421,7 +23169,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21448,7 +23198,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21475,7 +23227,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21502,7 +23256,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21529,7 +23285,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21556,7 +23314,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21583,7 +23343,9 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21609,7 +23371,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21637,7 +23401,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21665,7 +23431,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21693,7 +23461,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21722,7 +23492,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21732,8 +23504,8 @@ var designHighStressJson = {
             49.2549918
           ],
           [
-            -122.7473957,
-            49.2554721
+            -122.7473019,
+            49.2554332
           ]
         ]
       }
@@ -21750,7 +23522,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21775,7 +23549,9 @@ var designHighStressJson = {
         "highway": "secondary_link",
         "lanes": "1",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='secondary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='secondary_link'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21808,7 +23584,8 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "McLean Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='no'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='no'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21836,7 +23613,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "McLean Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21863,7 +23642,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21889,7 +23670,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21918,7 +23701,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Wellington Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -21983,7 +23768,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Wellington Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22038,7 +23825,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Fawcett Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22064,7 +23853,8 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Mariner Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22093,7 +23883,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22122,7 +23914,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22151,7 +23945,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22180,7 +23976,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22209,7 +24007,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22238,7 +24038,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22279,7 +24081,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because the maxspeed is between 51-64 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22315,7 +24119,9 @@ var designHighStressJson = {
         "motor_vehicle.conditional": "no @ (Mo-Fr 06:00-08:30)",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22343,7 +24149,9 @@ var designHighStressJson = {
         "motor_vehicle.conditional": "no @ (Mo-Fr 06:00-08:30)",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22361,8 +24169,8 @@ var designHighStressJson = {
             49.2807343
           ],
           [
-            -122.8666574,
-            49.2808062
+            -122.8666553,
+            49.280959
           ]
         ]
       }
@@ -22370,28 +24178,31 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/1349714983",
-        "bicycle": "designated",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "primary",
-        "lanes": "3",
-        "maxspeed": "60",
-        "name": "Lougheed Highway",
-        "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "id": "way/1349714989",
+        "bicycle": "yes",
+        "cycleway": "lane",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "6",
+        "lanes.backward": "2",
+        "lanes.forward": "4",
+        "maxspeed": "50",
+        "name": "King Edward Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8617288,
-            49.2344103
+            -122.8616296,
+            49.2333569
           ],
           [
-            -122.8615466,
-            49.2343728
+            -122.8616509,
+            49.2340921
           ]
         ]
       }
@@ -22405,7 +24216,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Langan Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
       },
       "geometry": {
         "type": "LineString",
@@ -22452,6 +24265,610 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
+        "id": "way/1362899109",
+        "bicycle": "yes",
+        "cycleway": "lane",
+        "foot": "no",
+        "highway": "secondary",
+        "lanes": "6",
+        "lanes.backward": "2",
+        "lanes.forward": "4",
+        "maxspeed": "50",
+        "name": "King Edward Street",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8616509,
+            49.2340921
+          ],
+          [
+            -122.8616522,
+            49.2341581
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1369229705",
+        "cycleway.both": "lane",
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Sheffield Avenue",
+        "decisionMsg": "Way has a bike lane because 'cycleway:both'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.7394368,
+            49.2979424
+          ],
+          [
+            -122.7393495,
+            49.2979422
+          ],
+          [
+            -122.738491,
+            49.2979397
+          ],
+          [
+            -122.7383895,
+            49.2979395
+          ],
+          [
+            -122.738284,
+            49.297938
+          ],
+          [
+            -122.7375534,
+            49.2979373
+          ],
+          [
+            -122.7374957,
+            49.2979369
+          ],
+          [
+            -122.7373869,
+            49.2979362
+          ],
+          [
+            -122.7372299,
+            49.2979481
+          ],
+          [
+            -122.7371461,
+            49.2979573
+          ],
+          [
+            -122.7370571,
+            49.2979691
+          ],
+          [
+            -122.7369692,
+            49.2979869
+          ],
+          [
+            -122.7368872,
+            49.2980073
+          ],
+          [
+            -122.7362789,
+            49.2981858
+          ],
+          [
+            -122.7351785,
+            49.29851
+          ],
+          [
+            -122.7351079,
+            49.2985305
+          ],
+          [
+            -122.7350368,
+            49.29855
+          ],
+          [
+            -122.7349631,
+            49.2985675
+          ],
+          [
+            -122.7348887,
+            49.2985832
+          ],
+          [
+            -122.734578,
+            49.2986477
+          ],
+          [
+            -122.7344443,
+            49.2986741
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1369867804",
+        "bicycle": "yes",
+        "cycleway.left": "no",
+        "cycleway.right": "lane",
+        "highway": "primary",
+        "lanes": "3",
+        "maxspeed": "60",
+        "name": "Lougheed Highway",
+        "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8684081,
+            49.2358502
+          ],
+          [
+            -122.8682881,
+            49.235825
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1369867806",
+        "bicycle": "yes",
+        "cycleway.left": "no",
+        "cycleway.right": "lane",
+        "highway": "primary",
+        "lanes": "4",
+        "maxspeed": "60",
+        "name": "Lougheed Highway",
+        "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8682231,
+            49.2359447
+          ],
+          [
+            -122.8683659,
+            49.2359707
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1381405500",
+        "bicycle": "yes",
+        "cycleway": "shared_lane",
+        "highway": "tertiary",
+        "lanes": "2",
+        "name": "Whiting Way",
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8919065,
+            49.2568082
+          ],
+          [
+            -122.8919067,
+            49.2567221
+          ],
+          [
+            -122.8919074,
+            49.2566897
+          ],
+          [
+            -122.8919383,
+            49.2561564
+          ],
+          [
+            -122.8919439,
+            49.2560889
+          ],
+          [
+            -122.8919474,
+            49.2560469
+          ],
+          [
+            -122.8919601,
+            49.2556139
+          ],
+          [
+            -122.8919621,
+            49.2555388
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1423972660",
+        "bicycle": "designated",
+        "foot": "designated",
+        "highway": "service",
+        "name": "Trans Canada Trail",
+        "segregated": "no",
+        "surface": "fine_gravel",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8768536,
+            49.2915825
+          ],
+          [
+            -122.8769846,
+            49.2915608
+          ],
+          [
+            -122.87706,
+            49.2915276
+          ],
+          [
+            -122.8771092,
+            49.2915107
+          ],
+          [
+            -122.8773386,
+            49.2914324
+          ],
+          [
+            -122.8774715,
+            49.2913866
+          ],
+          [
+            -122.8774842,
+            49.2913822
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1430193922",
+        "cycleway.right": "lane",
+        "highway": "secondary",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Murray Street",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8304984,
+            49.2804893
+          ],
+          [
+            -122.8296627,
+            49.280481
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1430193923",
+        "cycleway.right": "lane",
+        "highway": "secondary",
+        "lanes": "3",
+        "maxspeed": "50",
+        "name": "Murray Street",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8296627,
+            49.280481
+          ],
+          [
+            -122.8295492,
+            49.2804807
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1436007961",
+        "cycleway": "shared_lane",
+        "highway": "tertiary",
+        "lanes": "3",
+        "lanes.backward": "1",
+        "lanes.forward": "2",
+        "name": "Princeton Avenue",
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.7382119,
+            49.2946101
+          ],
+          [
+            -122.7381424,
+            49.2946125
+          ],
+          [
+            -122.7380593,
+            49.294611
+          ],
+          [
+            -122.7379982,
+            49.2946067
+          ],
+          [
+            -122.7378935,
+            49.2945947
+          ],
+          [
+            -122.7378073,
+            49.2945805
+          ],
+          [
+            -122.7377179,
+            49.2945599
+          ],
+          [
+            -122.737654,
+            49.2945427
+          ],
+          [
+            -122.7375093,
+            49.2945012
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1436007975",
+        "cycleway": "shared_lane",
+        "highway": "tertiary",
+        "lanes": "3",
+        "name": "Princeton Avenue",
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.7414443,
+            49.2951986
+          ],
+          [
+            -122.741354,
+            49.2951071
+          ],
+          [
+            -122.7413188,
+            49.2950708
+          ],
+          [
+            -122.7411649,
+            49.2949116
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1436007977",
+        "cycleway": "shared_lane",
+        "highway": "tertiary",
+        "lanes": "3",
+        "lanes.backward": "1",
+        "lanes.forward": "2",
+        "name": "Princeton Avenue",
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.7418778,
+            49.2955787
+          ],
+          [
+            -122.741834,
+            49.29555
+          ],
+          [
+            -122.7417903,
+            49.2955202
+          ],
+          [
+            -122.7417048,
+            49.295455
+          ],
+          [
+            -122.7416187,
+            49.2953789
+          ],
+          [
+            -122.7415429,
+            49.2952999
+          ],
+          [
+            -122.741518,
+            49.2952737
+          ],
+          [
+            -122.7414443,
+            49.2951986
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1442701311",
+        "cycleway": "shared_lane",
+        "highway": "unclassified",
+        "lanes": "1",
+        "maxspeed": "30",
+        "name": "April Road",
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8648725,
+            49.2992092
+          ],
+          [
+            -122.8647991,
+            49.2992605
+          ],
+          [
+            -122.8647944,
+            49.299772
+          ],
+          [
+            -122.8647885,
+            49.2998124
+          ],
+          [
+            -122.8647667,
+            49.2998532
+          ],
+          [
+            -122.8647366,
+            49.2998967
+          ],
+          [
+            -122.8646976,
+            49.2999344
+          ],
+          [
+            -122.8646861,
+            49.3000025
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1442701312",
+        "cycleway": "shared_lane",
+        "highway": "unclassified",
+        "lanes": "1",
+        "maxspeed": "30",
+        "name": "April Road",
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 3
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8646861,
+            49.3000025
+          ],
+          [
+            -122.8647944,
+            49.2999764
+          ],
+          [
+            -122.8648411,
+            49.2999356
+          ],
+          [
+            -122.8648777,
+            49.2998805
+          ],
+          [
+            -122.8648983,
+            49.299822
+          ],
+          [
+            -122.864906,
+            49.2997693
+          ],
+          [
+            -122.8649072,
+            49.2993958
+          ],
+          [
+            -122.8649267,
+            49.2993253
+          ],
+          [
+            -122.8648725,
+            49.2992092
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "id": "way/35194713",
         "cycleway.left": "no",
         "cycleway.right": "lane",
@@ -22459,7 +24876,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -22533,7 +24952,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -22563,7 +24984,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -22595,7 +25018,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "lanes": "2",
         "name": "Shaughnessy Street",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -22622,7 +25047,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -22667,7 +25094,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -22692,7 +25121,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -22754,7 +25185,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -22779,7 +25212,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Pitt River Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23077,7 +25512,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23107,7 +25544,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Fremont Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23182,7 +25621,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Lincoln Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23216,7 +25657,9 @@ var designHighStressJson = {
         "name": "Dominion Avenue",
         "parking.lane.left": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Found tag 'parking:lane:left'='parallel'. Parking is present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 55 km/h and parking present."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Found tag 'parking:lane:left'='parallel'. Parking is present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 55 km/h and parking present.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23258,7 +25701,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23307,7 +25752,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Forest Park Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23344,7 +25791,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23385,7 +25834,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23411,7 +25862,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23444,7 +25897,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23493,7 +25948,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23523,7 +25980,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23554,47 +26013,15 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/35198450",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.798095,
-            49.2851981
-          ],
-          [
-            -122.797941,
-            49.2851919
-          ],
-          [
-            -122.7961362,
-            49.2850652
-          ],
-          [
-            -122.7957397,
-            49.2850379
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/35198684",
         "cycleway.right": "lane",
         "highway": "secondary",
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23655,7 +26082,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Shaughnessy Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23667,6 +26096,10 @@ var designHighStressJson = {
           [
             -122.7752777,
             49.2712992
+          ],
+          [
+            -122.7752769,
+            49.2713267
           ],
           [
             -122.7752696,
@@ -23694,7 +26127,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Mariner Way",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23770,7 +26205,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23799,7 +26236,9 @@ var designHighStressJson = {
         "lanes": "4",
         "name": "Shaughnessy Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23844,7 +26283,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Shaughnessy Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23902,7 +26343,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23941,7 +26384,9 @@ var designHighStressJson = {
         "lanes.forward": "3",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -23960,116 +26405,6 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/35210821",
-        "cycleway.right": "lane",
-        "cycleway.right.lane": "exclusive",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.798078,
-            49.2853215
-          ],
-          [
-            -122.79821,
-            49.2853285
-          ],
-          [
-            -122.7985925,
-            49.2853396
-          ],
-          [
-            -122.7986759,
-            49.2853416
-          ],
-          [
-            -122.7987625,
-            49.2853435
-          ],
-          [
-            -122.7988336,
-            49.2853444
-          ],
-          [
-            -122.798909,
-            49.2853447
-          ],
-          [
-            -122.7989847,
-            49.2853448
-          ],
-          [
-            -122.799063,
-            49.285344
-          ],
-          [
-            -122.7992093,
-            49.2853417
-          ],
-          [
-            -122.7993508,
-            49.2853395
-          ],
-          [
-            -122.7994939,
-            49.2853352
-          ],
-          [
-            -122.7996064,
-            49.2853313
-          ],
-          [
-            -122.7997289,
-            49.2853265
-          ],
-          [
-            -122.7998731,
-            49.2853195
-          ],
-          [
-            -122.800015,
-            49.2853119
-          ],
-          [
-            -122.8001408,
-            49.2853041
-          ],
-          [
-            -122.8003119,
-            49.2852931
-          ],
-          [
-            -122.800481,
-            49.2852832
-          ],
-          [
-            -122.8006341,
-            49.2852754
-          ],
-          [
-            -122.8014147,
-            49.2852422
-          ],
-          [
-            -122.801454,
-            49.2852405
-          ],
-          [
-            -122.801571,
-            49.2852359
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/35482681",
         "cycleway": "lane",
         "highway": "secondary",
@@ -24079,7 +26414,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -24161,7 +26498,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -24191,7 +26530,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -24219,7 +26560,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -24249,7 +26592,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -24391,7 +26736,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -24565,7 +26912,9 @@ var designHighStressJson = {
         "lit": "yes",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -24627,7 +26976,9 @@ var designHighStressJson = {
         "lit": "yes",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -24688,7 +27039,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -24717,7 +27070,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -24744,7 +27099,9 @@ var designHighStressJson = {
         "maxspeed": "80",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -24864,7 +27221,9 @@ var designHighStressJson = {
         "maxspeed": "80",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25069,7 +27428,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25098,7 +27459,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25131,7 +27494,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25164,7 +27529,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25202,7 +27569,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25332,7 +27701,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25362,7 +27733,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25507,7 +27880,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25565,24 +27940,8 @@ var designHighStressJson = {
             49.2946857
           ],
           [
-            -122.7428149,
-            49.2948757
-          ],
-          [
-            -122.7424171,
-            49.2949711
-          ],
-          [
-            -122.7416126,
-            49.2951638
-          ],
-          [
-            -122.741569,
-            49.2951743
-          ],
-          [
-            -122.7414443,
-            49.2951986
+            -122.7433494,
+            49.2947536
           ]
         ]
       }
@@ -25597,8 +27956,10 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25617,44 +27978,15 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/76160131",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.801572,
-            49.2851266
-          ],
-          [
-            -122.801477,
-            49.2851303
-          ],
-          [
-            -122.800473,
-            49.2851726
-          ],
-          [
-            -122.7998029,
-            49.2851977
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/81605739",
         "cycleway": "shared_lane",
         "highway": "secondary",
+        "lanes": "2",
         "name": "David Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25680,7 +28012,10 @@ var designHighStressJson = {
         "lanes.backward": "1",
         "lanes.forward": "1",
         "name": "David Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25733,7 +28068,9 @@ var designHighStressJson = {
         "lanes": "4",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25758,7 +28095,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25785,7 +28124,9 @@ var designHighStressJson = {
         "lanes.forward": "1",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25846,7 +28187,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25872,7 +28215,9 @@ var designHighStressJson = {
         "lanes": "4",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25906,7 +28251,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25936,7 +28283,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Coast Meridian Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25966,7 +28315,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Coast Meridian Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -25996,7 +28347,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Coast Meridian Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26023,7 +28376,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26053,7 +28408,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26092,7 +28449,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26125,7 +28484,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26151,7 +28512,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26182,7 +28545,9 @@ var designHighStressJson = {
         "lanes.forward": "4",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26208,7 +28573,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26238,7 +28605,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26263,7 +28632,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Mariner Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26289,7 +28660,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26326,7 +28699,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26373,7 +28748,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26383,8 +28760,8 @@ var designHighStressJson = {
             49.2362131
           ],
           [
-            -122.8704778,
-            49.2363719
+            -122.8698646,
+            49.2362432
           ]
         ]
       }
@@ -26402,7 +28779,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26425,73 +28804,6 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/305606781",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7928278,
-            49.28494
-          ],
-          [
-            -122.7933329,
-            49.2849769
-          ],
-          [
-            -122.7936196,
-            49.2849972
-          ],
-          [
-            -122.7937152,
-            49.2850046
-          ],
-          [
-            -122.793816,
-            49.2850129
-          ],
-          [
-            -122.7940322,
-            49.2850325
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/305606783",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.801745,
-            49.2851206
-          ],
-          [
-            -122.801572,
-            49.2851266
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/306933778",
         "bicycle": "designated",
         "cycleway.left": "no",
@@ -26502,7 +28814,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26543,7 +28857,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26571,7 +28887,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26607,7 +28925,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26654,7 +28974,9 @@ var designHighStressJson = {
         "maxspeed": "80",
         "name": "Lougheed Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26702,7 +29024,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26757,7 +29081,8 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26784,32 +29109,6 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/390357953",
-        "cycleway.right": "lane",
-        "cycleway.right.lane": "advisory",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='advisory'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.792564,
-            49.2848032
-          ],
-          [
-            -122.7923977,
-            49.2847913
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/390357955",
         "cycleway.left": "no",
         "cycleway.right": "lane",
@@ -26817,18 +29116,16 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.7923977,
-            49.2847913
-          ],
-          [
-            -122.7922184,
-            49.2847784
+            -122.7919674,
+            49.2847594
           ],
           [
             -122.791451,
@@ -26848,56 +29145,15 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/390357959",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "cycleway.right.lane": "exclusive",
-        "highway": "secondary",
-        "lanes": "4",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7941047,
-            49.2849158
-          ],
-          [
-            -122.7940354,
-            49.284911
-          ],
-          [
-            -122.7938062,
-            49.2848938
-          ],
-          [
-            -122.7927432,
-            49.284816
-          ],
-          [
-            -122.7926891,
-            49.2848122
-          ],
-          [
-            -122.792564,
-            49.2848032
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/397040428",
         "cycleway.right": "lane",
         "highway": "secondary",
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -26931,16 +29187,8 @@ var designHighStressJson = {
             49.2931201
           ],
           [
-            -122.7505569,
-            49.2931893
-          ],
-          [
-            -122.7504497,
-            49.2932018
-          ],
-          [
-            -122.750348,
-            49.2932765
+            -122.7509205,
+            49.2931462
           ]
         ]
       }
@@ -26954,7 +29202,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27023,7 +29273,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27058,108 +29310,20 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.869163,
-            49.2360954
+            -122.8692785,
+            49.2361238
           ],
           [
             -122.8697211,
             49.2362131
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/460228304",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "3",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7969736,
-            49.2852521
-          ],
-          [
-            -122.7978869,
-            49.285311
-          ],
-          [
-            -122.797924,
-            49.2853135
-          ],
-          [
-            -122.798078,
-            49.2853215
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/461131151",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7925025,
-            49.284914
-          ],
-          [
-            -122.7926342,
-            49.2849238
-          ],
-          [
-            -122.7928278,
-            49.28494
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/461131152",
-        "cycleway.right": "lane",
-        "cycleway.right.lane": "advisory",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='advisory'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7923392,
-            49.284902
-          ],
-          [
-            -122.7925025,
-            49.284914
           ]
         ]
       }
@@ -27175,7 +29339,9 @@ var designHighStressJson = {
         "lanes.forward": "1",
         "name": "Shaughnessy Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27183,6 +29349,10 @@ var designHighStressJson = {
           [
             -122.7752769,
             49.2709912
+          ],
+          [
+            -122.7752784,
+            49.2711091
           ],
           [
             -122.7752798,
@@ -27200,7 +29370,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27225,7 +29397,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27251,7 +29425,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27300,7 +29476,9 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27326,7 +29504,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27356,7 +29536,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27385,7 +29567,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27409,7 +29593,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27434,7 +29620,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27467,7 +29655,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27496,7 +29686,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27528,7 +29720,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27557,7 +29751,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27581,7 +29777,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27610,7 +29808,9 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "Forest Park Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27659,7 +29859,9 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "Forest Park Way",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27713,7 +29915,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27739,7 +29943,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27764,7 +29970,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "name": "Coast Meridian Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27794,7 +30002,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27836,7 +30046,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Mariner Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27884,7 +30096,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27919,8 +30133,11 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27954,7 +30171,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -27980,7 +30199,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28010,7 +30231,9 @@ var designHighStressJson = {
         "lanes": "4",
         "name": "Mariner Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28045,7 +30268,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28078,7 +30303,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28104,7 +30331,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28133,7 +30362,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28159,7 +30390,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Fremont Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28421,7 +30654,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Fremont Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='separate'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='separate'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28440,184 +30675,6 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/479484604",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "4",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7913267,
-            49.2848233
-          ],
-          [
-            -122.7921005,
-            49.2848838
-          ],
-          [
-            -122.7921629,
-            49.2848897
-          ],
-          [
-            -122.7923392,
-            49.284902
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/494676736",
-        "cycleway.right": "lane",
-        "cycleway.right.lane": "exclusive",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7998029,
-            49.2851977
-          ],
-          [
-            -122.7995913,
-            49.2852047
-          ],
-          [
-            -122.7994013,
-            49.2852107
-          ],
-          [
-            -122.7992005,
-            49.2852142
-          ],
-          [
-            -122.7989997,
-            49.2852157
-          ],
-          [
-            -122.7988509,
-            49.285216
-          ],
-          [
-            -122.7987606,
-            49.2852158
-          ],
-          [
-            -122.7986677,
-            49.2852145
-          ],
-          [
-            -122.7985752,
-            49.2852123
-          ],
-          [
-            -122.7984827,
-            49.2852101
-          ],
-          [
-            -122.798262,
-            49.2852045
-          ],
-          [
-            -122.798228,
-            49.2852036
-          ],
-          [
-            -122.798095,
-            49.2851981
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/494680869",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7904345,
-            49.2847714
-          ],
-          [
-            -122.7909799,
-            49.2848014
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/494682487",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8128072,
-            49.283403
-          ],
-          [
-            -122.8126887,
-            49.2834218
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/494682491",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8129194,
-            49.2833852
-          ],
-          [
-            -122.8128072,
-            49.283403
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/498818496",
         "cycleway.left": "no",
         "cycleway.right": "lane",
@@ -28625,7 +30682,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Fremont Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28682,7 +30741,9 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28746,14 +30807,6 @@ var designHighStressJson = {
           [
             -122.7373817,
             49.295424
-          ],
-          [
-            -122.7371909,
-            49.2954541
-          ],
-          [
-            -122.7368335,
-            49.2955224
           ]
         ]
       }
@@ -28768,7 +30821,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Coast Meridian Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28806,7 +30861,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28840,7 +30897,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28869,7 +30928,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28896,7 +30957,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -28969,26 +31032,16 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.7368335,
-            49.2955224
-          ],
-          [
-            -122.736712,
-            49.2955509
-          ],
-          [
-            -122.736581,
-            49.2955839
-          ],
-          [
-            -122.736459,
-            49.2956163
+            -122.7362498,
+            49.2956799
           ],
           [
             -122.7354469,
@@ -29074,7 +31127,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Pitt River Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29121,7 +31176,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29154,7 +31211,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Pitt River Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29295,7 +31354,9 @@ var designHighStressJson = {
         "lanes": "4",
         "name": "Pitt River Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29337,7 +31398,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Fremont Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29551,7 +31614,8 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29575,7 +31639,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29598,7 +31664,9 @@ var designHighStressJson = {
         "cycleway.right": "shared_lane",
         "highway": "secondary",
         "name": "David Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29623,7 +31691,9 @@ var designHighStressJson = {
         "lanes": "4",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29647,7 +31717,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "lanes": "2",
         "name": "David Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29673,7 +31745,9 @@ var designHighStressJson = {
         "lanes": "5",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29707,7 +31781,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29743,7 +31819,9 @@ var designHighStressJson = {
         "maxspeed": "80",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29837,7 +31915,9 @@ var designHighStressJson = {
         "lanes": "5",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29875,7 +31955,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29918,7 +32000,9 @@ var designHighStressJson = {
         "name": "Barnet Highway",
         "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29949,7 +32033,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -29982,7 +32068,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Oxford Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30011,7 +32099,9 @@ var designHighStressJson = {
         "lanes": "4",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30037,7 +32127,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Shaughnessy Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30079,7 +32171,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Shaughnessy Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30128,7 +32222,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Dominion Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30157,7 +32253,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Dominion Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30202,11 +32300,21 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
+          [
+            -122.7365797,
+            49.2956492
+          ],
+          [
+            -122.7367034,
+            49.2956239
+          ],
           [
             -122.7368466,
             49.2955965
@@ -30262,22 +32370,6 @@ var designHighStressJson = {
           [
             -122.7405065,
             49.2953661
-          ],
-          [
-            -122.7408994,
-            49.295317
-          ],
-          [
-            -122.741292,
-            49.295256
-          ],
-          [
-            -122.741341,
-            49.2952365
-          ],
-          [
-            -122.7414443,
-            49.2951986
           ]
         ]
       }
@@ -30291,7 +32383,9 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30337,12 +32431,16 @@ var designHighStressJson = {
             49.2962677
           ],
           [
-            -122.7334296,
-            49.2962661
+            -122.7334205,
+            49.296271
           ],
           [
-            -122.733994,
-            49.2962429
+            -122.7336921,
+            49.2962688
+          ],
+          [
+            -122.7339925,
+            49.2962468
           ],
           [
             -122.7342611,
@@ -30365,20 +32463,8 @@ var designHighStressJson = {
             49.2959822
           ],
           [
-            -122.736458,
-            49.2956823
-          ],
-          [
-            -122.7365797,
-            49.2956492
-          ],
-          [
-            -122.736708,
-            49.2956181
-          ],
-          [
-            -122.7368466,
-            49.2955965
+            -122.7359962,
+            49.2958231
           ]
         ]
       }
@@ -30393,7 +32479,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Coast Meridian Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30420,7 +32508,9 @@ var designHighStressJson = {
         "lanes.forward": "1",
         "maxspeed": "50",
         "name": "Shaughnessy Street",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30457,7 +32547,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30486,7 +32578,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30527,7 +32621,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30568,7 +32664,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30608,7 +32706,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "concrete",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30641,7 +32741,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30667,7 +32769,9 @@ var designHighStressJson = {
         "lanes.backward": "1",
         "lanes.forward": "2",
         "name": "David Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30755,7 +32859,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "lanes": "2",
         "name": "Guildford Way",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30774,39 +32880,15 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/1212146188",
-        "cycleway.right": "lane",
-        "cycleway.right.lane": "exclusive",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8185338,
-            49.2844888
-          ],
-          [
-            -122.818421,
-            49.2844467
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/1224005735",
         "cycleway.right": "lane",
         "highway": "secondary",
         "lanes": "1",
         "name": "Guildford Way",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30832,7 +32914,9 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "Fremont Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30864,7 +32948,9 @@ var designHighStressJson = {
         "maxspeed": "80",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30899,7 +32985,9 @@ var designHighStressJson = {
         "maxspeed": "80",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30946,7 +33034,9 @@ var designHighStressJson = {
         "maxspeed": "80",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -30977,7 +33067,9 @@ var designHighStressJson = {
         "maxspeed": "80",
         "name": "Barnet Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31032,7 +33124,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31059,7 +33153,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31085,7 +33181,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31113,7 +33211,9 @@ var designHighStressJson = {
         "lanes.forward": "4",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31139,7 +33239,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31166,7 +33268,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Ioco Road",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31199,7 +33303,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31233,7 +33339,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31268,7 +33376,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31284,6 +33394,10 @@ var designHighStressJson = {
           [
             -122.762387,
             49.2457318
+          ],
+          [
+            -122.7623874,
+            49.2459598
           ],
           [
             -122.7623874,
@@ -31303,7 +33417,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31311,6 +33427,10 @@ var designHighStressJson = {
           [
             -122.7623874,
             49.2459902
+          ],
+          [
+            -122.7623877,
+            49.2461694
           ],
           [
             -122.7623879,
@@ -31331,7 +33451,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31374,7 +33496,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31401,7 +33525,9 @@ var designHighStressJson = {
         "lanes.forward": "3",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31440,7 +33566,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31471,7 +33599,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31502,7 +33632,9 @@ var designHighStressJson = {
         "lanes.forward": "3",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31526,7 +33658,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31550,7 +33684,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31577,7 +33713,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31604,7 +33742,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31635,7 +33775,9 @@ var designHighStressJson = {
         "lanes.forward": "3",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31670,7 +33812,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31705,7 +33849,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31732,7 +33878,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31757,7 +33905,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31784,7 +33934,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31810,7 +33962,10 @@ var designHighStressJson = {
         "lanes.backward": "1",
         "lanes.forward": "2",
         "name": "David Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31818,6 +33973,10 @@ var designHighStressJson = {
           [
             -122.8187166,
             49.2959484
+          ],
+          [
+            -122.8192867,
+            49.2961369
           ],
           [
             -122.819307,
@@ -31840,7 +33999,10 @@ var designHighStressJson = {
         "lanes.backward": "1",
         "lanes.forward": "1",
         "name": "David Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31878,7 +34040,10 @@ var designHighStressJson = {
         "lanes.backward": "2",
         "lanes.forward": "1",
         "name": "David Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31890,6 +34055,10 @@ var designHighStressJson = {
           [
             -122.8134003,
             49.2944461
+          ],
+          [
+            -122.8135229,
+            49.2944701
           ],
           [
             -122.8140114,
@@ -31908,7 +34077,10 @@ var designHighStressJson = {
         "lanes.backward": "1",
         "lanes.forward": "2",
         "name": "David Avenue",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31920,6 +34092,10 @@ var designHighStressJson = {
           [
             -122.8128107,
             49.2943661
+          ],
+          [
+            -122.8129915,
+            49.2943893
           ],
           [
             -122.8130749,
@@ -31940,7 +34116,9 @@ var designHighStressJson = {
         "highway": "secondary",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -31965,7 +34143,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32003,7 +34183,9 @@ var designHighStressJson = {
         "shoulder": "right",
         "shoulder.bicycle": "yes",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32034,7 +34216,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32065,7 +34249,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32093,7 +34279,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32120,7 +34308,9 @@ var designHighStressJson = {
         "maxspeed": "80",
         "name": "Barnet Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32154,7 +34344,9 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Lansdowne Drive",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32189,44 +34381,6 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/1299938836",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7946314,
-            49.2850844
-          ],
-          [
-            -122.794777,
-            49.2850958
-          ],
-          [
-            -122.7955279,
-            49.2851485
-          ],
-          [
-            -122.7962147,
-            49.2851937
-          ],
-          [
-            -122.7969736,
-            49.2852521
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/1314908215",
         "cycleway.left": "no",
         "cycleway.right": "shared_lane",
@@ -32236,7 +34390,9 @@ var designHighStressJson = {
         "name": "Barnet Highway",
         "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32261,7 +34417,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32290,7 +34448,9 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32319,7 +34479,9 @@ var designHighStressJson = {
         "lanes": "1",
         "name": "David Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32349,7 +34511,9 @@ var designHighStressJson = {
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32377,7 +34541,8 @@ var designHighStressJson = {
         "lanes.forward": "4",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='no'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='no'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32404,7 +34569,9 @@ var designHighStressJson = {
         "lanes.forward": "4",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32434,7 +34601,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32473,167 +34642,6 @@ var designHighStressJson = {
     {
       "type": "Feature",
       "properties": {
-        "id": "way/1338049311",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7948407,
-            49.2849595
-          ],
-          [
-            -122.7947992,
-            49.2849574
-          ],
-          [
-            -122.7946564,
-            49.2849481
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/1338049312",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7957397,
-            49.2850379
-          ],
-          [
-            -122.7953975,
-            49.2850005
-          ],
-          [
-            -122.7948407,
-            49.2849595
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/1338049313",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "3",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7940322,
-            49.2850325
-          ],
-          [
-            -122.7944232,
-            49.2850669
-          ],
-          [
-            -122.794467,
-            49.2850709
-          ],
-          [
-            -122.7946314,
-            49.2850844
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/1338049316",
-        "cycleway.right": "lane",
-        "cycleway.right.lane": "exclusive",
-        "highway": "secondary",
-        "lanes": "2",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Way has a bike lane because 'cycleway:right:lane'='exclusive'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7946564,
-            49.2849481
-          ],
-          [
-            -122.794488,
-            49.2849363
-          ],
-          [
-            -122.7943007,
-            49.2849274
-          ],
-          [
-            -122.7942304,
-            49.2849236
-          ],
-          [
-            -122.7941622,
-            49.2849195
-          ],
-          [
-            -122.7941047,
-            49.2849158
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "way/1338049318",
-        "cycleway.left": "no",
-        "cycleway.right": "lane",
-        "highway": "secondary",
-        "lanes": "3",
-        "name": "Guildford Way",
-        "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.7909799,
-            49.2848014
-          ],
-          [
-            -122.7913267,
-            49.2848233
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/1338347863",
         "cycleway.left": "no",
         "cycleway.right": "lane",
@@ -32642,7 +34650,9 @@ var designHighStressJson = {
         "lanes": "4",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32669,7 +34679,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32696,7 +34708,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Coast Meridian Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32723,7 +34737,9 @@ var designHighStressJson = {
         "lanes.forward": "1",
         "name": "Wilson Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 4 because the number of lanes is greater than 3."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 4 because the number of lanes is greater than 3.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32758,7 +34774,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Shaughnessy Street",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32794,8 +34812,11 @@ var designHighStressJson = {
         "maxspeed": "60",
         "name": "Lougheed Highway",
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "parking.both": "no",
         "surface": "asphalt",
-        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h."
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32830,7 +34851,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32859,7 +34882,9 @@ var designHighStressJson = {
         "lanes": "4",
         "name": "Broadway Street",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32895,7 +34920,9 @@ var designHighStressJson = {
         "maxspeed": "80",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32943,7 +34970,9 @@ var designHighStressJson = {
         "maxspeed": "80",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -32975,7 +35004,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Dominion Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33002,7 +35033,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Dominion Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33038,7 +35071,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Dominion Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33066,7 +35101,9 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "Dominion Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33096,7 +35133,9 @@ var designHighStressJson = {
         "name": "Dominion Avenue",
         "parking.lane.left": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Found tag 'parking:lane:left'='parallel'. Parking is present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 55 km/h and parking present."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Found tag 'parking:lane:left'='parallel'. Parking is present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 55 km/h and parking present.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33123,7 +35162,9 @@ var designHighStressJson = {
         "name": "Dominion Avenue",
         "parking.lane.left": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Found tag 'parking:lane:left'='parallel'. Parking is present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 55 km/h and parking present."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Found tag 'parking:lane:left'='parallel'. Parking is present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 55 km/h and parking present.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33150,7 +35191,9 @@ var designHighStressJson = {
         "name": "Dominion Avenue",
         "parking.lane.left": "parallel",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Found tag 'parking:lane:left'='parallel'. Parking is present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 55 km/h and parking present."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Found tag 'parking:lane:left'='parallel'. Parking is present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 55 km/h and parking present.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33160,12 +35203,20 @@ var designHighStressJson = {
             49.258388
           ],
           [
+            -122.738005,
+            49.2583881
+          ],
+          [
             -122.7379442,
             49.2583881
           ],
           [
             -122.73783,
             49.2583882
+          ],
+          [
+            -122.7376617,
+            49.2583886
           ],
           [
             -122.7376496,
@@ -33183,7 +35234,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Dominion Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33217,7 +35270,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Dominion Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33243,7 +35298,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Dominion Avenue",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33269,7 +35326,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Pitt River Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33303,7 +35362,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Pitt River Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33329,7 +35390,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Pitt River Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='share_busway'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33355,7 +35418,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Pitt River Road",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33369,8 +35434,8 @@ var designHighStressJson = {
             49.2540507
           ],
           [
-            -122.7784054,
-            49.2540519
+            -122.778406,
+            49.254052
           ],
           [
             -122.7785303,
@@ -33389,7 +35454,9 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Fremont Connector",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33467,7 +35534,9 @@ var designHighStressJson = {
         "lanes": "3",
         "name": "Barnet Highway",
         "surface": "asphalt",
-        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking."
+        "decisionMsg": "Way has a bike lane because 'cycleway:left'='no'.,Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='primary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
       },
       "geometry": {
         "type": "LineString",
@@ -33479,6 +35548,261 @@ var designHighStressJson = {
           [
             -122.7992156,
             49.2766723
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1369867808",
+        "bicycle": "designated",
+        "cycleway": "shared_lane",
+        "highway": "primary",
+        "lanes": "7",
+        "lanes.backward": "4",
+        "lanes.forward": "3",
+        "lit": "yes",
+        "maxspeed": "60",
+        "name": "Lougheed Highway",
+        "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
+        "surface": "asphalt",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
+        "bikeInfraType": "Shared Road Lane",
+        "level": 4
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8698646,
+            49.2362432
+          ],
+          [
+            -122.8704778,
+            49.2363719
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1434587959",
+        "cycleway.right": "lane",
+        "highway": "secondary",
+        "lanes": "3",
+        "name": "David Avenue",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.7509205,
+            49.2931462
+          ],
+          [
+            -122.7505569,
+            49.2931893
+          ],
+          [
+            -122.7504497,
+            49.2932018
+          ],
+          [
+            -122.750348,
+            49.2932765
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1436007971",
+        "cycleway.right": "lane",
+        "highway": "secondary",
+        "lanes": "2",
+        "name": "David Avenue",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.7373817,
+            49.295424
+          ],
+          [
+            -122.7371909,
+            49.2954541
+          ],
+          [
+            -122.7370122,
+            49.2954883
+          ],
+          [
+            -122.7368335,
+            49.2955224
+          ],
+          [
+            -122.736703,
+            49.2955512
+          ],
+          [
+            -122.736581,
+            49.2955839
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1436007972",
+        "cycleway.right": "lane",
+        "highway": "secondary",
+        "lanes": "1",
+        "name": "David Avenue",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.736581,
+            49.2955839
+          ],
+          [
+            -122.736459,
+            49.2956163
+          ],
+          [
+            -122.7362498,
+            49.2956799
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1436007973",
+        "cycleway.right": "lane",
+        "highway": "secondary",
+        "lanes": "2",
+        "name": "David Avenue",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.7359962,
+            49.2958231
+          ],
+          [
+            -122.736458,
+            49.2956823
+          ],
+          [
+            -122.7365797,
+            49.2956492
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1436007974",
+        "cycleway.right": "lane",
+        "highway": "secondary",
+        "lanes": "2",
+        "name": "David Avenue",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway:right'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.7405065,
+            49.2953661
+          ],
+          [
+            -122.7408994,
+            49.295317
+          ],
+          [
+            -122.741292,
+            49.295256
+          ],
+          [
+            -122.741341,
+            49.2952365
+          ],
+          [
+            -122.7414443,
+            49.2951986
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "way/1436007976",
+        "cycleway": "lane",
+        "highway": "secondary",
+        "lanes": "3",
+        "name": "David Avenue",
+        "surface": "asphalt",
+        "decisionMsg": "Way has a bike lane because 'cycleway'='lane'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
+        "bikeInfraType": "Painted Bike Lane",
+        "level": 4
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.7433494,
+            49.2947536
+          ],
+          [
+            -122.7428149,
+            49.2948757
+          ],
+          [
+            -122.7424171,
+            49.2949711
+          ],
+          [
+            -122.7416126,
+            49.2951638
+          ],
+          [
+            -122.741569,
+            49.2951743
+          ],
+          [
+            -122.7414443,
+            49.2951986
           ]
         ]
       }
