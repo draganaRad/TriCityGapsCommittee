@@ -660,7 +660,7 @@ var designHighStressJson = {
         "name": "Whiting Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -792,7 +792,7 @@ var designHighStressJson = {
         "parking.both": "parallel",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -870,7 +870,7 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Westview Street",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -1073,7 +1073,7 @@ var designHighStressJson = {
         "highway": "unclassified",
         "name": "Hartley Avenue",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -1176,7 +1176,7 @@ var designHighStressJson = {
         "name": "Ailsa Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -1306,7 +1306,7 @@ var designHighStressJson = {
         "name": "Glencoe Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -1397,7 +1397,7 @@ var designHighStressJson = {
         "name": "Alderson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -1482,7 +1482,7 @@ var designHighStressJson = {
         "foot": "yes",
         "highway": "service",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='service'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -1546,7 +1546,7 @@ var designHighStressJson = {
         "name": "April Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -1841,7 +1841,7 @@ var designHighStressJson = {
         "name": "Hastings Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -1911,7 +1911,7 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Parkside Drive",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -1950,7 +1950,7 @@ var designHighStressJson = {
         "name": "Patricia Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -1996,7 +1996,7 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Shaughnessy Street",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -2311,7 +2311,7 @@ var designHighStressJson = {
         "name": "Langan Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -2451,7 +2451,7 @@ var designHighStressJson = {
         "name": "Shaughnessy Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -2520,7 +2520,7 @@ var designHighStressJson = {
         "name": "Spuraway Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -2660,7 +2660,7 @@ var designHighStressJson = {
         "name": "Taylor Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -2934,7 +2934,7 @@ var designHighStressJson = {
         "name": "Apel Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -3081,7 +3081,7 @@ var designHighStressJson = {
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -3129,7 +3129,7 @@ var designHighStressJson = {
         "name": "Hastings Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -3335,7 +3335,7 @@ var designHighStressJson = {
         "name": "Holly Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -3522,7 +3522,7 @@ var designHighStressJson = {
         "name": "Turner Creek Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -3649,7 +3649,7 @@ var designHighStressJson = {
         "name": "Panorama Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -4012,7 +4012,7 @@ var designHighStressJson = {
         "name": "Kingsway Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -4055,7 +4055,7 @@ var designHighStressJson = {
         "name": "Holland Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -4090,7 +4090,7 @@ var designHighStressJson = {
         "name": "Perkins Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -4118,7 +4118,7 @@ var designHighStressJson = {
         "name": "Citadel Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -4534,7 +4534,7 @@ var designHighStressJson = {
         "name": "Citadel Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -4814,7 +4814,7 @@ var designHighStressJson = {
         "name": "Pooley Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -4901,7 +4901,7 @@ var designHighStressJson = {
         "name": "Cape Horn Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -5536,7 +5536,7 @@ var designHighStressJson = {
         "name": "Kingsway Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -5645,7 +5645,7 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Foster Avenue",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -5705,7 +5705,7 @@ var designHighStressJson = {
         "name": "Alderson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -5732,7 +5732,7 @@ var designHighStressJson = {
         "name": "Soball Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -5782,7 +5782,7 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Soball Street",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -5836,7 +5836,7 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Soball Street",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -5945,7 +5945,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -6019,7 +6019,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -6671,7 +6671,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -6698,7 +6698,7 @@ var designHighStressJson = {
         "lanes": "1",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -6733,7 +6733,7 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Parkside Drive",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -7188,7 +7188,7 @@ var designHighStressJson = {
         "name": "Robinson Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -7220,7 +7220,7 @@ var designHighStressJson = {
         "name": "Gatensbury Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -7380,7 +7380,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -7415,7 +7415,7 @@ var designHighStressJson = {
         "lanes": "1",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -8065,7 +8065,7 @@ var designHighStressJson = {
         "name": "Rochester Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -8151,7 +8151,7 @@ var designHighStressJson = {
         "name": "Foster Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -8226,7 +8226,7 @@ var designHighStressJson = {
         "name": "Henry Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -8639,7 +8639,7 @@ var designHighStressJson = {
         "name": "Fawcett Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -8694,7 +8694,7 @@ var designHighStressJson = {
         "name": "Brigantine Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -8744,7 +8744,7 @@ var designHighStressJson = {
         "name": "Brigantine Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -8836,7 +8836,7 @@ var designHighStressJson = {
         "name": "Princeton Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -8975,7 +8975,7 @@ var designHighStressJson = {
         "name": "Princeton Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -9225,7 +9225,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -9309,7 +9309,7 @@ var designHighStressJson = {
         "name": "Ungless Way",
         "surface": "asphalt",
         "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='shared_lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because highway with bike lane is not 'residential' and no parking.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -9346,7 +9346,7 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Foster Avenue",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -9393,7 +9393,7 @@ var designHighStressJson = {
         "name": "Foster Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -9568,7 +9568,7 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -9741,7 +9741,7 @@ var designHighStressJson = {
         "lanes": "1",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='primary_link'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -9832,7 +9832,7 @@ var designHighStressJson = {
         "name": "Loring Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -9870,7 +9870,7 @@ var designHighStressJson = {
         "name": "Dunlop Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -9912,7 +9912,7 @@ var designHighStressJson = {
         "name": "Sunset Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -9947,7 +9947,7 @@ var designHighStressJson = {
         "name": "Gatensbury Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -10045,7 +10045,7 @@ var designHighStressJson = {
         "name": "Foster Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -10092,7 +10092,7 @@ var designHighStressJson = {
         "name": "Gatensbury Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -10359,7 +10359,7 @@ var designHighStressJson = {
         "name": "Foster Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -10460,7 +10460,7 @@ var designHighStressJson = {
         "name": "Gatensbury Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -10655,7 +10655,7 @@ var designHighStressJson = {
         "name": "Union Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -10815,7 +10815,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -11539,7 +11539,7 @@ var designHighStressJson = {
         "name": "Fawcett Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -11879,7 +11879,7 @@ var designHighStressJson = {
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -11948,7 +11948,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -11984,7 +11984,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12297,7 +12297,7 @@ var designHighStressJson = {
         "name": "Hastings Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12332,7 +12332,7 @@ var designHighStressJson = {
         "name": "Hastings Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12358,7 +12358,7 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Hastings Street",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12394,7 +12394,7 @@ var designHighStressJson = {
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12467,7 +12467,7 @@ var designHighStressJson = {
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12531,7 +12531,7 @@ var designHighStressJson = {
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12596,7 +12596,7 @@ var designHighStressJson = {
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12635,7 +12635,7 @@ var designHighStressJson = {
         "name": "Parkside Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12666,7 +12666,7 @@ var designHighStressJson = {
         "name": "Turner Creek Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12701,7 +12701,7 @@ var designHighStressJson = {
         "name": "Turner Creek Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12732,7 +12732,7 @@ var designHighStressJson = {
         "name": "Turner Creek Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12806,7 +12806,7 @@ var designHighStressJson = {
         "parking.both": "no",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -12841,7 +12841,7 @@ var designHighStressJson = {
         "parking.both": "no",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -13144,7 +13144,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -13509,7 +13509,7 @@ var designHighStressJson = {
         "name": "College Park Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -13559,7 +13559,7 @@ var designHighStressJson = {
         "name": "Glenayre Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -13585,7 +13585,7 @@ var designHighStressJson = {
         "name": "College Park Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -13642,7 +13642,7 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "College Park Way",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -13856,7 +13856,7 @@ var designHighStressJson = {
         "name": "Ungless Way",
         "surface": "asphalt",
         "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='shared_lane'.,Parking is not present.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -13882,7 +13882,7 @@ var designHighStressJson = {
         "name": "Alderson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -13916,7 +13916,7 @@ var designHighStressJson = {
         "name": "Alderson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -14045,7 +14045,7 @@ var designHighStressJson = {
         "name": "Cecile Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -14139,7 +14139,7 @@ var designHighStressJson = {
         "name": "College Park Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -14169,7 +14169,7 @@ var designHighStressJson = {
         "name": "College Park Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -14197,7 +14197,7 @@ var designHighStressJson = {
         "name": "Spuraway Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -14231,7 +14231,7 @@ var designHighStressJson = {
         "name": "Alderson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -14298,7 +14298,7 @@ var designHighStressJson = {
         "name": "Glen Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -14361,7 +14361,7 @@ var designHighStressJson = {
         "name": "Wilson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -14408,7 +14408,7 @@ var designHighStressJson = {
         "name": "Mary Hill Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -14503,7 +14503,7 @@ var designHighStressJson = {
         "name": "Wellington Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -15012,7 +15012,7 @@ var designHighStressJson = {
         "name": "Wilson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -15084,7 +15084,7 @@ var designHighStressJson = {
         "name": "Wilson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -15210,7 +15210,7 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Turner Creek Drive",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -15308,7 +15308,7 @@ var designHighStressJson = {
         "name": "Rochester Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -15384,7 +15384,7 @@ var designHighStressJson = {
         "name": "Hartley Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -15444,7 +15444,7 @@ var designHighStressJson = {
         "name": "Alderson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -15546,7 +15546,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -15616,7 +15616,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -15938,7 +15938,7 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Harper Road",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -16087,7 +16087,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -16622,7 +16622,7 @@ var designHighStressJson = {
         "name": "College Park Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -16655,7 +16655,7 @@ var designHighStressJson = {
         "name": "Glencoe Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -16686,7 +16686,7 @@ var designHighStressJson = {
         "name": "Smith Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -16712,7 +16712,7 @@ var designHighStressJson = {
         "highway": "tertiary",
         "name": "Poirier Street",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -16756,7 +16756,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -16877,7 +16877,7 @@ var designHighStressJson = {
         "name": "Kebet Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -17236,7 +17236,7 @@ var designHighStressJson = {
         "name": "Delestre Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -17527,7 +17527,7 @@ var designHighStressJson = {
         "name": "Shaughnessy Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -17685,7 +17685,7 @@ var designHighStressJson = {
         "name": "Wilson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -17740,7 +17740,7 @@ var designHighStressJson = {
         "name": "Wellington Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18461,7 +18461,7 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Shaughnessy Street",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18513,7 +18513,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18542,7 +18542,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18583,7 +18583,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18625,7 +18625,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18673,7 +18673,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18737,7 +18737,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18802,7 +18802,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18832,7 +18832,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18870,7 +18870,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18908,7 +18908,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18946,7 +18946,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -18988,7 +18988,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -19030,7 +19030,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -19064,7 +19064,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -19100,7 +19100,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -19137,7 +19137,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -19230,7 +19230,7 @@ var designHighStressJson = {
         "name": "Gatensbury Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -19266,7 +19266,7 @@ var designHighStressJson = {
         "parking.lane.left": "parallel",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -19793,7 +19793,7 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Parkside Drive",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -19880,7 +19880,7 @@ var designHighStressJson = {
         "maxspeed": "30",
         "name": "Parkside Drive",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -19947,7 +19947,7 @@ var designHighStressJson = {
         "name": "Patricia Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -20021,7 +20021,7 @@ var designHighStressJson = {
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -20054,7 +20054,7 @@ var designHighStressJson = {
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -20621,7 +20621,7 @@ var designHighStressJson = {
         "name": "Gatensbury Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -20896,7 +20896,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -20997,7 +20997,7 @@ var designHighStressJson = {
         "name": "Whiting Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -21121,7 +21121,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -21149,7 +21149,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -21176,7 +21176,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -21620,7 +21620,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -21770,7 +21770,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -22281,7 +22281,7 @@ var designHighStressJson = {
         "name": "Alderson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -22907,7 +22907,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -22941,7 +22941,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -22977,7 +22977,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -23008,7 +23008,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -23044,7 +23044,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -23372,7 +23372,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -23671,7 +23671,7 @@ var designHighStressJson = {
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -23702,7 +23702,7 @@ var designHighStressJson = {
         "name": "Wellington Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -23769,7 +23769,7 @@ var designHighStressJson = {
         "name": "Wellington Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -23826,7 +23826,7 @@ var designHighStressJson = {
         "name": "Fawcett Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='unclassified'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -24217,7 +24217,7 @@ var designHighStressJson = {
         "name": "Langan Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -24469,7 +24469,7 @@ var designHighStressJson = {
         "name": "Whiting Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -24625,7 +24625,7 @@ var designHighStressJson = {
         "name": "Princeton Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -24680,7 +24680,7 @@ var designHighStressJson = {
         "name": "Princeton Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -24717,7 +24717,7 @@ var designHighStressJson = {
         "name": "Princeton Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -24769,7 +24769,7 @@ var designHighStressJson = {
         "name": "April Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -24821,7 +24821,7 @@ var designHighStressJson = {
         "name": "April Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 3 because maxspeed is up to 40 km/h and 3 or fewer lanes on non-residential highway.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 3
       },
       "geometry": {
@@ -24953,7 +24953,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -25019,7 +25019,7 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "Shaughnessy Street",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -25213,7 +25213,7 @@ var designHighStressJson = {
         "name": "Pitt River Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -25753,7 +25753,7 @@ var designHighStressJson = {
         "name": "Forest Park Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -26083,7 +26083,7 @@ var designHighStressJson = {
         "name": "Shaughnessy Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -26237,7 +26237,7 @@ var designHighStressJson = {
         "name": "Shaughnessy Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -26284,7 +26284,7 @@ var designHighStressJson = {
         "name": "Shaughnessy Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -26385,7 +26385,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -27985,7 +27985,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -28014,7 +28014,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -28069,7 +28069,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -28096,7 +28096,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -28125,7 +28125,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -28749,7 +28749,7 @@ var designHighStressJson = {
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -28815,7 +28815,7 @@ var designHighStressJson = {
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29274,7 +29274,7 @@ var designHighStressJson = {
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29311,7 +29311,7 @@ var designHighStressJson = {
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29340,7 +29340,7 @@ var designHighStressJson = {
         "name": "Shaughnessy Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29477,7 +29477,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29537,7 +29537,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29568,7 +29568,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29594,7 +29594,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29621,7 +29621,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29656,7 +29656,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29687,7 +29687,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29721,7 +29721,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29752,7 +29752,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29778,7 +29778,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29809,7 +29809,7 @@ var designHighStressJson = {
         "name": "Forest Park Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29860,7 +29860,7 @@ var designHighStressJson = {
         "name": "Forest Park Way",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29916,7 +29916,7 @@ var designHighStressJson = {
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -29944,7 +29944,7 @@ var designHighStressJson = {
         "name": "Heritage Mountain Boulevard",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -31033,7 +31033,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -31212,7 +31212,7 @@ var designHighStressJson = {
         "name": "Pitt River Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -31355,7 +31355,7 @@ var designHighStressJson = {
         "name": "Pitt River Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -31640,7 +31640,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -31665,7 +31665,7 @@ var designHighStressJson = {
         "highway": "secondary",
         "name": "David Avenue",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -31692,7 +31692,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -31718,7 +31718,7 @@ var designHighStressJson = {
         "lanes": "2",
         "name": "David Avenue",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -32034,7 +32034,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -32069,7 +32069,7 @@ var designHighStressJson = {
         "name": "Oxford Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -32100,7 +32100,7 @@ var designHighStressJson = {
         "name": "Coast Meridian Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -32128,7 +32128,7 @@ var designHighStressJson = {
         "name": "Shaughnessy Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -32172,7 +32172,7 @@ var designHighStressJson = {
         "name": "Shaughnessy Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -32384,7 +32384,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -32509,7 +32509,7 @@ var designHighStressJson = {
         "maxspeed": "50",
         "name": "Shaughnessy Street",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -32742,7 +32742,7 @@ var designHighStressJson = {
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -32770,7 +32770,7 @@ var designHighStressJson = {
         "lanes.forward": "2",
         "name": "David Avenue",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -33182,7 +33182,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -33240,7 +33240,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -33269,7 +33269,7 @@ var designHighStressJson = {
         "name": "Ioco Road",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -33935,7 +33935,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -33964,7 +33964,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34001,7 +34001,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34042,7 +34042,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34079,7 +34079,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34117,7 +34117,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34217,7 +34217,7 @@ var designHighStressJson = {
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34250,7 +34250,7 @@ var designHighStressJson = {
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34345,7 +34345,7 @@ var designHighStressJson = {
         "name": "Lansdowne Drive",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because the number of lanes is greater than 3.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34391,7 +34391,7 @@ var designHighStressJson = {
         "parking.both": "no",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34418,7 +34418,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34449,7 +34449,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34480,7 +34480,7 @@ var designHighStressJson = {
         "name": "David Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34512,7 +34512,7 @@ var designHighStressJson = {
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34738,7 +34738,7 @@ var designHighStressJson = {
         "name": "Wilson Avenue",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 4 because the number of lanes is greater than 3.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34775,7 +34775,7 @@ var designHighStressJson = {
         "name": "Shaughnessy Street",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -34815,7 +34815,7 @@ var designHighStressJson = {
         "parking.both": "no",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -35072,7 +35072,7 @@ var designHighStressJson = {
         "name": "Dominion Avenue",
         "surface": "asphalt",
         "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 3 because there are 3 or more lanes and no parking.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -35163,7 +35163,7 @@ var designHighStressJson = {
         "parking.lane.left": "parallel",
         "surface": "asphalt",
         "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Found tag 'parking:lane:left'='parallel'. Parking is present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 55 km/h and parking present.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -35271,7 +35271,7 @@ var designHighStressJson = {
         "name": "Dominion Avenue",
         "surface": "asphalt",
         "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -35327,7 +35327,7 @@ var designHighStressJson = {
         "name": "Pitt River Road",
         "surface": "asphalt",
         "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -35419,7 +35419,7 @@ var designHighStressJson = {
         "name": "Pitt River Road",
         "surface": "asphalt",
         "decisionMsg": "Way has a bike lane because 'cycleway:left'='lane'.,Way has a bike lane because 'cycleway:right'='share_busway'.,Parking is not present.,No maxspeed tag. Using default value of 80 when highway='secondary'.,Increasing LTS to 4 because the maxspeed is over 65 km/h and no parking.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
@@ -35568,7 +35568,7 @@ var designHighStressJson = {
         "name.pronunciation": "ˈloʊhiːd ˈhaɪweɪ",
         "surface": "asphalt",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,Setting LTS to 4 because maxspeed is greater than 50 km/h.",
-        "bikeInfraType": "Shared Road Lane",
+        "bikeInfraType": "Shared Road",
         "level": 4
       },
       "geometry": {
